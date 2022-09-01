@@ -3,8 +3,8 @@
  */
 export default {
   "v-20454bbc": () => import("C:\\Users\\liao.kailun\\Desktop\\New folder (2)\\markdownblog\\docs\\Components\\cp_netservice\\cpnetservice.md"),
-  "v-7392b3c2": () => import("C:\\Users\\liao.kailun\\Desktop\\New folder (2)\\markdownblog\\docs\\Components\\js_docs\\JS.md"),
   "v-f02bda70": () => import("C:\\Users\\liao.kailun\\Desktop\\New folder (2)\\markdownblog\\docs\\Components\\md_interview\\Interview.md"),
   "v-4f7a0fd8": () => import("C:\\Users\\liao.kailun\\Desktop\\New folder (2)\\markdownblog\\docs\\Components\\md_view\\vue.md"),
+  "v-7392b3c2": () => import("C:\\Users\\liao.kailun\\Desktop\\New folder (2)\\markdownblog\\docs\\Components\\js_docs\\JS.md"),
   "v-3b12fbda": () => import("C:\\Users\\liao.kailun\\Desktop\\New folder (2)\\markdownblog\\docs\\README.md") 
 }

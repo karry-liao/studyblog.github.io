@@ -17,14 +17,6 @@ export const routes = [
     },
   },
   {
-    name: "v-7392b3c2",
-    path: "/Components/js_docs/JS.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7392b3c2").then(next)
-    },
-  },
-  {
     name: "v-f02bda70",
     path: "/Components/md_interview/Interview.html",
     component: GlobalLayout,
@@ -38,6 +30,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-4f7a0fd8").then(next)
+    },
+  },
+  {
+    name: "v-7392b3c2",
+    path: "/Components/js_docs/JS.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7392b3c2").then(next)
     },
   },
   {
