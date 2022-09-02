@@ -10,9 +10,9 @@
   "scripts": {
     "dev": "vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
-    "test": "echo “Error: no test specified” && exit 1",
-    "deploy": "gh-pages -d docs/.vuepress/dist",
-    "commit": "yarn build && yarn deploy"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy-gh": "GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
   },
   "dependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5"
