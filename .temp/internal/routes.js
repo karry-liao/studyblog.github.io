@@ -17,11 +17,11 @@ export const routes = [
     },
   },
   {
-    name: "v-4f7a0fd8",
-    path: "/Components/md_view/vue.html",
+    name: "v-7392b3c2",
+    path: "/Components/js_docs/JS.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4f7a0fd8").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-7392b3c2").then(next)
     },
   },
   {
@@ -33,11 +33,11 @@ export const routes = [
     },
   },
   {
-    name: "v-7392b3c2",
-    path: "/Components/js_docs/JS.html",
+    name: "v-4f7a0fd8",
+    path: "/Components/md_view/vue.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7392b3c2").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-4f7a0fd8").then(next)
     },
   },
   {

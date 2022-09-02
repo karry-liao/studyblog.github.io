@@ -3,7 +3,6 @@ module.exports = {
   keywords: "前端开发",
   description: "个人博客",
   repo: "", //仓库地址
-  base: "/blog/", // 配合部署项目
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   lastUpdated: "Last Updated",
   configureWebpack: {
