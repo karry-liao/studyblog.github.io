@@ -66,14 +66,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "CSS",
-      "frontmatter": {},
-      "regularPath": "/Components/md_interview/Interview.html",
-      "relativePath": "Components/md_interview/Interview.md",
-      "key": "v-f02bda70",
-      "path": "/Components/md_interview/Interview.html"
-    },
-    {
       "title": "Vue",
       "frontmatter": {},
       "regularPath": "/Components/md_view/vue.html",
@@ -172,6 +164,14 @@ export const siteData = {
           "slug": "vue中computed和method-区别"
         }
       ]
+    },
+    {
+      "title": "CSS",
+      "frontmatter": {},
+      "regularPath": "/Components/md_interview/Interview.html",
+      "relativePath": "Components/md_interview/Interview.md",
+      "key": "v-f02bda70",
+      "path": "/Components/md_interview/Interview.html"
     },
     {
       "title": "JavaScript 的常用方法",
