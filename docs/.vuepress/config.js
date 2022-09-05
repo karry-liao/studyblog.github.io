@@ -2,7 +2,8 @@ module.exports = {
   title: "芒梨博客", //标题
   keywords: "前端开发",
   description: "个人博客",
-  repo: "", //仓库地址
+  repo: "git@github.com:karry-liao/studyblog.github.io.git", //仓库地址
+  base:"/studyblog.github.io/",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   lastUpdated: "Last Updated",
   configureWebpack: {
