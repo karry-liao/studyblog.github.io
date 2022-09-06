@@ -12,7 +12,7 @@
           @mouseout="outHandler"
         ></div>
       </div>
-        <div v-show="rShow" class="right">
+        <div v-show="true" class="right">
         <img
           :style="r_img"
           class="rightImg"
@@ -82,11 +82,11 @@
       width: 200px;
       height: 200px;
       position: relative;
-      /* overflow: hidden; */
+      overflow: hidden;
       background-color: aqua;
     } /* 一个最高层层罩 */
     .rightImg {
-        display: inline-block;
+      display: inline-block;
       width: 400px;
       height: 400px;
       position: absolute;
@@ -122,6 +122,12 @@
       height: 200px;
       display: inline-block;
     } /* 原图的容器 */
+
+    </style>
+    <style>
+    .theme-default-content .right .theme-default-content:not(.custom) img {
+      min-width: "" !important;
+    }
     </style>
     
   
