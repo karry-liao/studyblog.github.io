@@ -4,7 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-register-components": "^1.9.7",
+    "element-ui": "^2.15.9",
     "gh-pages": "^4.0.0",
+    "less": "^4.1.3",
+    "less-loader": "^7.3.0",
     "vuepress": "^1.9.7"
   },
   "scripts": {
@@ -15,6 +19,8 @@
     "deploy-gh": "GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
   },
   "dependencies": {
-    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5"
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "async-validator": "^1.11.5",
+    "vue": "^2.7.10"
   }
 }

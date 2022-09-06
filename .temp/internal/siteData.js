@@ -16,6 +16,38 @@ export const siteData = {
   ],
   "pages": [
     {
+      "title": "快速上手",
+      "frontmatter": {},
+      "regularPath": "/Components/base/start.html",
+      "relativePath": "Components/base/start.md",
+      "key": "v-1ed84da8",
+      "path": "/Components/base/start.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "获取组件",
+          "slug": "获取组件"
+        },
+        {
+          "level": 2,
+          "title": "引入组件",
+          "slug": "引入组件"
+        },
+        {
+          "level": 2,
+          "title": "使用组件",
+          "slug": "使用组件"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-5948fc08",
+      "path": "/Components/base/introduce.html"
+    },
+    {
       "title": "计算机网络基础知识总结",
       "frontmatter": {},
       "regularPath": "/Components/cp_netservice/cpnetservice.html",
@@ -246,6 +278,45 @@ export const siteData = {
       ]
     },
     {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F19%2F20180519142022_kVASd.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664607012&t=d9c7f089d193df41489bad49ebf22dc3",
+        "heroText": "karry的学习日记",
+        "tagline": "没有跨不过去的坎，只有走不完的路",
+        "features": [
+          {
+            "title": "梦想-最开始的地方",
+            "details": "活成自己最想活成的样子，加油！"
+          }
+        ]
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-3b12fbda",
+      "path": "/"
+    },
+    {
+      "title": "Icon",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Icon.html",
+      "relativePath": "Components/static/Icon.md",
+      "key": "v-84328e1c",
+      "path": "/Components/static/Icon.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
       "title": "Vue",
       "frontmatter": {},
       "regularPath": "/Components/md_view/vue.html",
@@ -352,25 +423,6 @@ export const siteData = {
       "relativePath": "Components/md_interview/Interview.md",
       "key": "v-f02bda70",
       "path": "/Components/md_interview/Interview.html"
-    },
-    {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F19%2F20180519142022_kVASd.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664607012&t=d9c7f089d193df41489bad49ebf22dc3",
-        "heroText": "karry的学习日记",
-        "tagline": "没有跨不过去的坎，只有走不完的路",
-        "features": [
-          {
-            "title": "梦想-最开始的地方",
-            "details": "活成自己最想活成的样子，加油！"
-          }
-        ]
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-3b12fbda",
-      "path": "/"
     }
   ],
   "themeConfig": {
@@ -398,16 +450,16 @@ export const siteData = {
         "link": "/Components/md_interview/interview"
       },
       {
-        "text": "2021",
+        "text": "语言",
         "ariLabel": "2021",
         "items": [
           {
-            "text": "May",
-            "link": "/2020/5/"
+            "text": "中文",
+            "link": "/language/chinese/"
           },
           {
-            "text": "June",
-            "link": "/2020/6/"
+            "text": "英文",
+            "link": "/language/english/"
           }
         ]
       },
@@ -421,15 +473,55 @@ export const siteData = {
         {
           "title": "开发指南",
           "collapsable": false,
-          "children": []
+          "children": [
+            [
+              "base/introduce",
+              "介绍"
+            ]
+          ]
         },
         {
-          "title": "静态组件",
+          "title": "CSS动画篇",
+          "collapsable": false,
+          "children": [
+            [
+              "static/Icon",
+              "图标"
+            ]
+          ]
+        },
+        {
+          "title": "JavaScript篇",
           "collapsable": false,
           "children": []
         },
         {
-          "title": "动态组件",
+          "title": "Vue篇",
+          "collapsable": false,
+          "children": []
+        },
+        {
+          "title": "React篇",
+          "collapsable": false,
+          "children": []
+        },
+        {
+          "title": "NodeJS篇",
+          "collapsable": false,
+          "children": []
+        },
+        {
+          "title": "Java基础篇",
+          "collapsable": false,
+          "children": []
+        },
+        {
+          "title": "计算机网络知识篇",
+          "collapsable": false,
+          "children": []
+        },
+        {
+          "title": "数据结构与算法篇",
           "collapsable": false,
           "children": []
         }

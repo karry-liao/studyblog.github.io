@@ -1,3 +1,1 @@
-export default [
-  "KanBanNiang"
-]
+export default []

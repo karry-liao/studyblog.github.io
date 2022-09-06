@@ -1,3 +1,5 @@
+
+const  path  = require('path')
 module.exports = {
   title: "芒梨博客", //标题
   keywords: "前端开发",
@@ -14,25 +16,30 @@ module.exports = {
   plugins: [
     [
       //先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
-      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
-      {
-        theme: ["wanko"],
-        clean: true,
-        messages: {
-          welcome: "我是lookroot欢迎你的关注 ",
-          home: "心里的花，我想要带你回家。",
-          theme: "好吧，希望你能喜欢我的其他小伙伴。",
-          close: "再见哦",
-        },
-        width: 240,
-        height: 352,
-        modelStyle: {
-          right: "-45px",
-          bottom: "-95px",
-          opacity: "0.9",
-        },
-      },
+      // "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      // {
+      //   theme: ["wanko"],
+      //   clean: true,
+      //   messages: {
+      //     welcome: "欢迎你的关注 ",
+      //     home: "心里的花，我想要带你回家。",
+      //     theme: "好吧，希望你能喜欢我的其他小伙伴。",
+      //     close: "再见哦",
+      //   },
+      //   width: 240,
+      //   height: 352,
+      //   modelStyle: {
+      //     right: "-45px",
+      //     bottom: "-95px",
+      //     opacity: "0.9",
+      //   },
+      // },
     ],
+    [       
+      '@vuepress/plugin-register-components',
+    {
+      componentsDir: path.resolve(__dirname, './components')
+    }],
     ["copy-code1", { hint: "复制成功！" }],
   ],
   themeConfig: {
@@ -53,12 +60,12 @@ module.exports = {
         link: "/Components/md_interview/interview",
       },
       {
-        text: "2021",
+        text: "语言",
         ariLabel: "2021",
         items: [
           //多级导航栏
-          { text: "May", link: "/2020/5/" },
-          { text: "June", link: "/2020/6/" },
+          { text: "中文", link: "/language/chinese/" },
+          { text: "英文", link: "/language/english/" },
         ],
       },
       { text: "github", link: "" },
@@ -70,21 +77,20 @@ module.exports = {
           title: "开发指南",
           collapsable: false,
           children: [
-            // ["base/introduce", "介绍"],
+            ["base/introduce", "介绍"],
             // ["base/start", "快速开始"],
           ],
         },
         {
-          title: "静态组件",
+          title: "CSS动画篇",
           collapsable: false,
           children: [
-            // ["static/Icon", "图标"],
+            ["static/Icon", "图标"],
             // ["static/Svg", "SVG变色图标"],
-
           ],
         },
         {
-          title: "动态组件",
+          title: "JavaScript篇",
           collapsable: false,
           children: [
             // ["dynamic/DragSort", "拖拽排序"],
@@ -97,6 +103,60 @@ module.exports = {
             // ["dynamic/RichText", "富文本编辑器"],
             // ["dynamic/ValidationCountdown", "获取验证码按钮"],
             // ["dynamic/SelectAddress", "省市区"],
+          ],
+        },
+        {
+          title: "Vue篇",
+          collapsable: false,
+          children: [
+            // ["static/Icon", "图标"],
+            // ["static/Svg", "SVG变色图标"],
+
+          ],
+        },
+        {
+          title: "React篇",
+          collapsable: false,
+          children: [
+            // ["static/Icon", "图标"],
+            // ["static/Svg", "SVG变色图标"],
+
+          ],
+        },
+        {
+          title: "NodeJS篇",
+          collapsable: false,
+          children: [
+            // ["static/Icon", "图标"],
+            // ["static/Svg", "SVG变色图标"],
+
+          ],
+        },
+        {
+          title: "Java基础篇",
+          collapsable: false,
+          children: [
+            // ["static/Icon", "图标"],
+            // ["static/Svg", "SVG变色图标"],
+
+          ],
+        },
+        {
+          title: "计算机网络知识篇",
+          collapsable: false,
+          children: [
+            // ["static/Icon", "图标"],
+            // ["static/Svg", "SVG变色图标"],
+
+          ],
+        },
+        {
+          title: "数据结构与算法篇",
+          collapsable: false,
+          children: [
+            // ["static/Icon", "图标"],
+            // ["static/Svg", "SVG变色图标"],
+
           ],
         },
       ],
