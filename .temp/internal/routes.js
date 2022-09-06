@@ -17,43 +17,11 @@ export const routes = [
     },
   },
   {
-    name: "v-15746658",
-    path: "/Components/base/introduce.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-15746658").then(next)
-    },
-  },
-  {
-    name: "v-7c5113b0",
-    path: "/Components/md_view/vue.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7c5113b0").then(next)
-    },
-  },
-  {
     name: "v-8dd857e0",
     path: "/Components/javascript/base.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-8dd857e0").then(next)
-    },
-  },
-  {
-    name: "v-6014b0d0",
-    path: "/Components/static/Button.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6014b0d0").then(next)
-    },
-  },
-  {
-    name: "v-0efb07f8",
-    path: "/Components/base/start.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0efb07f8").then(next)
     },
   },
   {
@@ -65,14 +33,6 @@ export const routes = [
     },
   },
   {
-    name: "v-30441f42",
-    path: "/Components/static/Icon.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-30441f42").then(next)
-    },
-  },
-  {
     name: "v-e4900cdc",
     path: "/Components/react/base.html",
     component: GlobalLayout,
@@ -81,11 +41,59 @@ export const routes = [
     },
   },
   {
+    name: "v-6014b0d0",
+    path: "/Components/static/Button.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6014b0d0").then(next)
+    },
+  },
+  {
+    name: "v-7c5113b0",
+    path: "/Components/md_view/vue.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7c5113b0").then(next)
+    },
+  },
+  {
+    name: "v-15746658",
+    path: "/Components/base/introduce.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-15746658").then(next)
+    },
+  },
+  {
     name: "v-80886510",
     path: "/Components/static/MagnifyingGlass.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-80886510").then(next)
+    },
+  },
+  {
+    name: "v-30441f42",
+    path: "/Components/static/Icon.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-30441f42").then(next)
+    },
+  },
+  {
+    name: "v-0efb07f8",
+    path: "/Components/base/start.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0efb07f8").then(next)
+    },
+  },
+  {
+    name: "v-d4b03610",
+    path: "/Components/static/Message.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-d4b03610").then(next)
     },
   },
   {
@@ -107,14 +115,6 @@ export const routes = [
   {
     path: "/index.html",
     redirect: "/"
-  },
-  {
-    name: "v-d4b03610",
-    path: "/Components/static/Message.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-d4b03610").then(next)
-    },
   },
   {
     path: '*',

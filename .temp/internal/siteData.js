@@ -66,113 +66,6 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-15746658",
-      "path": "/Components/base/introduce.html"
-    },
-    {
-      "title": "Vue",
-      "frontmatter": {},
-      "regularPath": "/Components/md_view/vue.html",
-      "relativePath": "Components/md_view/vue.md",
-      "key": "v-7c5113b0",
-      "path": "/Components/md_view/vue.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "（1）什么是vue生命周期?",
-          "slug": "_1-什么是vue生命周期"
-        },
-        {
-          "level": 3,
-          "title": "（2）vue生命周期的作用是什么?",
-          "slug": "_2-vue生命周期的作用是什么"
-        },
-        {
-          "level": 3,
-          "title": "（3）vue生命周期总共有几个阶段?",
-          "slug": "_3-vue生命周期总共有几个阶段"
-        },
-        {
-          "level": 3,
-          "title": "（4）第一次页面加载会触发哪几个钩子?",
-          "slug": "_4-第一次页面加载会触发哪几个钩子"
-        },
-        {
-          "level": 3,
-          "title": "（5）DOM 渲染在 哪个周期中就已经完成?",
-          "slug": "_5-dom-渲染在-哪个周期中就已经完成"
-        },
-        {
-          "level": 3,
-          "title": "（6）简单描述每个周期具体适合哪些场景?",
-          "slug": "_6-简单描述每个周期具体适合哪些场景"
-        },
-        {
-          "level": 2,
-          "title": "axios的方法和请求响应数据结构",
-          "slug": "axios的方法和请求响应数据结构"
-        },
-        {
-          "level": 3,
-          "title": "请求方法别名",
-          "slug": "请求方法别名"
-        },
-        {
-          "level": 3,
-          "title": "相应数据结构",
-          "slug": "相应数据结构"
-        },
-        {
-          "level": 2,
-          "title": "在VUE中封装axios",
-          "slug": "在vue中封装axios"
-        },
-        {
-          "level": 3,
-          "title": "请求响应之then  catch",
-          "slug": "请求响应之then-catch"
-        },
-        {
-          "level": 2,
-          "title": "Vuex状态管理",
-          "slug": "vuex状态管理"
-        },
-        {
-          "level": 2,
-          "title": "VUE中router的钩子函数",
-          "slug": "vue中router的钩子函数"
-        },
-        {
-          "level": 2,
-          "title": "ES6的基本知识",
-          "slug": "es6的基本知识"
-        },
-        {
-          "level": 2,
-          "title": "Promise",
-          "slug": "promise"
-        },
-        {
-          "level": 2,
-          "title": "vue store存储commit和dispatch",
-          "slug": "vue-store存储commit和dispatch"
-        },
-        {
-          "level": 2,
-          "title": "vue  路由导航",
-          "slug": "vue-路由导航"
-        },
-        {
-          "level": 2,
-          "title": "vue中computed和method 区别",
-          "slug": "vue中computed和method-区别"
-        }
-      ]
-    },
-    {
       "title": "JavaScript 的常用方法",
       "frontmatter": {},
       "regularPath": "/Components/javascript/base.html",
@@ -353,12 +246,174 @@ export const siteData = {
       ]
     },
     {
+      "title": "CSS",
+      "frontmatter": {},
+      "regularPath": "/Components/md_interview/Interview.html",
+      "relativePath": "Components/md_interview/Interview.md",
+      "key": "v-1916dd18",
+      "path": "/Components/md_interview/Interview.html"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/react/base.html",
+      "relativePath": "Components/react/base.md",
+      "key": "v-e4900cdc",
+      "path": "/Components/react/base.html"
+    },
+    {
       "title": "Button",
       "frontmatter": {},
       "regularPath": "/Components/static/Button.html",
       "relativePath": "Components/static/Button.md",
       "key": "v-6014b0d0",
       "path": "/Components/static/Button.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "Vue",
+      "frontmatter": {},
+      "regularPath": "/Components/md_view/vue.html",
+      "relativePath": "Components/md_view/vue.md",
+      "key": "v-7c5113b0",
+      "path": "/Components/md_view/vue.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "（1）什么是vue生命周期?",
+          "slug": "_1-什么是vue生命周期"
+        },
+        {
+          "level": 3,
+          "title": "（2）vue生命周期的作用是什么?",
+          "slug": "_2-vue生命周期的作用是什么"
+        },
+        {
+          "level": 3,
+          "title": "（3）vue生命周期总共有几个阶段?",
+          "slug": "_3-vue生命周期总共有几个阶段"
+        },
+        {
+          "level": 3,
+          "title": "（4）第一次页面加载会触发哪几个钩子?",
+          "slug": "_4-第一次页面加载会触发哪几个钩子"
+        },
+        {
+          "level": 3,
+          "title": "（5）DOM 渲染在 哪个周期中就已经完成?",
+          "slug": "_5-dom-渲染在-哪个周期中就已经完成"
+        },
+        {
+          "level": 3,
+          "title": "（6）简单描述每个周期具体适合哪些场景?",
+          "slug": "_6-简单描述每个周期具体适合哪些场景"
+        },
+        {
+          "level": 2,
+          "title": "axios的方法和请求响应数据结构",
+          "slug": "axios的方法和请求响应数据结构"
+        },
+        {
+          "level": 3,
+          "title": "请求方法别名",
+          "slug": "请求方法别名"
+        },
+        {
+          "level": 3,
+          "title": "相应数据结构",
+          "slug": "相应数据结构"
+        },
+        {
+          "level": 2,
+          "title": "在VUE中封装axios",
+          "slug": "在vue中封装axios"
+        },
+        {
+          "level": 3,
+          "title": "请求响应之then  catch",
+          "slug": "请求响应之then-catch"
+        },
+        {
+          "level": 2,
+          "title": "Vuex状态管理",
+          "slug": "vuex状态管理"
+        },
+        {
+          "level": 2,
+          "title": "VUE中router的钩子函数",
+          "slug": "vue中router的钩子函数"
+        },
+        {
+          "level": 2,
+          "title": "ES6的基本知识",
+          "slug": "es6的基本知识"
+        },
+        {
+          "level": 2,
+          "title": "Promise",
+          "slug": "promise"
+        },
+        {
+          "level": 2,
+          "title": "vue store存储commit和dispatch",
+          "slug": "vue-store存储commit和dispatch"
+        },
+        {
+          "level": 2,
+          "title": "vue  路由导航",
+          "slug": "vue-路由导航"
+        },
+        {
+          "level": 2,
+          "title": "vue中computed和method 区别",
+          "slug": "vue中computed和method-区别"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-15746658",
+      "path": "/Components/base/introduce.html"
+    },
+    {
+      "title": "Icon",
+      "frontmatter": {},
+      "regularPath": "/Components/static/MagnifyingGlass.html",
+      "relativePath": "Components/static/MagnifyingGlass.md",
+      "key": "v-80886510",
+      "path": "/Components/static/MagnifyingGlass.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "Icon",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Icon.html",
+      "relativePath": "Components/static/Icon.md",
+      "key": "v-30441f42",
+      "path": "/Components/static/Icon.html",
       "headers": [
         {
           "level": 2,
@@ -398,47 +453,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "CSS",
+      "title": "Button",
       "frontmatter": {},
-      "regularPath": "/Components/md_interview/Interview.html",
-      "relativePath": "Components/md_interview/Interview.md",
-      "key": "v-1916dd18",
-      "path": "/Components/md_interview/Interview.html"
-    },
-    {
-      "title": "Icon",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Icon.html",
-      "relativePath": "Components/static/Icon.md",
-      "key": "v-30441f42",
-      "path": "/Components/static/Icon.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/react/base.html",
-      "relativePath": "Components/react/base.md",
-      "key": "v-e4900cdc",
-      "path": "/Components/react/base.html"
-    },
-    {
-      "title": "Icon",
-      "frontmatter": {},
-      "regularPath": "/Components/static/MagnifyingGlass.html",
-      "relativePath": "Components/static/MagnifyingGlass.md",
-      "key": "v-80886510",
-      "path": "/Components/static/MagnifyingGlass.html",
+      "regularPath": "/Components/static/Message.html",
+      "relativePath": "Components/static/Message.md",
+      "key": "v-d4b03610",
+      "path": "/Components/static/Message.html",
       "headers": [
         {
           "level": 2,
@@ -570,26 +590,6 @@ export const siteData = {
       "relativePath": "README.md",
       "key": "v-2194adc3",
       "path": "/"
-    },
-    {
-      "title": "Button",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Message.html",
-      "relativePath": "Components/static/Message.md",
-      "key": "v-d4b03610",
-      "path": "/Components/static/Message.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
     }
   ],
   "themeConfig": {
