@@ -2,25 +2,16 @@
 
 <ContainerBox title="介绍">
 ::: slot desc
-有字体图标的特点，不会被拖拽，自带鼠标悬浮效果及悬浮提示
+此组件常用于购物，放大镜效果，查看图片细节，多用于购物app中。
 :::
 </ContainerBox>
 
-<ContainerBox title="下载并引入">
-::: slot desc
-
-[下载组件包](https://gitee.com/lengyibai/component-package/raw/master/LibIcon.zip)
-
-引入参考 [引入组件](/Components/Base/start.html#引入组件)
-
-:::
-</ContainerBox>
 
 ## 代码演示
 
 <ContainerBox title="基础用法">
 <div class="demoBox">
-<static-icon-demo-indexA/>
+    <static-MagnifyingGlass-demo-magnifyingGlass/>
 </div>
 
 <ShowCode>
@@ -58,7 +49,7 @@
 :::
 
 <div class="demoBox">
-<static-icon-demo-indexB/>
+    <!-- <static-MagnifyingGlass-demo-MagnifyingGlass/> -->
 </div>
 
 <ShowCode>
@@ -66,14 +57,7 @@
 ```vue
 <div class="demo">
   
-  <!-- <LibIcon
-    :imgUrl="require('./img/a.svg')"
-    :imgUrlHover="require('./img/b.svg')"
-    title="爱心"
-    size="10vw"
-    left="0.5em"
-    right="0.5em"
-  /> -->
+
 </div>
 ````
 

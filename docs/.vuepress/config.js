@@ -1,5 +1,5 @@
-
-const  path  = require('path')
+const  path  = require('path');
+console.log(path.resolve(__dirname, './components')),
 module.exports = {
   title: "芒梨博客", //标题
   keywords: "前端开发",
@@ -49,11 +49,11 @@ module.exports = {
     nav: [
       //导航栏
       { text: "首页", link: "/" },
-      { text: "JS", link: "/Components/js_docs/JS" },
-      { text: "Vue", link: "/Components/md_view/vue"},
+      { text: "JS", link: "/Components/javascript/base" },
+      { text: "Vue", link: "/Components/vue/bae"},
       {
         text: "计算机网络知识",
-        link: "/Components/cp_netservice/cpnetservice",
+        link: "/Components/CpNet/base",
       },
       {
         text: "面试总结",
@@ -82,18 +82,20 @@ module.exports = {
           ],
         },
         {
-          title: "CSS动画篇",
+          title: "Vue组件篇",
           collapsable: false,
           children: [
             ["static/Icon", "图标"],
-            // ["static/Svg", "SVG变色图标"],
+            ["static/Button", "光亮按钮"],
+            ["static/Message", "信息提醒框"],
+            ["static/MagnifyingGlass", "放大镜效果"],
           ],
         },
         {
           title: "JavaScript篇",
-          collapsable: false,
+          collapsable: true,
           children: [
-            // ["dynamic/DragSort", "拖拽排序"],
+            ["javascript/base", "JS基础"],
             // ["dynamic/ScrollInto", "滚动入场动画"],
             // ["dynamic/ScrollFollow", "滚动跟随动画"],
             // ["dynamic/PdrPul", "上拉加载下拉刷新"],
@@ -107,16 +109,16 @@ module.exports = {
         },
         {
           title: "Vue篇",
-          collapsable: false,
+          collapsable: true,
           children: [
-            // ["static/Icon", "图标"],
+            ["vue/base", "Vue基础"],
             // ["static/Svg", "SVG变色图标"],
 
           ],
         },
         {
           title: "React篇",
-          collapsable: false,
+          collapsable: true,
           children: [
             // ["static/Icon", "图标"],
             // ["static/Svg", "SVG变色图标"],
@@ -125,7 +127,7 @@ module.exports = {
         },
         {
           title: "NodeJS篇",
-          collapsable: false,
+          collapsable: true,
           children: [
             // ["static/Icon", "图标"],
             // ["static/Svg", "SVG变色图标"],
@@ -134,7 +136,7 @@ module.exports = {
         },
         {
           title: "Java基础篇",
-          collapsable: false,
+          collapsable: true,
           children: [
             // ["static/Icon", "图标"],
             // ["static/Svg", "SVG变色图标"],
@@ -143,16 +145,16 @@ module.exports = {
         },
         {
           title: "计算机网络知识篇",
-          collapsable: false,
+          collapsable: true,
           children: [
-            // ["static/Icon", "图标"],
+            ["CpNet/base", "计算机网络基础"],
             // ["static/Svg", "SVG变色图标"],
 
           ],
         },
         {
           title: "数据结构与算法篇",
-          collapsable: false,
+          collapsable: true,
           children: [
             // ["static/Icon", "图标"],
             // ["static/Svg", "SVG变色图标"],

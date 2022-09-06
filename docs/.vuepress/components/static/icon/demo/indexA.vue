@@ -1,15 +1,19 @@
 <template>
   <div class="demo">
     爱
-    <Static-Icon-index
-      :imgUrl="require('./img/love.svg')"
+    <static-icon-karryIcon
+      :imgUrl="require('./img/a.svg')"
       title="爱心"
       left="0.5em"
       right="0.5em"
     />心
   </div>
 </template>
-
+<script>
+  export default {
+      name: "indexA"
+  }
+  </script>
 <style scoped>
 .demo {
   display: flex;

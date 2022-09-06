@@ -16,44 +16,12 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "快速上手",
-      "frontmatter": {},
-      "regularPath": "/Components/base/start.html",
-      "relativePath": "Components/base/start.md",
-      "key": "v-1ed84da8",
-      "path": "/Components/base/start.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "获取组件",
-          "slug": "获取组件"
-        },
-        {
-          "level": 2,
-          "title": "引入组件",
-          "slug": "引入组件"
-        },
-        {
-          "level": 2,
-          "title": "使用组件",
-          "slug": "使用组件"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-5948fc08",
-      "path": "/Components/base/introduce.html"
-    },
-    {
       "title": "计算机网络基础知识总结",
       "frontmatter": {},
-      "regularPath": "/Components/cp_netservice/cpnetservice.html",
-      "relativePath": "Components/cp_netservice/cpnetservice.md",
-      "key": "v-20454bbc",
-      "path": "/Components/cp_netservice/cpnetservice.html",
+      "regularPath": "/Components/CpNet/base.html",
+      "relativePath": "Components/CpNet/base.md",
+      "key": "v-7d90b73c",
+      "path": "/Components/CpNet/base.html",
       "headers": [
         {
           "level": 2,
@@ -98,12 +66,52 @@ export const siteData = {
       ]
     },
     {
+      "title": "快速上手",
+      "frontmatter": {},
+      "regularPath": "/Components/base/start.html",
+      "relativePath": "Components/base/start.md",
+      "key": "v-1ed84da8",
+      "path": "/Components/base/start.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "获取组件",
+          "slug": "获取组件"
+        },
+        {
+          "level": 2,
+          "title": "引入组件",
+          "slug": "引入组件"
+        },
+        {
+          "level": 2,
+          "title": "使用组件",
+          "slug": "使用组件"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-5948fc08",
+      "path": "/Components/base/introduce.html"
+    },
+    {
+      "title": "CSS",
+      "frontmatter": {},
+      "regularPath": "/Components/md_interview/Interview.html",
+      "relativePath": "Components/md_interview/Interview.md",
+      "key": "v-f02bda70",
+      "path": "/Components/md_interview/Interview.html"
+    },
+    {
       "title": "JavaScript 的常用方法",
       "frontmatter": {},
-      "regularPath": "/Components/js_docs/JS.html",
-      "relativePath": "Components/js_docs/JS.md",
-      "key": "v-7392b3c2",
-      "path": "/Components/js_docs/JS.html",
+      "regularPath": "/Components/javascript/base.html",
+      "relativePath": "Components/javascript/base.md",
+      "key": "v-5a19bdc0",
+      "path": "/Components/javascript/base.html",
       "headers": [
         {
           "level": 2,
@@ -278,45 +286,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F19%2F20180519142022_kVASd.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664607012&t=d9c7f089d193df41489bad49ebf22dc3",
-        "heroText": "karry的学习日记",
-        "tagline": "没有跨不过去的坎，只有走不完的路",
-        "features": [
-          {
-            "title": "梦想-最开始的地方",
-            "details": "活成自己最想活成的样子，加油！"
-          }
-        ]
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-3b12fbda",
-      "path": "/"
-    },
-    {
-      "title": "Icon",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Icon.html",
-      "relativePath": "Components/static/Icon.md",
-      "key": "v-84328e1c",
-      "path": "/Components/static/Icon.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
       "title": "Vue",
       "frontmatter": {},
       "regularPath": "/Components/md_view/vue.html",
@@ -417,12 +386,210 @@ export const siteData = {
       ]
     },
     {
-      "title": "CSS",
+      "title": "Button",
       "frontmatter": {},
-      "regularPath": "/Components/md_interview/Interview.html",
-      "relativePath": "Components/md_interview/Interview.md",
-      "key": "v-f02bda70",
-      "path": "/Components/md_interview/Interview.html"
+      "regularPath": "/Components/static/Button.html",
+      "relativePath": "Components/static/Button.md",
+      "key": "v-7b1a1b00",
+      "path": "/Components/static/Button.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "Icon",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Icon.html",
+      "relativePath": "Components/static/Icon.md",
+      "key": "v-84328e1c",
+      "path": "/Components/static/Icon.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/react/base.html",
+      "relativePath": "Components/react/base.md",
+      "key": "v-c4d5817c",
+      "path": "/Components/react/base.html"
+    },
+    {
+      "title": "Icon",
+      "frontmatter": {},
+      "regularPath": "/Components/static/MagnifyingGlass.html",
+      "relativePath": "Components/static/MagnifyingGlass.md",
+      "key": "v-2e8f0328",
+      "path": "/Components/static/MagnifyingGlass.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "Button",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Message.html",
+      "relativePath": "Components/static/Message.md",
+      "key": "v-4d070ab0",
+      "path": "/Components/static/Message.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "Vue",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/base.html",
+      "relativePath": "Components/vue/base.md",
+      "key": "v-44a85ebc",
+      "path": "/Components/vue/base.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "（1）什么是vue生命周期?",
+          "slug": "_1-什么是vue生命周期"
+        },
+        {
+          "level": 3,
+          "title": "（2）vue生命周期的作用是什么?",
+          "slug": "_2-vue生命周期的作用是什么"
+        },
+        {
+          "level": 3,
+          "title": "（3）vue生命周期总共有几个阶段?",
+          "slug": "_3-vue生命周期总共有几个阶段"
+        },
+        {
+          "level": 3,
+          "title": "（4）第一次页面加载会触发哪几个钩子?",
+          "slug": "_4-第一次页面加载会触发哪几个钩子"
+        },
+        {
+          "level": 3,
+          "title": "（5）DOM 渲染在 哪个周期中就已经完成?",
+          "slug": "_5-dom-渲染在-哪个周期中就已经完成"
+        },
+        {
+          "level": 3,
+          "title": "（6）简单描述每个周期具体适合哪些场景?",
+          "slug": "_6-简单描述每个周期具体适合哪些场景"
+        },
+        {
+          "level": 2,
+          "title": "axios的方法和请求响应数据结构",
+          "slug": "axios的方法和请求响应数据结构"
+        },
+        {
+          "level": 3,
+          "title": "请求方法别名",
+          "slug": "请求方法别名"
+        },
+        {
+          "level": 3,
+          "title": "相应数据结构",
+          "slug": "相应数据结构"
+        },
+        {
+          "level": 2,
+          "title": "在VUE中封装axios",
+          "slug": "在vue中封装axios"
+        },
+        {
+          "level": 3,
+          "title": "请求响应之then  catch",
+          "slug": "请求响应之then-catch"
+        },
+        {
+          "level": 2,
+          "title": "Vuex状态管理",
+          "slug": "vuex状态管理"
+        },
+        {
+          "level": 2,
+          "title": "VUE中router的钩子函数",
+          "slug": "vue中router的钩子函数"
+        },
+        {
+          "level": 2,
+          "title": "ES6的基本知识",
+          "slug": "es6的基本知识"
+        },
+        {
+          "level": 2,
+          "title": "Promise",
+          "slug": "promise"
+        },
+        {
+          "level": 2,
+          "title": "vue store存储commit和dispatch",
+          "slug": "vue-store存储commit和dispatch"
+        },
+        {
+          "level": 2,
+          "title": "vue  路由导航",
+          "slug": "vue-路由导航"
+        },
+        {
+          "level": 2,
+          "title": "vue中computed和method 区别",
+          "slug": "vue中computed和method-区别"
+        }
+      ]
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F19%2F20180519142022_kVASd.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664607012&t=d9c7f089d193df41489bad49ebf22dc3",
+        "heroText": "karry的学习日记",
+        "tagline": "没有跨不过去的坎，只有走不完的路",
+        "features": [
+          {
+            "title": "梦想-最开始的地方",
+            "details": "活成自己最想活成的样子，加油！"
+          }
+        ]
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-3b12fbda",
+      "path": "/"
     }
   ],
   "themeConfig": {
@@ -435,15 +602,15 @@ export const siteData = {
       },
       {
         "text": "JS",
-        "link": "/Components/js_docs/JS"
+        "link": "/Components/javascript/base"
       },
       {
         "text": "Vue",
-        "link": "/Components/md_view/vue"
+        "link": "/Components/vue/bae"
       },
       {
         "text": "计算机网络知识",
-        "link": "/Components/cp_netservice/cpnetservice"
+        "link": "/Components/CpNet/base"
       },
       {
         "text": "面试总结",
@@ -481,48 +648,75 @@ export const siteData = {
           ]
         },
         {
-          "title": "CSS动画篇",
+          "title": "Vue组件篇",
           "collapsable": false,
           "children": [
             [
               "static/Icon",
               "图标"
+            ],
+            [
+              "static/Button",
+              "光亮按钮"
+            ],
+            [
+              "static/Message",
+              "信息提醒框"
+            ],
+            [
+              "static/MagnifyingGlass",
+              "放大镜效果"
             ]
           ]
         },
         {
           "title": "JavaScript篇",
-          "collapsable": false,
-          "children": []
+          "collapsable": true,
+          "children": [
+            [
+              "javascript/base",
+              "JS基础"
+            ]
+          ]
         },
         {
           "title": "Vue篇",
-          "collapsable": false,
-          "children": []
+          "collapsable": true,
+          "children": [
+            [
+              "vue/base",
+              "Vue基础"
+            ]
+          ]
         },
         {
           "title": "React篇",
-          "collapsable": false,
+          "collapsable": true,
           "children": []
         },
         {
           "title": "NodeJS篇",
-          "collapsable": false,
+          "collapsable": true,
           "children": []
         },
         {
           "title": "Java基础篇",
-          "collapsable": false,
+          "collapsable": true,
           "children": []
         },
         {
           "title": "计算机网络知识篇",
-          "collapsable": false,
-          "children": []
+          "collapsable": true,
+          "children": [
+            [
+              "CpNet/base",
+              "计算机网络基础"
+            ]
+          ]
         },
         {
           "title": "数据结构与算法篇",
-          "collapsable": false,
+          "collapsable": true,
           "children": []
         }
       ]

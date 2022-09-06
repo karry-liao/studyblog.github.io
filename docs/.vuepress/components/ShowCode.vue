@@ -13,7 +13,7 @@
       @touchend="enter(false)"
       ref="show"
     >
-      <LibSvg
+      <KarrySvg
         class="LibSvg"
         :svg="icon.DOWNUP"
         :color="icon_color"
@@ -45,19 +45,20 @@ export default {
   },
   watch: {
     show(v) {
+      console.log(v,'=======')
       const show = this.$refs.show;
-      if (!v) {
-        if (
-          document.documentElement.clientHeight -
-            show.getBoundingClientRect().y -
-            this.$refs.code.scrollHeight <
-          -500
-        ) {
-          show.classList.add("fixed");
-        }
-      } else {
-        show.classList.remove("fixed");
-      }
+      // if (!v) {
+      //   if (
+      //     document.documentElement.clientHeight -
+      //       show.getBoundingClientRect().y -
+      //       this.$refs.code.scrollHeight <
+      //     -500
+      //   ) {
+      //     show.classList.add("fixed");
+      //   }
+      // } else {
+      //   show.classList.remove("fixed");
+      // }
     },
   },
   mounted() {

@@ -1,16 +1,21 @@
 <template>
   <div class="demo">
-    滑
-    <Static-Icon-index
+    
+    <static-icon-karryIcon
       :imgUrl="require('./img/a.svg')"
       :imgUrlHover="require('./img/b.svg')"
       title="滑稽"
       size="10vw"
       left="0.5em"
       right="0.5em"
-    />稽
+    />
   </div>
 </template>
+<script>
+  export default {
+      name: "indexB"
+  }
+  </script>
 <style scoped>
 .demo {
   display: flex;
