@@ -15,25 +15,25 @@ module.exports = {
   },
   plugins: [
     [
-      //先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
-      // "@vuepress-reco/vuepress-plugin-kan-ban-niang",
-      // {
-      //   theme: ["wanko"],
-      //   clean: true,
-      //   messages: {
-      //     welcome: "欢迎你的关注 ",
-      //     home: "心里的花，我想要带你回家。",
-      //     theme: "好吧，希望你能喜欢我的其他小伙伴。",
-      //     close: "再见哦",
-      //   },
-      //   width: 240,
-      //   height: 352,
-      //   modelStyle: {
-      //     right: "-45px",
-      //     bottom: "-95px",
-      //     opacity: "0.9",
-      //   },
-      // },
+      // 先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      {
+        theme: ["wanko"],
+        clean: true,
+        messages: {
+          welcome: "欢迎你的关注 ",
+          home: "心里的花，我想要带你回家。",
+          theme: "好吧，希望你能喜欢我的其他小伙伴。",
+          close: "再见哦",
+        },
+        width: 240,
+        height: 352,
+        modelStyle: {
+          right: "-45px",
+          bottom: "-95px",
+          opacity: "0.9",
+        },
+      },
     ],
     [       
       '@vuepress/plugin-register-components',
@@ -82,6 +82,14 @@ module.exports = {
           ],
         },
         {
+          title: "HTML&CSS篇",
+          collapsable: false,
+          children: [
+            ["htmlcss/Flex", "Flex布局"],
+            // ["base/start", "快速开始"],
+          ],
+        },
+        {
           title: "Vue组件篇",
           collapsable: false,
           children: [
@@ -89,6 +97,7 @@ module.exports = {
             ["static/Button", "光亮按钮"],
             ["static/Message", "信息提醒框"],
             ["static/MagnifyingGlass", "放大镜效果"],
+            ["static/SlideVerify", "滑块验证"],
           ],
         },
         {
@@ -96,6 +105,9 @@ module.exports = {
           collapsable: true,
           children: [
             ["javascript/base", "JS基础"],
+            ["javascript/clone", "浅拷贝与深拷贝"],
+            ["javascript/extends", "JavaScript扩展"],
+            ["javascript/designPatterns","JS常见设计模式"]
             // ["dynamic/ScrollInto", "滚动入场动画"],
             // ["dynamic/ScrollFollow", "滚动跟随动画"],
             // ["dynamic/PdrPul", "上拉加载下拉刷新"],
@@ -112,6 +124,7 @@ module.exports = {
           collapsable: true,
           children: [
             ["vue/base", "Vue基础"],
+            ["vue/code", "Vue源码分析"],
             // ["static/Svg", "SVG变色图标"],
 
           ],
@@ -130,6 +143,14 @@ module.exports = {
           collapsable: true,
           children: [
             // ["static/Icon", "图标"],
+            // ["static/Svg", "SVG变色图标"],
+
+          ],
+        },        {
+          title: "MiniPrograme篇",
+          collapsable: true,
+          children: [
+            ["MiniPrograme/base", "初识小程序"],
             // ["static/Svg", "SVG变色图标"],
 
           ],

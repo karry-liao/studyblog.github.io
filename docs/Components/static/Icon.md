@@ -28,14 +28,14 @@
 ```vue
 <template>
   <div class="demo">
-    爱
+    
     <LibIcon
       :imgUrl="require('./img/love.svg')"
       title="爱心"
       size="10vw"
       left="0.5em"
       right="0.5em"
-    />心
+    />
   </div>
 </template>
 <style scoped>

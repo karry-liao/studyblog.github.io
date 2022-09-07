@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="left">
-        <img class="leftImg" src="../img/pic.jpg" alt="" />
+        <img class="leftImg" :src="imgSrc" alt="" />
         <!-- 鼠标层罩 -->
         <div v-show="topShow" class="top" :style="topStyle"></div>
         <!-- 最顶层覆盖了整个原图空间的透明层罩 -->
@@ -16,7 +16,7 @@
         <img
           :style="r_img"
           class="rightImg"
-          src="../img/pic.jpg"
+          :src="imgSrc"
           alt=""
         />
       </div>
@@ -33,7 +33,13 @@
           topShow: false,
           rShow: true,
         };
-      },
+  },
+  props: {
+    imgSrc: {
+      type: String,
+      default:require("../img/pic.jpg")
+    }
+  },
       methods: {
         // 鼠标进入原图空间函数
         enterHandler() {
@@ -46,7 +52,6 @@
           // 鼠标的坐标位置
           let x = event.offsetX;
           let y = event.offsetY;
-          console.log(x,y)
           // 层罩的左上角坐标位置，并对其进行限制：无法超出原图区域左上角
           let topX = x - 50 < 0 ? 0 : x - 50;
           let topY = y - 50 < 0 ? 0 : y - 50;
@@ -60,8 +65,6 @@
           // 通过 transform 进行移动控制
           this.topStyle.transform = `translate(${topX}px,${topY}px)`;
           this.r_img.transform = `translate(-${2 * topX}px,-${2 * topY}px)`;
-          console.log(this.topStyle.transform,this.r_img.transform)
-          
         },
         // 鼠标移出函数
         outHandler() {
@@ -123,11 +126,6 @@
       display: inline-block;
     } /* 原图的容器 */
 
-    </style>
-    <style>
-    .theme-default-content .right .theme-default-content:not(.custom) img {
-      min-width: "" !important;
-    }
     </style>
     
   

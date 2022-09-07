@@ -45,7 +45,6 @@ export default {
   },
   watch: {
     show(v) {
-      console.log(v,'=======')
       const show = this.$refs.show;
       // if (!v) {
       //   if (
