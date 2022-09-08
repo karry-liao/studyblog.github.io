@@ -86,6 +86,7 @@ module.exports = {
           collapsable: false,
           children: [
             ["htmlcss/Flex", "Flex布局"],
+            ["htmlcss/FontCss", "花式字体"],
             // ["base/start", "快速开始"],
           ],
         },
@@ -146,7 +147,17 @@ module.exports = {
             // ["static/Svg", "SVG变色图标"],
 
           ],
-        },        {
+        },
+        {
+          title: "Web性能提升篇",
+          collapsable: true,
+          children: [
+            ["performance/WebWorker", "WebWorker"],
+            // ["static/Svg", "SVG变色图标"],
+
+          ],
+        },
+        {
           title: "MiniPrograme篇",
           collapsable: true,
           children: [
