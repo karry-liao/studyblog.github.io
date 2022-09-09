@@ -66,28 +66,6 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-5948fc08",
-      "path": "/Components/base/introduce.html"
-    },
-    {
-      "title": "Font样式",
-      "frontmatter": {},
-      "regularPath": "/Components/htmlcss/FontCss.html",
-      "relativePath": "Components/htmlcss/FontCss.md",
-      "key": "v-e4c77034",
-      "path": "/Components/htmlcss/FontCss.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        }
-      ]
-    },
-    {
       "title": "MiniPrograme",
       "frontmatter": {},
       "regularPath": "/Components/MiniPrograme/base.html",
@@ -209,6 +187,53 @@ export const siteData = {
           "level": 2,
           "title": "使用组件",
           "slug": "使用组件"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-5948fc08",
+      "path": "/Components/base/introduce.html"
+    },
+    {
+      "title": "var、let、const",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/ESsix.html",
+      "relativePath": "Components/javascript/ESsix.md",
+      "key": "v-b0e78630",
+      "path": "/Components/javascript/ESsix.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "var、let、const",
+          "slug": "var、let、const"
+        },
+        {
+          "level": 2,
+          "title": "数组篇",
+          "slug": "数组篇"
+        },
+        {
+          "level": 2,
+          "title": "实例对象新增的方法",
+          "slug": "实例对象新增的方法"
+        }
+      ]
+    },
+    {
+      "title": "Font样式",
+      "frontmatter": {},
+      "regularPath": "/Components/htmlcss/FontCss.html",
+      "relativePath": "Components/htmlcss/FontCss.md",
+      "key": "v-e4c77034",
+      "path": "/Components/htmlcss/FontCss.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
         }
       ]
     },
@@ -511,21 +536,6 @@ export const siteData = {
       "path": "/Components/md_interview/Interview.html"
     },
     {
-      "title": "WebWorker",
-      "frontmatter": {},
-      "regularPath": "/Components/performance/WebWorker.html",
-      "relativePath": "Components/performance/WebWorker.md",
-      "key": "v-bb20220c",
-      "path": "/Components/performance/WebWorker.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        }
-      ]
-    },
-    {
       "title": "Vue",
       "frontmatter": {},
       "regularPath": "/Components/md_view/vue.html",
@@ -626,6 +636,61 @@ export const siteData = {
       ]
     },
     {
+      "title": "WebWorker",
+      "frontmatter": {},
+      "regularPath": "/Components/performance/WebWorker.html",
+      "relativePath": "Components/performance/WebWorker.md",
+      "key": "v-bb20220c",
+      "path": "/Components/performance/WebWorker.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
+    },
+    {
+      "title": "初识React",
+      "frontmatter": {},
+      "regularPath": "/Components/react/base.html",
+      "relativePath": "Components/react/base.md",
+      "key": "v-c4d5817c",
+      "path": "/Components/react/base.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "初识React",
+          "slug": "初识react"
+        },
+        {
+          "level": 3,
+          "title": "特性：",
+          "slug": "特性"
+        },
+        {
+          "level": 3,
+          "title": "React-Component",
+          "slug": "react-component"
+        },
+        {
+          "level": 3,
+          "title": "组件的特点：",
+          "slug": "组件的特点"
+        },
+        {
+          "level": 3,
+          "title": "React的优势",
+          "slug": "react的优势"
+        },
+        {
+          "level": 2,
+          "title": "React的生命周期",
+          "slug": "react的生命周期"
+        }
+      ]
+    },
+    {
       "title": "Button",
       "frontmatter": {},
       "regularPath": "/Components/static/Button.html",
@@ -672,33 +737,6 @@ export const siteData = {
       "relativePath": "Components/static/Message.md",
       "key": "v-4d070ab0",
       "path": "/Components/static/Message.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/react/base.html",
-      "relativePath": "Components/react/base.md",
-      "key": "v-c4d5817c",
-      "path": "/Components/react/base.html"
-    },
-    {
-      "title": "放大镜",
-      "frontmatter": {},
-      "regularPath": "/Components/static/MagnifyingGlass.html",
-      "relativePath": "Components/static/MagnifyingGlass.md",
-      "key": "v-2e8f0328",
-      "path": "/Components/static/MagnifyingGlass.html",
       "headers": [
         {
           "level": 2,
@@ -872,6 +910,45 @@ export const siteData = {
       "relativePath": "README.md",
       "key": "v-3b12fbda",
       "path": "/"
+    },
+    {
+      "title": "放大镜",
+      "frontmatter": {},
+      "regularPath": "/Components/static/MagnifyingGlass.html",
+      "relativePath": "Components/static/MagnifyingGlass.md",
+      "key": "v-2e8f0328",
+      "path": "/Components/static/MagnifyingGlass.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/vue/template.html",
+      "relativePath": "Components/vue/template.md",
+      "key": "v-4bb298c2",
+      "path": "/Components/vue/template.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
+          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
+        },
+        {
+          "level": 3,
+          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
+          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
+        }
+      ]
     }
   ],
   "themeConfig": {
@@ -982,6 +1059,10 @@ export const siteData = {
               "浅拷贝与深拷贝"
             ],
             [
+              "javascript/ESsix",
+              "ES6新拓展"
+            ],
+            [
               "javascript/extends",
               "JavaScript扩展"
             ],
@@ -1008,7 +1089,12 @@ export const siteData = {
         {
           "title": "React篇",
           "collapsable": true,
-          "children": []
+          "children": [
+            [
+              "react/base",
+              "初识React"
+            ]
+          ]
         },
         {
           "title": "NodeJS篇",

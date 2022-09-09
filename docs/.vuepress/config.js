@@ -107,6 +107,7 @@ module.exports = {
           children: [
             ["javascript/base", "JS基础"],
             ["javascript/clone", "浅拷贝与深拷贝"],
+            ["javascript/ESsix", "ES6新拓展"],
             ["javascript/extends", "JavaScript扩展"],
             ["javascript/designPatterns","JS常见设计模式"]
             // ["dynamic/ScrollInto", "滚动入场动画"],
@@ -134,7 +135,7 @@ module.exports = {
           title: "React篇",
           collapsable: true,
           children: [
-            // ["static/Icon", "图标"],
+            ["react/base", "初识React"],
             // ["static/Svg", "SVG变色图标"],
 
           ],
