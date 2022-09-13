@@ -16,54 +16,36 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "计算机网络基础知识总结",
+      "title": "快速上手",
       "frontmatter": {},
-      "regularPath": "/Components/CpNet/base.html",
-      "relativePath": "Components/CpNet/base.md",
-      "key": "v-7d90b73c",
-      "path": "/Components/CpNet/base.html",
+      "regularPath": "/Components/base/start.html",
+      "relativePath": "Components/base/start.md",
+      "key": "v-1ed84da8",
+      "path": "/Components/base/start.html",
       "headers": [
         {
           "level": 2,
-          "title": "网络层次划分",
-          "slug": "网络层次划分"
+          "title": "获取组件",
+          "slug": "获取组件"
         },
         {
-          "level": 3,
-          "title": "物理层",
-          "slug": "物理层"
+          "level": 2,
+          "title": "引入组件",
+          "slug": "引入组件"
         },
         {
-          "level": 3,
-          "title": "数据链路层",
-          "slug": "数据链路层"
-        },
-        {
-          "level": 3,
-          "title": "网络层",
-          "slug": "网络层"
-        },
-        {
-          "level": 3,
-          "title": "传输层",
-          "slug": "传输层"
-        },
-        {
-          "level": 3,
-          "title": "会话层",
-          "slug": "会话层"
-        },
-        {
-          "level": 3,
-          "title": "表示层",
-          "slug": "表示层"
-        },
-        {
-          "level": 3,
-          "title": "应用层",
-          "slug": "应用层"
+          "level": 2,
+          "title": "使用组件",
+          "slug": "使用组件"
         }
       ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-5948fc08",
+      "path": "/Components/base/introduce.html"
     },
     {
       "title": "MiniPrograme",
@@ -166,74 +148,52 @@ export const siteData = {
       ]
     },
     {
-      "title": "快速上手",
+      "title": "计算机网络基础知识总结",
       "frontmatter": {},
-      "regularPath": "/Components/base/start.html",
-      "relativePath": "Components/base/start.md",
-      "key": "v-1ed84da8",
-      "path": "/Components/base/start.html",
+      "regularPath": "/Components/CpNet/base.html",
+      "relativePath": "Components/CpNet/base.md",
+      "key": "v-7d90b73c",
+      "path": "/Components/CpNet/base.html",
       "headers": [
         {
           "level": 2,
-          "title": "获取组件",
-          "slug": "获取组件"
+          "title": "网络层次划分",
+          "slug": "网络层次划分"
         },
         {
-          "level": 2,
-          "title": "引入组件",
-          "slug": "引入组件"
+          "level": 3,
+          "title": "物理层",
+          "slug": "物理层"
         },
         {
-          "level": 2,
-          "title": "使用组件",
-          "slug": "使用组件"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-5948fc08",
-      "path": "/Components/base/introduce.html"
-    },
-    {
-      "title": "var、let、const",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/ESsix.html",
-      "relativePath": "Components/javascript/ESsix.md",
-      "key": "v-b0e78630",
-      "path": "/Components/javascript/ESsix.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "var、let、const",
-          "slug": "var、let、const"
+          "level": 3,
+          "title": "数据链路层",
+          "slug": "数据链路层"
         },
         {
-          "level": 2,
-          "title": "数组篇",
-          "slug": "数组篇"
+          "level": 3,
+          "title": "网络层",
+          "slug": "网络层"
         },
         {
-          "level": 2,
-          "title": "实例对象新增的方法",
-          "slug": "实例对象新增的方法"
-        }
-      ]
-    },
-    {
-      "title": "Font样式",
-      "frontmatter": {},
-      "regularPath": "/Components/htmlcss/FontCss.html",
-      "relativePath": "Components/htmlcss/FontCss.md",
-      "key": "v-e4c77034",
-      "path": "/Components/htmlcss/FontCss.html",
-      "headers": [
+          "level": 3,
+          "title": "传输层",
+          "slug": "传输层"
+        },
         {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
+          "level": 3,
+          "title": "会话层",
+          "slug": "会话层"
+        },
+        {
+          "level": 3,
+          "title": "表示层",
+          "slug": "表示层"
+        },
+        {
+          "level": 3,
+          "title": "应用层",
+          "slug": "应用层"
         }
       ]
     },
@@ -418,6 +378,46 @@ export const siteData = {
       ]
     },
     {
+      "title": "Font样式",
+      "frontmatter": {},
+      "regularPath": "/Components/htmlcss/FontCss.html",
+      "relativePath": "Components/htmlcss/FontCss.md",
+      "key": "v-e4c77034",
+      "path": "/Components/htmlcss/FontCss.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
+    },
+    {
+      "title": "var、let、const",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/ESsix.html",
+      "relativePath": "Components/javascript/ESsix.md",
+      "key": "v-b0e78630",
+      "path": "/Components/javascript/ESsix.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "var、let、const",
+          "slug": "var、let、const"
+        },
+        {
+          "level": 2,
+          "title": "数组篇",
+          "slug": "数组篇"
+        },
+        {
+          "level": 2,
+          "title": "实例对象新增的方法",
+          "slug": "实例对象新增的方法"
+        }
+      ]
+    },
+    {
       "title": "浅拷贝与深拷贝",
       "frontmatter": {},
       "regularPath": "/Components/javascript/clone.html",
@@ -528,12 +528,19 @@ export const siteData = {
       ]
     },
     {
-      "title": "CSS",
+      "title": "WebWorker",
       "frontmatter": {},
-      "regularPath": "/Components/md_interview/Interview.html",
-      "relativePath": "Components/md_interview/Interview.md",
-      "key": "v-f02bda70",
-      "path": "/Components/md_interview/Interview.html"
+      "regularPath": "/Components/performance/WebWorker.html",
+      "relativePath": "Components/performance/WebWorker.md",
+      "key": "v-bb20220c",
+      "path": "/Components/performance/WebWorker.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
     },
     {
       "title": "Vue",
@@ -636,19 +643,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "WebWorker",
+      "title": "CSS",
       "frontmatter": {},
-      "regularPath": "/Components/performance/WebWorker.html",
-      "relativePath": "Components/performance/WebWorker.md",
-      "key": "v-bb20220c",
-      "path": "/Components/performance/WebWorker.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        }
-      ]
+      "regularPath": "/Components/md_interview/Interview.html",
+      "relativePath": "Components/md_interview/Interview.md",
+      "key": "v-f02bda70",
+      "path": "/Components/md_interview/Interview.html"
     },
     {
       "title": "初识React",
@@ -731,6 +731,26 @@ export const siteData = {
       ]
     },
     {
+      "title": "放大镜",
+      "frontmatter": {},
+      "regularPath": "/Components/static/MagnifyingGlass.html",
+      "relativePath": "Components/static/MagnifyingGlass.md",
+      "key": "v-2e8f0328",
+      "path": "/Components/static/MagnifyingGlass.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
       "title": "Button",
       "frontmatter": {},
       "regularPath": "/Components/static/Message.html",
@@ -767,6 +787,46 @@ export const siteData = {
           "level": 2,
           "title": "Detail",
           "slug": "detail"
+        }
+      ]
+    },
+    {
+      "title": "一、数据驱动",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/code.html",
+      "relativePath": "Components/vue/code.md",
+      "key": "v-acdf3fbc",
+      "path": "/Components/vue/code.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "",
+          "slug": ""
+        },
+        {
+          "level": 3,
+          "title": "",
+          "slug": "-2"
+        }
+      ]
+    },
+    {
+      "title": "瀑布流",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Pinterest.html",
+      "relativePath": "Components/static/Pinterest.md",
+      "key": "v-b35c4f70",
+      "path": "/Components/static/Pinterest.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
         }
       ]
     },
@@ -871,22 +931,21 @@ export const siteData = {
       ]
     },
     {
-      "title": "一、数据驱动",
       "frontmatter": {},
-      "regularPath": "/Components/vue/code.html",
-      "relativePath": "Components/vue/code.md",
-      "key": "v-acdf3fbc",
-      "path": "/Components/vue/code.html",
+      "regularPath": "/Components/vue/template.html",
+      "relativePath": "Components/vue/template.md",
+      "key": "v-4bb298c2",
+      "path": "/Components/vue/template.html",
       "headers": [
         {
           "level": 3,
-          "title": "",
-          "slug": ""
+          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
+          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
         },
         {
           "level": 3,
-          "title": "",
-          "slug": "-2"
+          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
+          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
         }
       ]
     },
@@ -910,45 +969,6 @@ export const siteData = {
       "relativePath": "README.md",
       "key": "v-3b12fbda",
       "path": "/"
-    },
-    {
-      "title": "放大镜",
-      "frontmatter": {},
-      "regularPath": "/Components/static/MagnifyingGlass.html",
-      "relativePath": "Components/static/MagnifyingGlass.md",
-      "key": "v-2e8f0328",
-      "path": "/Components/static/MagnifyingGlass.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/vue/template.html",
-      "relativePath": "Components/vue/template.md",
-      "key": "v-4bb298c2",
-      "path": "/Components/vue/template.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
-          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
-        },
-        {
-          "level": 3,
-          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
-          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
-        }
-      ]
     }
   ],
   "themeConfig": {
@@ -1024,6 +1044,10 @@ export const siteData = {
           "title": "Vue组件篇",
           "collapsable": false,
           "children": [
+            [
+              "static/Pinterest",
+              "瀑布流"
+            ],
             [
               "static/Icon",
               "图标"

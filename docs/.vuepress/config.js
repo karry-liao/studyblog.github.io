@@ -94,6 +94,7 @@ module.exports = {
           title: "Vue组件篇",
           collapsable: false,
           children: [
+            ["static/Pinterest", "瀑布流"],
             ["static/Icon", "图标"],
             ["static/Button", "光亮按钮"],
             ["static/Message", "信息提醒框"],
