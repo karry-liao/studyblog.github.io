@@ -138,7 +138,6 @@ module.exports = {
           children: [
             ["react/base", "初识React"],
             // ["static/Svg", "SVG变色图标"],
-
           ],
         },
         {
@@ -154,6 +153,7 @@ module.exports = {
           title: "Web性能提升篇",
           collapsable: true,
           children: [
+            ["performance/Browser", "Web缓存"],
             ["performance/WebWorker", "WebWorker"],
             // ["static/Svg", "SVG变色图标"],
 
