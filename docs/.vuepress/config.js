@@ -145,7 +145,7 @@ module.exports = {
           title: "NodeJS篇",
           collapsable: true,
           children: [
-            // ["static/Icon", "图标"],
+            ["NodeJs/Start", "初识NodeJS"],
             // ["static/Svg", "SVG变色图标"],
 
           ],
@@ -190,7 +190,7 @@ module.exports = {
           title: "数据结构与算法篇",
           collapsable: true,
           children: [
-            // ["static/Icon", "图标"],
+            ["dataStructureAndCount/count", "算法"],
             // ["static/Svg", "SVG变色图标"],
 
           ],

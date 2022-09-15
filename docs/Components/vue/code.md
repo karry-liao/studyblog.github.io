@@ -23,3 +23,58 @@ Vue 初始化主要就干了几件事情，合并配置，初始化生命周期�
 ​		构造子类构造函数，安装组件钩子函数和实例化 `vnode`。
 
 ​		`createComponent` 的实现，了解到它在渲染一个组件的时候的 3 个关键逻辑：**构造子类构造函数，安装组件钩子函数和实例化 `vnode`**。`createComponent` 后返回的是组件 `vnode`，它也一样走到 `vm._update` 方法，进而执行了 `patch` 函数，执行 `vm.__patch__` 去把 VNode 转换成真正的 DOM 节点
+
+## 五、如何让数据变得可观测？
+
+```javascript
+let obj = {}
+let val = 20
+Object.defineProperty(obj,"age",{
+	get(){
+		console.log('age属性被读取了')
+		return value
+	},
+	set(newvalue){
+	val = newvalue
+	console.log('age属性被修改了',newvalue)
+	}
+})
+```
+
+//_Observe类
+
+```javascript
+Module.export class Observe{
+	constructor(value){
+	this.value = value
+	if(Array.isArray(value)){
+	}else{
+        this.walk(value)
+	}
+	walk(obj){
+		const keys = Object.keys(Obj)
+        for(let i=0; i < keys.length; i++){
+            definReactive(obj,keys[i])
+        }
+	}
+}
+function defineReactive(obj,key,val){
+    if(arguments.length ===2){
+        val = obj[key]
+    }
+    if(typeof val === 'object'){
+        new Observe
+    }
+Object.defineProperty(obj,"age",{
+	get(){
+		console.log(`${key}属性被读取了`)
+		return value
+	},
+	set(newvalue){
+	val = newvalue
+	console.log(`${newvalue}属性被修改了`,newvalue)
+	}
+})
+}
+```
+

@@ -1,5 +1,5 @@
 <template>
-    <div class="box">
+    <div class="box"  ref="box" style="width:100%;">
         <div class="item"  v-for="item in img" :key="item.id" > 
         <img  :src="item.url" alt="1" />
         </div>
@@ -63,7 +63,11 @@ export default {
     ]
         }
     },
+
     mounted() {
+        console.log(this.$refs.box.style.width)
+                console.log(window.screen)
+        console.log(window.screen.width)
     }
 }
 </script>

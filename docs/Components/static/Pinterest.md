@@ -40,7 +40,7 @@
 :::
 
 <div class="demoBox">
-<static-Button-demo-Button ButtonName="这是自定义内容" color="#FFFFFF"/>
+<static-Pinterest-demo-waterfall/>
 </div>
 
 <ShowCode>
