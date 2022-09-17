@@ -16,126 +16,6 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "计算机网络基础知识总结",
-      "frontmatter": {},
-      "regularPath": "/Components/CpNet/base.html",
-      "relativePath": "Components/CpNet/base.md",
-      "key": "v-9d4b429c",
-      "path": "/Components/CpNet/base.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "网络层次划分",
-          "slug": "网络层次划分"
-        },
-        {
-          "level": 3,
-          "title": "物理层",
-          "slug": "物理层"
-        },
-        {
-          "level": 3,
-          "title": "数据链路层",
-          "slug": "数据链路层"
-        },
-        {
-          "level": 3,
-          "title": "网络层",
-          "slug": "网络层"
-        },
-        {
-          "level": 3,
-          "title": "传输层",
-          "slug": "传输层"
-        },
-        {
-          "level": 3,
-          "title": "会话层",
-          "slug": "会话层"
-        },
-        {
-          "level": 3,
-          "title": "表示层",
-          "slug": "表示层"
-        },
-        {
-          "level": 3,
-          "title": "应用层",
-          "slug": "应用层"
-        }
-      ]
-    },
-    {
-      "title": "MiniPrograme",
-      "frontmatter": {},
-      "regularPath": "/Components/MiniPrograme/base.html",
-      "relativePath": "Components/MiniPrograme/base.md",
-      "key": "v-2d1b4466",
-      "path": "/Components/MiniPrograme/base.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "生命周期",
-          "slug": "生命周期"
-        },
-        {
-          "level": 2,
-          "title": "钩子函数",
-          "slug": "钩子函数"
-        }
-      ]
-    },
-    {
-      "title": "浅拷贝与深拷贝",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/clone.html",
-      "relativePath": "Components/javascript/clone.md",
-      "key": "v-43eeef50",
-      "path": "/Components/javascript/clone.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1.对象的深拷贝",
-          "slug": "_1-对象的深拷贝"
-        },
-        {
-          "level": 2,
-          "title": "2.数组的深拷贝方法",
-          "slug": "_2-数组的深拷贝方法"
-        },
-        {
-          "level": 2,
-          "title": "3.多维数组实现深拷贝",
-          "slug": "_3-多维数组实现深拷贝"
-        }
-      ]
-    },
-    {
-      "title": "快速上手",
-      "frontmatter": {},
-      "regularPath": "/Components/base/start.html",
-      "relativePath": "Components/base/start.md",
-      "key": "v-0efb07f8",
-      "path": "/Components/base/start.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "获取组件",
-          "slug": "获取组件"
-        },
-        {
-          "level": 2,
-          "title": "引入组件",
-          "slug": "引入组件"
-        },
-        {
-          "level": 2,
-          "title": "使用组件",
-          "slug": "使用组件"
-        }
-      ]
-    },
-    {
       "title": "JavaScript 的常用方法",
       "frontmatter": {},
       "regularPath": "/Components/javascript/base.html",
@@ -316,6 +196,153 @@ export const siteData = {
       ]
     },
     {
+      "title": "MiniPrograme",
+      "frontmatter": {},
+      "regularPath": "/Components/MiniPrograme/base.html",
+      "relativePath": "Components/MiniPrograme/base.md",
+      "key": "v-2d1b4466",
+      "path": "/Components/MiniPrograme/base.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "生命周期",
+          "slug": "生命周期"
+        },
+        {
+          "level": 2,
+          "title": "钩子函数",
+          "slug": "钩子函数"
+        }
+      ]
+    },
+    {
+      "title": "计算机网络基础知识总结",
+      "frontmatter": {},
+      "regularPath": "/Components/CpNet/base.html",
+      "relativePath": "Components/CpNet/base.md",
+      "key": "v-9d4b429c",
+      "path": "/Components/CpNet/base.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "网络层次划分",
+          "slug": "网络层次划分"
+        },
+        {
+          "level": 3,
+          "title": "物理层",
+          "slug": "物理层"
+        },
+        {
+          "level": 3,
+          "title": "数据链路层",
+          "slug": "数据链路层"
+        },
+        {
+          "level": 3,
+          "title": "网络层",
+          "slug": "网络层"
+        },
+        {
+          "level": 3,
+          "title": "传输层",
+          "slug": "传输层"
+        },
+        {
+          "level": 3,
+          "title": "会话层",
+          "slug": "会话层"
+        },
+        {
+          "level": 3,
+          "title": "表示层",
+          "slug": "表示层"
+        },
+        {
+          "level": 3,
+          "title": "应用层",
+          "slug": "应用层"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-15746658",
+      "path": "/Components/base/introduce.html"
+    },
+    {
+      "title": "快速上手",
+      "frontmatter": {},
+      "regularPath": "/Components/base/start.html",
+      "relativePath": "Components/base/start.md",
+      "key": "v-0efb07f8",
+      "path": "/Components/base/start.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "获取组件",
+          "slug": "获取组件"
+        },
+        {
+          "level": 2,
+          "title": "引入组件",
+          "slug": "引入组件"
+        },
+        {
+          "level": 2,
+          "title": "使用组件",
+          "slug": "使用组件"
+        }
+      ]
+    },
+    {
+      "title": "工厂模式",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/designPatterns.html",
+      "relativePath": "Components/javascript/designPatterns.md",
+      "key": "v-6410bf30",
+      "path": "/Components/javascript/designPatterns.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "工厂模式",
+          "slug": "工厂模式"
+        },
+        {
+          "level": 2,
+          "title": "单例模式",
+          "slug": "单例模式"
+        },
+        {
+          "level": 2,
+          "title": "代理模式",
+          "slug": "代理模式"
+        },
+        {
+          "level": 2,
+          "title": "职责链模式",
+          "slug": "职责链模式"
+        },
+        {
+          "level": 2,
+          "title": "装饰者模式",
+          "slug": "装饰者模式"
+        },
+        {
+          "level": 2,
+          "title": "观察者模式",
+          "slug": "观察者模式"
+        },
+        {
+          "level": 2,
+          "title": "发布订阅模式",
+          "slug": "发布订阅模式"
+        }
+      ]
+    },
+    {
       "title": "一、Flex布局表示弹性布局，为盒模型提供最大灵活性。",
       "frontmatter": {},
       "regularPath": "/Components/htmlcss/Flex.html",
@@ -396,49 +423,36 @@ export const siteData = {
       ]
     },
     {
-      "title": "工厂模式",
+      "title": "浅拷贝与深拷贝",
       "frontmatter": {},
-      "regularPath": "/Components/javascript/designPatterns.html",
-      "relativePath": "Components/javascript/designPatterns.md",
-      "key": "v-6410bf30",
-      "path": "/Components/javascript/designPatterns.html",
+      "regularPath": "/Components/javascript/clone.html",
+      "relativePath": "Components/javascript/clone.md",
+      "key": "v-43eeef50",
+      "path": "/Components/javascript/clone.html",
       "headers": [
         {
           "level": 2,
-          "title": "工厂模式",
-          "slug": "工厂模式"
+          "title": "1.对象的深拷贝",
+          "slug": "_1-对象的深拷贝"
         },
         {
           "level": 2,
-          "title": "单例模式",
-          "slug": "单例模式"
+          "title": "2.数组的深拷贝方法",
+          "slug": "_2-数组的深拷贝方法"
         },
         {
           "level": 2,
-          "title": "代理模式",
-          "slug": "代理模式"
-        },
-        {
-          "level": 2,
-          "title": "职责链模式",
-          "slug": "职责链模式"
-        },
-        {
-          "level": 2,
-          "title": "装饰者模式",
-          "slug": "装饰者模式"
-        },
-        {
-          "level": 2,
-          "title": "观察者模式",
-          "slug": "观察者模式"
-        },
-        {
-          "level": 2,
-          "title": "发布订阅模式",
-          "slug": "发布订阅模式"
+          "title": "3.多维数组实现深拷贝",
+          "slug": "_3-多维数组实现深拷贝"
         }
       ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/react/base.html",
+      "relativePath": "Components/react/base.md",
+      "key": "v-e4900cdc",
+      "path": "/Components/react/base.html"
     },
     {
       "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
@@ -477,6 +491,46 @@ export const siteData = {
           "level": 3,
           "title": "冒泡排序",
           "slug": "冒泡排序"
+        }
+      ]
+    },
+    {
+      "title": "Button",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Button.html",
+      "relativePath": "Components/static/Button.md",
+      "key": "v-6014b0d0",
+      "path": "/Components/static/Button.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "Icon",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Icon.html",
+      "relativePath": "Components/static/Icon.md",
+      "key": "v-30441f42",
+      "path": "/Components/static/Icon.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
         }
       ]
     },
@@ -589,60 +643,6 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/Components/react/base.html",
-      "relativePath": "Components/react/base.md",
-      "key": "v-e4900cdc",
-      "path": "/Components/react/base.html"
-    },
-    {
-      "title": "Button",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Button.html",
-      "relativePath": "Components/static/Button.md",
-      "key": "v-6014b0d0",
-      "path": "/Components/static/Button.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "title": "Icon",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Icon.html",
-      "relativePath": "Components/static/Icon.md",
-      "key": "v-30441f42",
-      "path": "/Components/static/Icon.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-15746658",
-      "path": "/Components/base/introduce.html"
-    },
-    {
       "title": "放大镜",
       "frontmatter": {},
       "regularPath": "/Components/static/MagnifyingGlass.html",
@@ -683,26 +683,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "滑块验证",
-      "frontmatter": {},
-      "regularPath": "/Components/static/SlideVerify.html",
-      "relativePath": "Components/static/SlideVerify.md",
-      "key": "v-2752f318",
-      "path": "/Components/static/SlideVerify.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "Detail",
-          "slug": "detail"
-        }
-      ]
-    },
-    {
       "title": "一、数据驱动",
       "frontmatter": {},
       "regularPath": "/Components/vue/code.html",
@@ -721,6 +701,25 @@ export const siteData = {
           "slug": "-2"
         }
       ]
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F19%2F20180519142022_kVASd.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664607012&t=d9c7f089d193df41489bad49ebf22dc3",
+        "heroText": "karry的学习日记",
+        "tagline": "没有跨不过去的坎，只有走不完的路",
+        "features": [
+          {
+            "title": "梦想-最开始的地方",
+            "details": "活成自己最想活成的样子，加油！"
+          }
+        ]
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-2194adc3",
+      "path": "/"
     },
     {
       "title": "Vue",
@@ -823,23 +822,24 @@ export const siteData = {
       ]
     },
     {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F19%2F20180519142022_kVASd.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664607012&t=d9c7f089d193df41489bad49ebf22dc3",
-        "heroText": "karry的学习日记",
-        "tagline": "没有跨不过去的坎，只有走不完的路",
-        "features": [
-          {
-            "title": "梦想-最开始的地方",
-            "details": "活成自己最想活成的样子，加油！"
-          }
-        ]
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-2194adc3",
-      "path": "/"
+      "title": "滑块验证",
+      "frontmatter": {},
+      "regularPath": "/Components/static/SlideVerify.html",
+      "relativePath": "Components/static/SlideVerify.md",
+      "key": "v-2752f318",
+      "path": "/Components/static/SlideVerify.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "Detail",
+          "slug": "detail"
+        }
+      ]
     }
   ],
   "themeConfig": {
