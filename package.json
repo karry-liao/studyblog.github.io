@@ -22,6 +22,7 @@
   "dependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "async-validator": "^1.11.5",
+    "echarts": "^5.3.3",
     "vue": "^2.7.10"
   }
 }

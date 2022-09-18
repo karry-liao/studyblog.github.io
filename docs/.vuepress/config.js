@@ -49,8 +49,9 @@ module.exports = {
     nav: [
       //导航栏
       { text: "首页", link: "/" },
+      { text: "数据可视化", link: "/Components/Echarts/echarts" },
       { text: "JS", link: "/Components/javascript/base" },
-      { text: "Vue", link: "/Components/vue/bae"},
+      { text: "Vue", link: "/Components/vue/base"},
       {
         text: "计算机网络知识",
         link: "/Components/CpNet/base",

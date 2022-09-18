@@ -158,13 +158,116 @@ order( 3, true, 500 ) // 普通购买, 无优惠券
 
 ​	**动态的给函数赋能  天冷了穿衣服，天热了脱衣服**
 
-## 观察者模式
+​	**允许向一个对象添加新的功能，但不改变原有对象**
 
-​	**当观察对象发生变化时自动调用相关函数  vue 双向绑定**
+```javascript
+//装饰器的实现
+//定义一个圆
+class Circle{
+    draw(){
+        console.log("画一个圆");
+    }
+}
+//使用装饰器添加一个边框
+class Decorator{
+    constructor(circle){
+        this.circle = circle;
+    }
+    draw(){
+        this.circle.draw();//圆自己绘制方法
+        this.setBorder(this.circle)
+    }
+    setBorder(circle){
+        console.log("绘制边框")
+    }
+}
+var circle = new Circle();
+var dec = new Decorator(circle);
+dec.draw();
+```
 
-## 发布订阅模式 
+```javascript
+//装饰器----注解形式
+class Boy{
+	speak(){
+        @run//注解装饰
+        console.log("唱")
+    }
+}
+//非脚手架环境下需配置.babelrc转换文件
+//装饰器  参数
+function run(target,key,descriptor){
+    //target是boy对象,key表示被装饰的方法名‘speak’，desc描述对象，value=speak()
+    console.log("我能跑")
+}
+var boy = new Boy()
+boy.speak()
+```
 
-​	**PubSub 瀑布流库**
+```javascript
+class Math{
+    @log(100)
+    add(a,b){
+        return a+b;
+    }
+}
+//日志装饰器
+function log(num){
+    function log(target,name,descriptor){
+        var _num = num || 0
+    var oldValue = descriptor.value //value == add
+    //重构
+    descriptor.value = function(...arg){
+        arg[0] += _num;
+        arg[1] += _num;
+        console.log(`调用${name} 参数：`, arguments);
+        return oldValue.apply(target,arg)
+    }
+    return descriptor;
+	}
+}
+
+var math = new Math();
+math.add(1,5)
+```
 
 
+
+## 观察者-发布订阅模式 
+
+​		**当观察对象发生变化时自动调用相关函数  vue 双向绑定**
+
+​		**PubSub 瀑布流库**
+
+```javascript
+    //发布者
+    var shopObj = {}
+    //商品列表
+    shopObj.list = [];
+    shopObj.listen = function(key,fn){
+        if(!this.list[key]){
+            this.list[key] = [];
+            
+        }
+      this.list[key].push(fn);//往特定的商品列表中添加订阅
+    }
+    //发布消息
+    shopObj.publish = function(key){
+        var fns = this.list[key]
+      for(var i = 0, fn; fn = this.fns[i++];){
+        //执行订阅的fn  arguments JS内置对象
+        fn.apply(this,arguments);
+      }
+    }
+    //A添加订阅
+    shopObj.listen("huawei",function(brand, model){
+      console.log("A订阅："+ brand +" "+mode)
+    })
+    //B添加订阅
+    shopObj.listen("apple",function(brand, model){
+      console.log("B订阅："+ brand +" "+mode)
+    })
+    //商家发布消息
+    shopObj.publish('hahaha','10000$')
+```
 
