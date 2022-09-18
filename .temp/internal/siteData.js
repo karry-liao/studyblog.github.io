@@ -16,190 +16,6 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "创建第一个应用",
-      "frontmatter": {},
-      "regularPath": "/Components/NodeJs/Start.html",
-      "relativePath": "Components/NodeJs/Start.md",
-      "key": "v-f900ce90",
-      "path": "/Components/NodeJs/Start.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "创建第一个应用",
-          "slug": "创建第一个应用"
-        },
-        {
-          "level": 2,
-          "title": "Node包管理工具-npm",
-          "slug": "node包管理工具-npm"
-        },
-        {
-          "level": 2,
-          "title": "Node.js REPL(交互式解析器)",
-          "slug": "node-js-repl-交互式解析器"
-        },
-        {
-          "level": 2,
-          "title": "Node.js回调函数",
-          "slug": "node-js回调函数"
-        },
-        {
-          "level": 2,
-          "title": "Node.js事件循环",
-          "slug": "node-js事件循环"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/NodeJs/Node.html",
-      "relativePath": "Components/NodeJs/Node.md",
-      "key": "v-47f431ac",
-      "path": "/Components/NodeJs/Node.html"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-15746658",
-      "path": "/Components/base/introduce.html"
-    },
-    {
-      "title": "找出出现次数最多的字符",
-      "frontmatter": {},
-      "regularPath": "/Components/dataStructureAndCount/count.html",
-      "relativePath": "Components/dataStructureAndCount/count.md",
-      "key": "v-26402224",
-      "path": "/Components/dataStructureAndCount/count.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "找出出现次数最多的字符",
-          "slug": "找出出现次数最多的字符"
-        },
-        {
-          "level": 2,
-          "title": "null与undefined",
-          "slug": "null与undefined"
-        }
-      ]
-    },
-    {
-      "title": "MiniPrograme",
-      "frontmatter": {},
-      "regularPath": "/Components/MiniPrograme/base.html",
-      "relativePath": "Components/MiniPrograme/base.md",
-      "key": "v-2d1b4466",
-      "path": "/Components/MiniPrograme/base.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "生命周期",
-          "slug": "生命周期"
-        },
-        {
-          "level": 2,
-          "title": "钩子函数",
-          "slug": "钩子函数"
-        }
-      ]
-    },
-    {
-      "title": "一、Flex布局表示弹性布局，为盒模型提供最大灵活性。",
-      "frontmatter": {},
-      "regularPath": "/Components/htmlcss/Flex.html",
-      "relativePath": "Components/htmlcss/Flex.md",
-      "key": "v-5f6b5c9c",
-      "path": "/Components/htmlcss/Flex.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "一、Flex布局表示弹性布局，为盒模型提供最大灵活性。",
-          "slug": "一、flex布局表示弹性布局-为盒模型提供最大灵活性。"
-        },
-        {
-          "level": 2,
-          "title": "二、flex 容器的一些属性",
-          "slug": "二、flex-容器的一些属性"
-        },
-        {
-          "level": 3,
-          "title": "1.flex-direction",
-          "slug": "_1-flex-direction"
-        },
-        {
-          "level": 3,
-          "title": "2.flex-wrap",
-          "slug": "_2-flex-wrap"
-        },
-        {
-          "level": 3,
-          "title": "3.flex-flow",
-          "slug": "_3-flex-flow"
-        },
-        {
-          "level": 3,
-          "title": "4.justify-content",
-          "slug": "_4-justify-content"
-        },
-        {
-          "level": 3,
-          "title": "5.align-items",
-          "slug": "_5-align-items"
-        },
-        {
-          "level": 3,
-          "title": "6.align-content",
-          "slug": "_6-align-content"
-        },
-        {
-          "level": 3,
-          "title": "7.order 属性",
-          "slug": "_7-order-属性"
-        },
-        {
-          "level": 3,
-          "title": "8.flex-grow 属性",
-          "slug": "_8-flex-grow-属性"
-        },
-        {
-          "level": 3,
-          "title": "9.flex-shrink 属性",
-          "slug": "_9-flex-shrink-属性"
-        },
-        {
-          "level": 3,
-          "title": "10.flex-basis",
-          "slug": "_10-flex-basis"
-        },
-        {
-          "level": 3,
-          "title": "11.flex",
-          "slug": "_11-flex"
-        },
-        {
-          "level": 3,
-          "title": "12.align-self属性",
-          "slug": "_12-align-self属性"
-        }
-      ]
-    },
-    {
-      "title": "Font样式",
-      "frontmatter": {},
-      "regularPath": "/Components/htmlcss/FontCss.html",
-      "relativePath": "Components/htmlcss/FontCss.md",
-      "key": "v-26d34394",
-      "path": "/Components/htmlcss/FontCss.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        }
-      ]
-    },
-    {
       "title": "计算机网络基础知识总结",
       "frontmatter": {},
       "regularPath": "/Components/CpNet/base.html",
@@ -250,72 +66,116 @@ export const siteData = {
       ]
     },
     {
-      "title": "工厂模式",
+      "title": "MiniPrograme",
       "frontmatter": {},
-      "regularPath": "/Components/javascript/designPatterns.html",
-      "relativePath": "Components/javascript/designPatterns.md",
-      "key": "v-6410bf30",
-      "path": "/Components/javascript/designPatterns.html",
+      "regularPath": "/Components/MiniPrograme/base.html",
+      "relativePath": "Components/MiniPrograme/base.md",
+      "key": "v-2d1b4466",
+      "path": "/Components/MiniPrograme/base.html",
       "headers": [
         {
           "level": 2,
-          "title": "工厂模式",
-          "slug": "工厂模式"
+          "title": "生命周期",
+          "slug": "生命周期"
         },
         {
           "level": 2,
-          "title": "单例模式",
-          "slug": "单例模式"
-        },
-        {
-          "level": 2,
-          "title": "代理模式",
-          "slug": "代理模式"
-        },
-        {
-          "level": 2,
-          "title": "职责链模式",
-          "slug": "职责链模式"
-        },
-        {
-          "level": 2,
-          "title": "装饰者模式",
-          "slug": "装饰者模式"
-        },
-        {
-          "level": 2,
-          "title": "观察者模式",
-          "slug": "观察者模式"
-        },
-        {
-          "level": 2,
-          "title": "发布订阅模式",
-          "slug": "发布订阅模式"
+          "title": "钩子函数",
+          "slug": "钩子函数"
         }
       ]
     },
     {
-      "title": "var、let、const",
       "frontmatter": {},
-      "regularPath": "/Components/javascript/ESsix.html",
-      "relativePath": "Components/javascript/ESsix.md",
-      "key": "v-3059ff38",
-      "path": "/Components/javascript/ESsix.html",
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-15746658",
+      "path": "/Components/base/introduce.html"
+    },
+    {
+      "title": "快速上手",
+      "frontmatter": {},
+      "regularPath": "/Components/base/start.html",
+      "relativePath": "Components/base/start.md",
+      "key": "v-0efb07f8",
+      "path": "/Components/base/start.html",
       "headers": [
         {
           "level": 2,
-          "title": "var、let、const",
-          "slug": "var、let、const"
+          "title": "获取组件",
+          "slug": "获取组件"
         },
         {
           "level": 2,
-          "title": "数组篇",
-          "slug": "数组篇"
+          "title": "引入组件",
+          "slug": "引入组件"
         },
         {
           "level": 2,
-          "title": "实例对象新增的方法",
-          "slug": "实例对象新增的方法"
+          "title": "使用组件",
+          "slug": "使用组件"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/NodeJs/Node.html",
+      "relativePath": "Components/NodeJs/Node.md",
+      "key": "v-47f431ac",
+      "path": "/Components/NodeJs/Node.html"
+    },
+    {
+      "title": "找出出现次数最多的字符",
+      "frontmatter": {},
+      "regularPath": "/Components/dataStructureAndCount/count.html",
+      "relativePath": "Components/dataStructureAndCount/count.md",
+      "key": "v-26402224",
+      "path": "/Components/dataStructureAndCount/count.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "找出出现次数最多的字符",
+          "slug": "找出出现次数最多的字符"
+        },
+        {
+          "level": 2,
+          "title": "null与undefined",
+          "slug": "null与undefined"
+        }
+      ]
+    },
+    {
+      "title": "创建第一个应用",
+      "frontmatter": {},
+      "regularPath": "/Components/NodeJs/Start.html",
+      "relativePath": "Components/NodeJs/Start.md",
+      "key": "v-f900ce90",
+      "path": "/Components/NodeJs/Start.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建第一个应用",
+          "slug": "创建第一个应用"
+        },
+        {
+          "level": 2,
+          "title": "Node包管理工具-npm",
+          "slug": "node包管理工具-npm"
+        },
+        {
+          "level": 2,
+          "title": "Node.js REPL(交互式解析器)",
+          "slug": "node-js-repl-交互式解析器"
+        },
+        {
+          "level": 2,
+          "title": "Node.js回调函数",
+          "slug": "node-js回调函数"
+        },
+        {
+          "level": 2,
+          "title": "Node.js事件循环",
+          "slug": "node-js事件循环"
         }
       ]
     },
@@ -500,6 +360,126 @@ export const siteData = {
       ]
     },
     {
+      "title": "Font样式",
+      "frontmatter": {},
+      "regularPath": "/Components/htmlcss/FontCss.html",
+      "relativePath": "Components/htmlcss/FontCss.md",
+      "key": "v-26d34394",
+      "path": "/Components/htmlcss/FontCss.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
+    },
+    {
+      "title": "一、Flex布局表示弹性布局，为盒模型提供最大灵活性。",
+      "frontmatter": {},
+      "regularPath": "/Components/htmlcss/Flex.html",
+      "relativePath": "Components/htmlcss/Flex.md",
+      "key": "v-5f6b5c9c",
+      "path": "/Components/htmlcss/Flex.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一、Flex布局表示弹性布局，为盒模型提供最大灵活性。",
+          "slug": "一、flex布局表示弹性布局-为盒模型提供最大灵活性。"
+        },
+        {
+          "level": 2,
+          "title": "二、flex 容器的一些属性",
+          "slug": "二、flex-容器的一些属性"
+        },
+        {
+          "level": 3,
+          "title": "1.flex-direction",
+          "slug": "_1-flex-direction"
+        },
+        {
+          "level": 3,
+          "title": "2.flex-wrap",
+          "slug": "_2-flex-wrap"
+        },
+        {
+          "level": 3,
+          "title": "3.flex-flow",
+          "slug": "_3-flex-flow"
+        },
+        {
+          "level": 3,
+          "title": "4.justify-content",
+          "slug": "_4-justify-content"
+        },
+        {
+          "level": 3,
+          "title": "5.align-items",
+          "slug": "_5-align-items"
+        },
+        {
+          "level": 3,
+          "title": "6.align-content",
+          "slug": "_6-align-content"
+        },
+        {
+          "level": 3,
+          "title": "7.order 属性",
+          "slug": "_7-order-属性"
+        },
+        {
+          "level": 3,
+          "title": "8.flex-grow 属性",
+          "slug": "_8-flex-grow-属性"
+        },
+        {
+          "level": 3,
+          "title": "9.flex-shrink 属性",
+          "slug": "_9-flex-shrink-属性"
+        },
+        {
+          "level": 3,
+          "title": "10.flex-basis",
+          "slug": "_10-flex-basis"
+        },
+        {
+          "level": 3,
+          "title": "11.flex",
+          "slug": "_11-flex"
+        },
+        {
+          "level": 3,
+          "title": "12.align-self属性",
+          "slug": "_12-align-self属性"
+        }
+      ]
+    },
+    {
+      "title": "var、let、const",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/ESsix.html",
+      "relativePath": "Components/javascript/ESsix.md",
+      "key": "v-3059ff38",
+      "path": "/Components/javascript/ESsix.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "var、let、const",
+          "slug": "var、let、const"
+        },
+        {
+          "level": 2,
+          "title": "数组篇",
+          "slug": "数组篇"
+        },
+        {
+          "level": 2,
+          "title": "实例对象新增的方法",
+          "slug": "实例对象新增的方法"
+        }
+      ]
+    },
+    {
       "title": "浅拷贝与深拷贝",
       "frontmatter": {},
       "regularPath": "/Components/javascript/clone.html",
@@ -523,194 +503,6 @@ export const siteData = {
           "slug": "_3-多维数组实现深拷贝"
         }
       ]
-    },
-    {
-      "title": "快速上手",
-      "frontmatter": {},
-      "regularPath": "/Components/base/start.html",
-      "relativePath": "Components/base/start.md",
-      "key": "v-0efb07f8",
-      "path": "/Components/base/start.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "获取组件",
-          "slug": "获取组件"
-        },
-        {
-          "level": 2,
-          "title": "引入组件",
-          "slug": "引入组件"
-        },
-        {
-          "level": 2,
-          "title": "使用组件",
-          "slug": "使用组件"
-        }
-      ]
-    },
-    {
-      "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/extends.html",
-      "relativePath": "Components/javascript/extends.md",
-      "key": "v-52792ed8",
-      "path": "/Components/javascript/extends.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
-          "slug": "一-如何获取浏览器url中查询字符串中的参数"
-        },
-        {
-          "level": 2,
-          "title": "二. js实现一个打点计时器",
-          "slug": "二-js实现一个打点计时器"
-        },
-        {
-          "level": 3,
-          "title": "setTimeout方法",
-          "slug": "settimeout方法"
-        },
-        {
-          "level": 3,
-          "title": "setInterval()方法",
-          "slug": "setinterval-方法"
-        },
-        {
-          "level": 2,
-          "title": "三. 用js实现一个标准的排序算法",
-          "slug": "三-用js实现一个标准的排序算法"
-        },
-        {
-          "level": 3,
-          "title": "冒泡排序",
-          "slug": "冒泡排序"
-        }
-      ]
-    },
-    {
-      "title": "Button",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Button.html",
-      "relativePath": "Components/static/Button.md",
-      "key": "v-6014b0d0",
-      "path": "/Components/static/Button.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "title": "Icon",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Icon.html",
-      "relativePath": "Components/static/Icon.md",
-      "key": "v-30441f42",
-      "path": "/Components/static/Icon.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "title": "初识React",
-      "frontmatter": {},
-      "regularPath": "/Components/react/base.html",
-      "relativePath": "Components/react/base.md",
-      "key": "v-e4900cdc",
-      "path": "/Components/react/base.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "初识React",
-          "slug": "初识react"
-        },
-        {
-          "level": 3,
-          "title": "特性：",
-          "slug": "特性"
-        },
-        {
-          "level": 3,
-          "title": "React-Component",
-          "slug": "react-component"
-        },
-        {
-          "level": 3,
-          "title": "组件的特点：",
-          "slug": "组件的特点"
-        },
-        {
-          "level": 3,
-          "title": "React的优势",
-          "slug": "react的优势"
-        },
-        {
-          "level": 2,
-          "title": "React的生命周期",
-          "slug": "react的生命周期"
-        }
-      ]
-    },
-    {
-      "title": "Web的缓存机制",
-      "frontmatter": {},
-      "regularPath": "/Components/performance/Browser.html",
-      "relativePath": "Components/performance/Browser.md",
-      "key": "v-306e925e",
-      "path": "/Components/performance/Browser.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Web的缓存机制",
-          "slug": "web的缓存机制"
-        },
-        {
-          "level": 2,
-          "title": "As Total",
-          "slug": "as-total"
-        }
-      ]
-    },
-    {
-      "title": "WebWorker",
-      "frontmatter": {},
-      "regularPath": "/Components/performance/WebWorker.html",
-      "relativePath": "Components/performance/WebWorker.md",
-      "key": "v-25eb0d4a",
-      "path": "/Components/performance/WebWorker.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        }
-      ]
-    },
-    {
-      "title": "CSS",
-      "frontmatter": {},
-      "regularPath": "/Components/md_interview/Interview.html",
-      "relativePath": "Components/md_interview/Interview.md",
-      "key": "v-1916dd18",
-      "path": "/Components/md_interview/Interview.html"
     },
     {
       "title": "Vue",
@@ -813,12 +605,120 @@ export const siteData = {
       ]
     },
     {
-      "title": "瀑布流",
+      "title": "工厂模式",
       "frontmatter": {},
-      "regularPath": "/Components/static/Pinterest.html",
-      "relativePath": "Components/static/Pinterest.md",
-      "key": "v-2f1f9a98",
-      "path": "/Components/static/Pinterest.html",
+      "regularPath": "/Components/javascript/designPatterns.html",
+      "relativePath": "Components/javascript/designPatterns.md",
+      "key": "v-6410bf30",
+      "path": "/Components/javascript/designPatterns.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "工厂模式",
+          "slug": "工厂模式"
+        },
+        {
+          "level": 2,
+          "title": "单例模式",
+          "slug": "单例模式"
+        },
+        {
+          "level": 2,
+          "title": "代理模式",
+          "slug": "代理模式"
+        },
+        {
+          "level": 2,
+          "title": "职责链模式",
+          "slug": "职责链模式"
+        },
+        {
+          "level": 2,
+          "title": "装饰者模式",
+          "slug": "装饰者模式"
+        },
+        {
+          "level": 2,
+          "title": "观察者模式",
+          "slug": "观察者模式"
+        },
+        {
+          "level": 2,
+          "title": "发布订阅模式",
+          "slug": "发布订阅模式"
+        }
+      ]
+    },
+    {
+      "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/extends.html",
+      "relativePath": "Components/javascript/extends.md",
+      "key": "v-52792ed8",
+      "path": "/Components/javascript/extends.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
+          "slug": "一-如何获取浏览器url中查询字符串中的参数"
+        },
+        {
+          "level": 2,
+          "title": "二. js实现一个打点计时器",
+          "slug": "二-js实现一个打点计时器"
+        },
+        {
+          "level": 3,
+          "title": "setTimeout方法",
+          "slug": "settimeout方法"
+        },
+        {
+          "level": 3,
+          "title": "setInterval()方法",
+          "slug": "setinterval-方法"
+        },
+        {
+          "level": 2,
+          "title": "三. 用js实现一个标准的排序算法",
+          "slug": "三-用js实现一个标准的排序算法"
+        },
+        {
+          "level": 3,
+          "title": "冒泡排序",
+          "slug": "冒泡排序"
+        }
+      ]
+    },
+    {
+      "title": "WebWorker",
+      "frontmatter": {},
+      "regularPath": "/Components/performance/WebWorker.html",
+      "relativePath": "Components/performance/WebWorker.md",
+      "key": "v-25eb0d4a",
+      "path": "/Components/performance/WebWorker.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
+    },
+    {
+      "title": "CSS",
+      "frontmatter": {},
+      "regularPath": "/Components/md_interview/Interview.html",
+      "relativePath": "Components/md_interview/Interview.md",
+      "key": "v-1916dd18",
+      "path": "/Components/md_interview/Interview.html"
+    },
+    {
+      "title": "Button",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Message.html",
+      "relativePath": "Components/static/Message.md",
+      "key": "v-d4b03610",
+      "path": "/Components/static/Message.html",
       "headers": [
         {
           "level": 2,
@@ -829,6 +729,66 @@ export const siteData = {
           "level": 2,
           "title": "API",
           "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "Web的缓存机制",
+      "frontmatter": {},
+      "regularPath": "/Components/performance/Browser.html",
+      "relativePath": "Components/performance/Browser.md",
+      "key": "v-306e925e",
+      "path": "/Components/performance/Browser.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Web的缓存机制",
+          "slug": "web的缓存机制"
+        },
+        {
+          "level": 2,
+          "title": "As Total",
+          "slug": "as-total"
+        }
+      ]
+    },
+    {
+      "title": "初识React",
+      "frontmatter": {},
+      "regularPath": "/Components/react/base.html",
+      "relativePath": "Components/react/base.md",
+      "key": "v-e4900cdc",
+      "path": "/Components/react/base.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "初识React",
+          "slug": "初识react"
+        },
+        {
+          "level": 3,
+          "title": "特性：",
+          "slug": "特性"
+        },
+        {
+          "level": 3,
+          "title": "React-Component",
+          "slug": "react-component"
+        },
+        {
+          "level": 3,
+          "title": "组件的特点：",
+          "slug": "组件的特点"
+        },
+        {
+          "level": 3,
+          "title": "React的优势",
+          "slug": "react的优势"
+        },
+        {
+          "level": 2,
+          "title": "React的生命周期",
+          "slug": "react的生命周期"
         }
       ]
     },
@@ -853,77 +813,12 @@ export const siteData = {
       ]
     },
     {
+      "title": "Icon",
       "frontmatter": {},
-      "regularPath": "/Components/vue/template.html",
-      "relativePath": "Components/vue/template.md",
-      "key": "v-c760a9dc",
-      "path": "/Components/vue/template.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
-          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
-        },
-        {
-          "level": 3,
-          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
-          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
-        }
-      ]
-    },
-    {
-      "title": "一、数据驱动",
-      "frontmatter": {},
-      "regularPath": "/Components/vue/code.html",
-      "relativePath": "Components/vue/code.md",
-      "key": "v-23667b1c",
-      "path": "/Components/vue/code.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "",
-          "slug": ""
-        },
-        {
-          "level": 3,
-          "title": "",
-          "slug": "-2"
-        },
-        {
-          "level": 2,
-          "title": "五、如何让数据变得可观测？",
-          "slug": "五、如何让数据变得可观测"
-        }
-      ]
-    },
-    {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F19%2F20180519142022_kVASd.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664607012&t=d9c7f089d193df41489bad49ebf22dc3",
-        "heroText": "karry的学习日记",
-        "tagline": "没有跨不过去的坎，只有走不完的路",
-        "actionText": "点击从这里开始",
-        "actionLink": "/Components/base/introduce",
-        "features": [
-          {
-            "title": "梦想-最开始的地方",
-            "details": "活成自己最想活成的样子，加油！"
-          }
-        ]
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-2194adc3",
-      "path": "/"
-    },
-    {
-      "title": "Button",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Message.html",
-      "relativePath": "Components/static/Message.md",
-      "key": "v-d4b03610",
-      "path": "/Components/static/Message.html",
+      "regularPath": "/Components/static/Icon.html",
+      "relativePath": "Components/static/Icon.md",
+      "key": "v-30441f42",
+      "path": "/Components/static/Icon.html",
       "headers": [
         {
           "level": 2,
@@ -938,12 +833,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "滑块验证",
+      "title": "瀑布流",
       "frontmatter": {},
-      "regularPath": "/Components/static/SlideVerify.html",
-      "relativePath": "Components/static/SlideVerify.md",
-      "key": "v-2752f318",
-      "path": "/Components/static/SlideVerify.html",
+      "regularPath": "/Components/static/Pinterest.html",
+      "relativePath": "Components/static/Pinterest.md",
+      "key": "v-2f1f9a98",
+      "path": "/Components/static/Pinterest.html",
       "headers": [
         {
           "level": 2,
@@ -952,8 +847,28 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "Detail",
-          "slug": "detail"
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "Button",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Button.html",
+      "relativePath": "Components/static/Button.md",
+      "key": "v-6014b0d0",
+      "path": "/Components/static/Button.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
         }
       ]
     },
@@ -1056,6 +971,91 @@ export const siteData = {
           "slug": "vue中computed和method-区别"
         }
       ]
+    },
+    {
+      "title": "一、数据驱动",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/code.html",
+      "relativePath": "Components/vue/code.md",
+      "key": "v-23667b1c",
+      "path": "/Components/vue/code.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "",
+          "slug": ""
+        },
+        {
+          "level": 3,
+          "title": "",
+          "slug": "-2"
+        },
+        {
+          "level": 2,
+          "title": "五、如何让数据变得可观测？",
+          "slug": "五、如何让数据变得可观测"
+        }
+      ]
+    },
+    {
+      "title": "滑块验证",
+      "frontmatter": {},
+      "regularPath": "/Components/static/SlideVerify.html",
+      "relativePath": "Components/static/SlideVerify.md",
+      "key": "v-2752f318",
+      "path": "/Components/static/SlideVerify.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "Detail",
+          "slug": "detail"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/vue/template.html",
+      "relativePath": "Components/vue/template.md",
+      "key": "v-c760a9dc",
+      "path": "/Components/vue/template.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
+          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
+        },
+        {
+          "level": 3,
+          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
+          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
+        }
+      ]
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F19%2F20180519142022_kVASd.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664607012&t=d9c7f089d193df41489bad49ebf22dc3",
+        "heroText": "karry的学习日记",
+        "tagline": "没有跨不过去的坎，只有走不完的路",
+        "actionText": "点击从这里开始",
+        "actionLink": "/Components/base/introduce",
+        "features": [
+          {
+            "title": "梦想-最开始的地方",
+            "details": "活成自己最想活成的样子，加油！"
+          }
+        ]
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-2194adc3",
+      "path": "/"
     }
   ],
   "themeConfig": {

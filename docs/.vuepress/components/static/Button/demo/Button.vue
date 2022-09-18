@@ -26,7 +26,7 @@ import { watch } from 'vue'
   }
   </script>
   
-  <style>
+  <style scoped>
     .cmp{
         display: flex;
         justify-content: center;
