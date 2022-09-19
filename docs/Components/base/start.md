@@ -63,7 +63,6 @@ import "./components/common/lib-components/index.js";
 <ContainerBox title="采用大驼峰命名组件">
 ::: slot desc
 
-所有组件都需要加上前缀`Lib`
 
 ```vue
 <LibMaskClose />
