@@ -20,9 +20,12 @@
     "deploy-gh": "GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
   },
   "dependencies": {
+    "@antv/g2plot": "^2.4.20",
+    "@jiaminghi/data-view": "^2.10.0",
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "async-validator": "^1.11.5",
     "echarts": "^5.3.3",
+    "echarts-gl": "^2.0.9",
     "vue": "^2.7.10"
   }
 }

@@ -20,7 +20,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/Components/CpNet/base.html",
       "relativePath": "Components/CpNet/base.md",
-      "key": "v-9d4b429c",
+      "key": "v-7d90b73c",
       "path": "/Components/CpNet/base.html",
       "headers": [
         {
@@ -66,43 +66,11 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-15746658",
-      "path": "/Components/base/introduce.html"
-    },
-    {
-      "title": "快速上手",
-      "frontmatter": {},
-      "regularPath": "/Components/base/start.html",
-      "relativePath": "Components/base/start.md",
-      "key": "v-0efb07f8",
-      "path": "/Components/base/start.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "获取组件",
-          "slug": "获取组件"
-        },
-        {
-          "level": 2,
-          "title": "引入组件",
-          "slug": "引入组件"
-        },
-        {
-          "level": 2,
-          "title": "使用组件",
-          "slug": "使用组件"
-        }
-      ]
-    },
-    {
       "title": "MiniPrograme",
       "frontmatter": {},
       "regularPath": "/Components/MiniPrograme/base.html",
       "relativePath": "Components/MiniPrograme/base.md",
-      "key": "v-2d1b4466",
+      "key": "v-be9653d4",
       "path": "/Components/MiniPrograme/base.html",
       "headers": [
         {
@@ -118,17 +86,17 @@ export const siteData = {
       ]
     },
     {
-      "title": "Font样式",
+      "title": "数据可视化之雷达图",
       "frontmatter": {},
-      "regularPath": "/Components/htmlcss/FontCss.html",
-      "relativePath": "Components/htmlcss/FontCss.md",
-      "key": "v-26d34394",
-      "path": "/Components/htmlcss/FontCss.html",
+      "regularPath": "/Components/Echarts/echarts.html",
+      "relativePath": "Components/Echarts/echarts.md",
+      "key": "v-dee70954",
+      "path": "/Components/Echarts/echarts.html",
       "headers": [
         {
           "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
+          "title": "哈哈哈哈哈",
+          "slug": "哈哈哈哈哈"
         }
       ]
     },
@@ -137,7 +105,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/Components/NodeJs/Start.html",
       "relativePath": "Components/NodeJs/Start.md",
-      "key": "v-f900ce90",
+      "key": "v-32e28668",
       "path": "/Components/NodeJs/Start.html",
       "headers": [
         {
@@ -168,11 +136,50 @@ export const siteData = {
       ]
     },
     {
+      "title": "快速上手",
+      "frontmatter": {},
+      "regularPath": "/Components/base/start.html",
+      "relativePath": "Components/base/start.md",
+      "key": "v-1ed84da8",
+      "path": "/Components/base/start.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "获取组件",
+          "slug": "获取组件"
+        },
+        {
+          "level": 2,
+          "title": "引入组件",
+          "slug": "引入组件"
+        },
+        {
+          "level": 2,
+          "title": "使用组件",
+          "slug": "使用组件"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-5948fc08",
+      "path": "/Components/base/introduce.html"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/NodeJs/Node.html",
+      "relativePath": "Components/NodeJs/Node.md",
+      "key": "v-69a880da",
+      "path": "/Components/NodeJs/Node.html"
+    },
+    {
       "title": "一、Flex布局表示弹性布局，为盒模型提供最大灵活性。",
       "frontmatter": {},
       "regularPath": "/Components/htmlcss/Flex.html",
       "relativePath": "Components/htmlcss/Flex.md",
-      "key": "v-5f6b5c9c",
+      "key": "v-7fad3f62",
       "path": "/Components/htmlcss/Flex.html",
       "headers": [
         {
@@ -248,11 +255,26 @@ export const siteData = {
       ]
     },
     {
+      "title": "Font样式",
+      "frontmatter": {},
+      "regularPath": "/Components/htmlcss/FontCss.html",
+      "relativePath": "Components/htmlcss/FontCss.md",
+      "key": "v-e4c77034",
+      "path": "/Components/htmlcss/FontCss.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
+    },
+    {
       "title": "找出出现次数最多的字符",
       "frontmatter": {},
       "regularPath": "/Components/dataStructureAndCount/count.html",
       "relativePath": "Components/dataStructureAndCount/count.md",
-      "key": "v-26402224",
+      "key": "v-33a06ec4",
       "path": "/Components/dataStructureAndCount/count.html",
       "headers": [
         {
@@ -268,19 +290,11 @@ export const siteData = {
       ]
     },
     {
-      "title": "Button",
-      "frontmatter": {},
-      "regularPath": "/Components/Echarts/echarts.html",
-      "relativePath": "Components/Echarts/echarts.md",
-      "key": "v-20f2dcb4",
-      "path": "/Components/Echarts/echarts.html"
-    },
-    {
       "title": "var、let、const",
       "frontmatter": {},
       "regularPath": "/Components/javascript/ESsix.html",
       "relativePath": "Components/javascript/ESsix.md",
-      "key": "v-3059ff38",
+      "key": "v-b0e78630",
       "path": "/Components/javascript/ESsix.html",
       "headers": [
         {
@@ -301,11 +315,26 @@ export const siteData = {
       ]
     },
     {
+      "title": "递归实现无限树型结构",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/RecursionTree.html",
+      "relativePath": "Components/javascript/RecursionTree.md",
+      "key": "v-1c79e368",
+      "path": "/Components/javascript/RecursionTree.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "递归实现无限树型结构",
+          "slug": "递归实现无限树型结构"
+        }
+      ]
+    },
+    {
       "title": "JavaScript 的常用方法",
       "frontmatter": {},
       "regularPath": "/Components/javascript/base.html",
       "relativePath": "Components/javascript/base.md",
-      "key": "v-8dd857e0",
+      "key": "v-5a19bdc0",
       "path": "/Components/javascript/base.html",
       "headers": [
         {
@@ -481,76 +510,11 @@ export const siteData = {
       ]
     },
     {
-      "title": "浅拷贝与深拷贝",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/clone.html",
-      "relativePath": "Components/javascript/clone.md",
-      "key": "v-43eeef50",
-      "path": "/Components/javascript/clone.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1.对象的深拷贝",
-          "slug": "_1-对象的深拷贝"
-        },
-        {
-          "level": 2,
-          "title": "2.数组的深拷贝方法",
-          "slug": "_2-数组的深拷贝方法"
-        },
-        {
-          "level": 2,
-          "title": "3.多维数组实现深拷贝",
-          "slug": "_3-多维数组实现深拷贝"
-        }
-      ]
-    },
-    {
-      "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/extends.html",
-      "relativePath": "Components/javascript/extends.md",
-      "key": "v-52792ed8",
-      "path": "/Components/javascript/extends.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
-          "slug": "一-如何获取浏览器url中查询字符串中的参数"
-        },
-        {
-          "level": 2,
-          "title": "二. js实现一个打点计时器",
-          "slug": "二-js实现一个打点计时器"
-        },
-        {
-          "level": 3,
-          "title": "setTimeout方法",
-          "slug": "settimeout方法"
-        },
-        {
-          "level": 3,
-          "title": "setInterval()方法",
-          "slug": "setinterval-方法"
-        },
-        {
-          "level": 2,
-          "title": "三. 用js实现一个标准的排序算法",
-          "slug": "三-用js实现一个标准的排序算法"
-        },
-        {
-          "level": 3,
-          "title": "冒泡排序",
-          "slug": "冒泡排序"
-        }
-      ]
-    },
-    {
       "title": "工厂模式",
       "frontmatter": {},
       "regularPath": "/Components/javascript/designPatterns.html",
       "relativePath": "Components/javascript/designPatterns.md",
-      "key": "v-6410bf30",
+      "key": "v-3130f0e0",
       "path": "/Components/javascript/designPatterns.html",
       "headers": [
         {
@@ -586,52 +550,67 @@ export const siteData = {
       ]
     },
     {
-      "title": "递归实现无限树型结构",
+      "title": "浅拷贝与深拷贝",
       "frontmatter": {},
-      "regularPath": "/Components/javascript/RecursionTree.html",
-      "relativePath": "Components/javascript/RecursionTree.md",
-      "key": "v-5a9905b8",
-      "path": "/Components/javascript/RecursionTree.html",
+      "regularPath": "/Components/javascript/clone.html",
+      "relativePath": "Components/javascript/clone.md",
+      "key": "v-553ac608",
+      "path": "/Components/javascript/clone.html",
       "headers": [
         {
           "level": 2,
-          "title": "递归实现无限树型结构",
-          "slug": "递归实现无限树型结构"
-        }
-      ]
-    },
-    {
-      "title": "WebWorker",
-      "frontmatter": {},
-      "regularPath": "/Components/performance/WebWorker.html",
-      "relativePath": "Components/performance/WebWorker.md",
-      "key": "v-25eb0d4a",
-      "path": "/Components/performance/WebWorker.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        }
-      ]
-    },
-    {
-      "title": "Web的缓存机制",
-      "frontmatter": {},
-      "regularPath": "/Components/performance/Browser.html",
-      "relativePath": "Components/performance/Browser.md",
-      "key": "v-306e925e",
-      "path": "/Components/performance/Browser.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Web的缓存机制",
-          "slug": "web的缓存机制"
+          "title": "1.对象的深拷贝",
+          "slug": "_1-对象的深拷贝"
         },
         {
           "level": 2,
-          "title": "As Total",
-          "slug": "as-total"
+          "title": "2.数组的深拷贝方法",
+          "slug": "_2-数组的深拷贝方法"
+        },
+        {
+          "level": 2,
+          "title": "3.多维数组实现深拷贝",
+          "slug": "_3-多维数组实现深拷贝"
+        }
+      ]
+    },
+    {
+      "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/extends.html",
+      "relativePath": "Components/javascript/extends.md",
+      "key": "v-45f51488",
+      "path": "/Components/javascript/extends.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
+          "slug": "一-如何获取浏览器url中查询字符串中的参数"
+        },
+        {
+          "level": 2,
+          "title": "二. js实现一个打点计时器",
+          "slug": "二-js实现一个打点计时器"
+        },
+        {
+          "level": 3,
+          "title": "setTimeout方法",
+          "slug": "settimeout方法"
+        },
+        {
+          "level": 3,
+          "title": "setInterval()方法",
+          "slug": "setinterval-方法"
+        },
+        {
+          "level": 2,
+          "title": "三. 用js实现一个标准的排序算法",
+          "slug": "三-用js实现一个标准的排序算法"
+        },
+        {
+          "level": 3,
+          "title": "冒泡排序",
+          "slug": "冒泡排序"
         }
       ]
     },
@@ -640,7 +619,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/Components/md_interview/Interview.html",
       "relativePath": "Components/md_interview/Interview.md",
-      "key": "v-1916dd18",
+      "key": "v-f02bda70",
       "path": "/Components/md_interview/Interview.html"
     },
     {
@@ -648,7 +627,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/Components/md_view/vue.html",
       "relativePath": "Components/md_view/vue.md",
-      "key": "v-7c5113b0",
+      "key": "v-4f7a0fd8",
       "path": "/Components/md_view/vue.html",
       "headers": [
         {
@@ -744,18 +723,46 @@ export const siteData = {
       ]
     },
     {
+      "title": "Web的缓存机制",
       "frontmatter": {},
-      "regularPath": "/Components/NodeJs/Node.html",
-      "relativePath": "Components/NodeJs/Node.md",
-      "key": "v-47f431ac",
-      "path": "/Components/NodeJs/Node.html"
+      "regularPath": "/Components/performance/Browser.html",
+      "relativePath": "Components/performance/Browser.md",
+      "key": "v-3487cc0e",
+      "path": "/Components/performance/Browser.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Web的缓存机制",
+          "slug": "web的缓存机制"
+        },
+        {
+          "level": 2,
+          "title": "As Total",
+          "slug": "as-total"
+        }
+      ]
+    },
+    {
+      "title": "WebWorker",
+      "frontmatter": {},
+      "regularPath": "/Components/performance/WebWorker.html",
+      "relativePath": "Components/performance/WebWorker.md",
+      "key": "v-bb20220c",
+      "path": "/Components/performance/WebWorker.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
     },
     {
       "title": "初识React",
       "frontmatter": {},
       "regularPath": "/Components/react/base.html",
       "relativePath": "Components/react/base.md",
-      "key": "v-e4900cdc",
+      "key": "v-c4d5817c",
       "path": "/Components/react/base.html",
       "headers": [
         {
@@ -795,48 +802,8 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/Components/static/Button.html",
       "relativePath": "Components/static/Button.md",
-      "key": "v-6014b0d0",
+      "key": "v-7b1a1b00",
       "path": "/Components/static/Button.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "title": "Icon",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Icon.html",
-      "relativePath": "Components/static/Icon.md",
-      "key": "v-30441f42",
-      "path": "/Components/static/Icon.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "title": "Button",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Message.html",
-      "relativePath": "Components/static/Message.md",
-      "key": "v-d4b03610",
-      "path": "/Components/static/Message.html",
       "headers": [
         {
           "level": 2,
@@ -855,7 +822,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/Components/static/MagnifyingGlass.html",
       "relativePath": "Components/static/MagnifyingGlass.md",
-      "key": "v-80886510",
+      "key": "v-2e8f0328",
       "path": "/Components/static/MagnifyingGlass.html",
       "headers": [
         {
@@ -875,7 +842,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/Components/static/Pinterest.html",
       "relativePath": "Components/static/Pinterest.md",
-      "key": "v-2f1f9a98",
+      "key": "v-b35c4f70",
       "path": "/Components/static/Pinterest.html",
       "headers": [
         {
@@ -895,7 +862,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/Components/static/SlideVerify.html",
       "relativePath": "Components/static/SlideVerify.md",
-      "key": "v-2752f318",
+      "key": "v-1aced8c8",
       "path": "/Components/static/SlideVerify.html",
       "headers": [
         {
@@ -911,11 +878,56 @@ export const siteData = {
       ]
     },
     {
+      "title": "Icon",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Icon.html",
+      "relativePath": "Components/static/Icon.md",
+      "key": "v-84328e1c",
+      "path": "/Components/static/Icon.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "一、数据驱动",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/code.html",
+      "relativePath": "Components/vue/code.md",
+      "key": "v-acdf3fbc",
+      "path": "/Components/vue/code.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "",
+          "slug": ""
+        },
+        {
+          "level": 3,
+          "title": "",
+          "slug": "-2"
+        },
+        {
+          "level": 2,
+          "title": "五、如何让数据变得可观测？",
+          "slug": "五、如何让数据变得可观测"
+        }
+      ]
+    },
+    {
       "title": "Vue",
       "frontmatter": {},
       "regularPath": "/Components/vue/base.html",
       "relativePath": "Components/vue/base.md",
-      "key": "v-226832f2",
+      "key": "v-44a85ebc",
       "path": "/Components/vue/base.html",
       "headers": [
         {
@@ -1011,27 +1023,41 @@ export const siteData = {
       ]
     },
     {
-      "title": "一、数据驱动",
+      "title": "Button",
       "frontmatter": {},
-      "regularPath": "/Components/vue/code.html",
-      "relativePath": "Components/vue/code.md",
-      "key": "v-23667b1c",
-      "path": "/Components/vue/code.html",
+      "regularPath": "/Components/static/Message.html",
+      "relativePath": "Components/static/Message.md",
+      "key": "v-4d070ab0",
+      "path": "/Components/static/Message.html",
       "headers": [
         {
-          "level": 3,
-          "title": "",
-          "slug": ""
-        },
-        {
-          "level": 3,
-          "title": "",
-          "slug": "-2"
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
         },
         {
           "level": 2,
-          "title": "五、如何让数据变得可观测？",
-          "slug": "五、如何让数据变得可观测"
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/vue/template.html",
+      "relativePath": "Components/vue/template.md",
+      "key": "v-4bb298c2",
+      "path": "/Components/vue/template.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
+          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
+        },
+        {
+          "level": 3,
+          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
+          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
         }
       ]
     },
@@ -1053,27 +1079,8 @@ export const siteData = {
       },
       "regularPath": "/",
       "relativePath": "README.md",
-      "key": "v-2194adc3",
+      "key": "v-3b12fbda",
       "path": "/"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/vue/template.html",
-      "relativePath": "Components/vue/template.md",
-      "key": "v-c760a9dc",
-      "path": "/Components/vue/template.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
-          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
-        },
-        {
-          "level": 3,
-          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
-          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
-        }
-      ]
     }
   ],
   "themeConfig": {
