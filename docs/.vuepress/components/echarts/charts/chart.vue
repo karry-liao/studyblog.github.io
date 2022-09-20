@@ -30,29 +30,39 @@ export default {
         //窗口大小
         myChart.resize(); //自适应
       };
-      (this.timer = setInterval(() => {
+      myChart.showLoading({
+        text: "loading",
+        color: "rgb(99, 99, 227)",
+        textColor: "rgb(99, 99, 227)",
+        maskColor: "rgba(255, 255, 255, 0.2)",
+        zlevel: 0,
+      });
+      this.timer = setInterval(() => {
         var i = parseInt(Math.random() * res.length);
         option.series[0].data = res[i];
         option && myChart.setOption(option);
-      }, 2000)),
-        // 通过$once来监听定时器，在beforeDestroy钩子可以被清除。
-        (option = {
-          xAxis: {
-            type: "category",
-            data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        myChart.hideLoading();
+      }, 2000);
+
+      // console.log(this.isLoding);
+      // 通过$once来监听定时器，在beforeDestroy钩子可以被清除。
+      option = {
+        xAxis: {
+          type: "category",
+          data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        },
+        title: {
+          text: "可根据请求数据实时动态变化的chart图",
+        },
+        yAxis: {
+          type: "value",
+        },
+        series: [
+          {
+            type: "bar",
           },
-          title: {
-            text: "可根据请求数据实时动态变化的chart图",
-          },
-          yAxis: {
-            type: "value",
-          },
-          series: [
-            {
-              type: "line",
-            },
-          ],
-        });
+        ],
+      };
     },
   },
 

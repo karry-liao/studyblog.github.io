@@ -7,17 +7,15 @@
 </template>
 
 <script>
-import { Line } from "@antv/g2plot";
-import { WordCloud } from "@antv/g2plot";
-import { onBeforeUnmount } from "vue";
+import { Line, WordCloud } from "@antv/g2plot";
 export default {
   name: "wordcloud",
+  data() {
+    return {
+      isLoading: true,
+    };
+  },
   methods: {
-    data() {
-      return {
-        initData: [],
-      };
-    },
     datas() {
       const data = [
         {
@@ -40,6 +38,7 @@ export default {
         xField: "year",
         yField: "value",
       });
+      // this.isLoading = false;
       line.render();
     },
     wordcloud() {

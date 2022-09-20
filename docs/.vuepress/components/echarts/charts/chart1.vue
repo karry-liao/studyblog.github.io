@@ -19,6 +19,13 @@ export default {
     drawChart() {
       // 基于准备好的dom，初始化echarts实例  这个和上面的main对应
       let myChart = echarts.init(document.getElementById("main"));
+      myChart.showLoading({
+        text: "loading",
+        color: "rgb(99, 99, 227)",
+        textColor: "rgb(99, 99, 227)",
+        maskColor: "rgb(255, 255, 255)",
+        zlevel: 0,
+      });
       //自适应
       window.onresize = function () {
         //窗口大小
@@ -89,10 +96,10 @@ export default {
           return series;
         })(),
       };
+      myChart.hideLoading();
       // 使用刚指定的配置项和数据显示图表。
       myChart.setOption(option);
     },
-
   },
 
   mounted() {
