@@ -124,13 +124,13 @@ class animals extends React.Component {
 
    #### 更新阶段：
 
-5. getDerivedStateFromProps：此方法通创建时期一样。
+5. **getDerivedStateFromProps**：此方法通创建时期一样。
 
-6. shouldComponentUpdate：用于告知组件本身当前的props和state是否需要重新渲染组件，默认返回true，执行时机：到新的props或者state时都会调用，通过返回true或者false告知组件更新与否，一般情况，不建议在改周期进行深层比较，会影响效率同事也不能调用setstate否则会触发无线循环更新。
+6. **shouldComponentUpdate**：用于告知组件本身当前的props和state是否需要重新渲染组件，默认返回true，执行时机：到新的props或者state时都会调用，通过返回true或者false告知组件更新与否，一般情况，不建议在改周期进行深层比较，会影响效率同事也不能调用setstate否则会触发无线循环更新。
 
-7. 7.render：同上
+7. **render**：同上
 
-8. getSnapshotBeforeUpdate：在render函数后面执行，执行时DOM元素还没更新，改方法返回一个snapshot值，作为componentDidUpdate第三个参数传入
+8. **getSnapshotBeforeUpdate**：在render函数后面执行，执行时DOM元素还没更新，改方法返回一个snapshot值，作为componentDidUpdate第三个参数传入
 
    ```javascript
    getSnapshotBeforeUpdate(prevProps, prevState) {
@@ -145,7 +145,7 @@ class animals extends React.Component {
 
    此方法的目的在于获取组件更新前的一些信息，比如组件的滚动位置之类的，在组件更新后可以根据这些信息恢复一些UI视觉上的状态
 
-9. componentDidUpdate：组件更新结束触发，在该方法中，可以根据前后的`props`和`state`的变化做相应的操作，如获取数据，修改`DOM`样式
+9. **componentDidUpdate**：组件更新结束触发，在该方法中，可以根据前后的`props`和`state`的变化做相应的操作，如获取数据，修改`DOM`样式
 
    #### 卸载阶段
 
@@ -160,3 +160,56 @@ class animals extends React.Component {
 新增了getDerivedStateFromProps、getSnapShotBeforeUpdate
 
 但是移除的三个旧版依然存在，但必须在前面加上UNSAFE_前缀。如`UNSAFE_componentWillMount`
+
+父子组件的挂载生命周期函数，可以发现挂载时，子组件的挂载钩子先被触发；卸载时，父组件的卸载钩子先被触发。
+
+## Redux 和 Vuex区别
+
+相同点：
+
+- ​		state共享数据
+- ​		流程一直：定义全局state，触发，修改state
+- ​		原理相似，通过全局注入store
+
+不同点：
+
+​		从实现原理上来讲：
+
+- ​			Redux使用的是不可变数据，儿Vuex的数据时可变的，Redux每次都是用新的state替换就得state，而Vuex是直接修改
+- ​			Redux在检测数据变化的时候，是通过diff的方式比较，而Vuex其实和Vue的原理一样，是通过getter/setter来比较
+
+​		从表现层来讲：
+
+- ​			 Vuex定义了state，getter，mutatuion，action四个对象；Redux定义了state，reducer，action
+- ​             Vuex中的state统一存放，方便理解；reduxstate依赖所有的reducer出事之后
+- ​			 vuex有getter,目的是快捷得到state；redux没有这层，react-redux mapStateToProps参数做了这个工作。
+- ​			 vuex中mutation只是单纯赋值(很浅的一层)；redux中reducer只是单纯设置新state(很浅的一层)。他俩作用类似，但书写方式不同
+- ​			action中可简单可复杂,简单就直接发送数据对象（{type:xxx, your-data}）,复杂需要调用异步ajax（依赖redux-thunk插件）。
+- ​			vuex触发方式有两种commit同步和dispatch异步；redux同步和异步都使用dispatch
+
+## 共同思想
+
+- 单一的数据源
+- 变化可以预测
+
+本质上∶ redux与vuex都是对mvvm思想的服务，将数据从视图中抽离的一种方案。
+
+## Redux中的connect有什么作用？
+
+​	connect负责连接React和Redux
+
+**获取state**
+
+​	connect通过context获取Provider中的store，通过store.getState()获取整个store tree上的state。
+
+**包装原组件**
+
+​	将state和action通过props的方式传入到原组件内部，wrapWithConnect返回一个ReactCommponent对象Connect，Connect重新render外部传入的原组件WrappedComponent，并把 connect 中传入的 `mapStateToProps`，`mapDispatchToProps`与组件上原有的 props 合并后，通过属性的方式传给 `WrappedComponent`
+
+**监听store tree变化**
+
+​	connect缓存了`store tree`中state的状态，通过当前state状态 和变更前 state 状态进行比较，从而确定是否调用 `this.setState()`方法触发 Connect 及其子组件的重新渲染
+
+## Redux状态管理和变量挂载带window**中的区别**
+
+两者都是存储数据以供后期使用。但是Redux状态更改可回溯——`Time travel`，数据多了的时候可以很清晰的知道改动在哪里发生，完整的提供了一套状态管理模式。
