@@ -84,7 +84,7 @@ export default {
 </script>
 <style scoped lang="less">
 .ShowCode {
-  width: 100%;
+  width: 98%;
   .code {
     width: 100%;
     overflow: hidden;

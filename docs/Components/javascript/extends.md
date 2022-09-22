@@ -101,8 +101,61 @@
    cnosole.log(result);
    ```
 
-   
+## 四.防抖节流
 
-   
+ 防抖：只触发时间后在N秒内函数只执行一次，若在N秒内再次触发则重新计算。点击按钮 2秒后调用函数，在1.5秒时有点了，则重新计算。      下拉触底加载下一页。
+
+```javascript
+//输入完毕后过两秒再查询(延迟执行)
+function debounce(func,wait){
+    let timeout;
+    return function(){
+        if(timeout) clearTimeout(timeout);
+        timeout = setTimeout(function(){
+            func.apply(this)
+        },wait)
+    }
+}
+//输入完毕后立即查询，过两秒再查询(立即执行)
+function debounce(func,wait){
+    let timeout;
+    return function(){
+        if(timeout) clearTimeout(timeout);
+        let callNow = !timeout;
+        timeout = setTimeout(()=>{
+            timeout = null;
+        },wait);
+        if(callNow) func.apply(count,2000)
+    }
+}
+```
+
+节流：39滴焊锡   连续发生的时间在N秒内置执行一次   即时查询
+
+```javascript
+//定时器    固定时间去发请求
+function throttle(func,wat){
+    let timeout;
+    return function(){
+        if(!timeout){
+            timeout = setTimeout(()=>{
+                timeout = null;
+                func.apply()
+            },wait)
+        }
+    }
+}
+//时间戳
+function throttle(func,wat){
+    let prev = 0;
+    return function(){
+        let now = Date.now();
+        if(now - prev > wait){
+            func.apply(this)
+            prev = now
+        }
+    }
+}
+```
 
 

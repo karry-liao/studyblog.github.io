@@ -97,6 +97,7 @@ console.log(path.resolve(__dirname, "./components")),
             collapsable: false,
             children: [
               ["static/GuaguaLe", "canvas之刮刮乐"],
+              ["static/LuckyRolling", "幸运大转盘"],
               ["static/Pinterest", "瀑布流"],
               ["static/Icon", "图标"],
               ["static/Button", "光亮按钮"],
