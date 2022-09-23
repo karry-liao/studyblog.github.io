@@ -16,14 +16,6 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "数据可视化",
-      "frontmatter": {},
-      "regularPath": "/Components/Echarts/echarts.html",
-      "relativePath": "Components/Echarts/echarts.md",
-      "key": "v-dee70954",
-      "path": "/Components/Echarts/echarts.html"
-    },
-    {
       "title": "计算机网络基础知识总结",
       "frontmatter": {},
       "regularPath": "/Components/CpNet/base.html",
@@ -74,6 +66,14 @@ export const siteData = {
       ]
     },
     {
+      "title": "数据可视化",
+      "frontmatter": {},
+      "regularPath": "/Components/Echarts/echarts.html",
+      "relativePath": "Components/Echarts/echarts.md",
+      "key": "v-dee70954",
+      "path": "/Components/Echarts/echarts.html"
+    },
+    {
       "title": "MiniPrograme",
       "frontmatter": {},
       "regularPath": "/Components/MiniPrograme/base.html",
@@ -90,48 +90,6 @@ export const siteData = {
           "level": 2,
           "title": "钩子函数",
           "slug": "钩子函数"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-5948fc08",
-      "path": "/Components/base/introduce.html"
-    },
-    {
-      "title": "创建第一个应用",
-      "frontmatter": {},
-      "regularPath": "/Components/NodeJs/Start.html",
-      "relativePath": "Components/NodeJs/Start.md",
-      "key": "v-32e28668",
-      "path": "/Components/NodeJs/Start.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "创建第一个应用",
-          "slug": "创建第一个应用"
-        },
-        {
-          "level": 2,
-          "title": "Node包管理工具-npm",
-          "slug": "node包管理工具-npm"
-        },
-        {
-          "level": 2,
-          "title": "Node.js REPL(交互式解析器)",
-          "slug": "node-js-repl-交互式解析器"
-        },
-        {
-          "level": 2,
-          "title": "Node.js回调函数",
-          "slug": "node-js回调函数"
-        },
-        {
-          "level": 2,
-          "title": "Node.js事件循环",
-          "slug": "node-js事件循环"
         }
       ]
     },
@@ -177,6 +135,48 @@ export const siteData = {
           "level": 2,
           "title": "null与undefined",
           "slug": "null与undefined"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/NodeJs/Node.html",
+      "relativePath": "Components/NodeJs/Node.md",
+      "key": "v-69a880da",
+      "path": "/Components/NodeJs/Node.html"
+    },
+    {
+      "title": "创建第一个应用",
+      "frontmatter": {},
+      "regularPath": "/Components/NodeJs/Start.html",
+      "relativePath": "Components/NodeJs/Start.md",
+      "key": "v-32e28668",
+      "path": "/Components/NodeJs/Start.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建第一个应用",
+          "slug": "创建第一个应用"
+        },
+        {
+          "level": 2,
+          "title": "Node包管理工具-npm",
+          "slug": "node包管理工具-npm"
+        },
+        {
+          "level": 2,
+          "title": "Node.js REPL(交互式解析器)",
+          "slug": "node-js-repl-交互式解析器"
+        },
+        {
+          "level": 2,
+          "title": "Node.js回调函数",
+          "slug": "node-js回调函数"
+        },
+        {
+          "level": 2,
+          "title": "Node.js事件循环",
+          "slug": "node-js事件循环"
         }
       ]
     },
@@ -262,10 +262,10 @@ export const siteData = {
     },
     {
       "frontmatter": {},
-      "regularPath": "/Components/NodeJs/Node.html",
-      "relativePath": "Components/NodeJs/Node.md",
-      "key": "v-69a880da",
-      "path": "/Components/NodeJs/Node.html"
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-5948fc08",
+      "path": "/Components/base/introduce.html"
     },
     {
       "title": "Font样式",
@@ -319,6 +319,116 @@ export const siteData = {
           "level": 2,
           "title": "实例对象新增的方法",
           "slug": "实例对象新增的方法"
+        }
+      ]
+    },
+    {
+      "title": "工厂模式",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/designPatterns.html",
+      "relativePath": "Components/javascript/designPatterns.md",
+      "key": "v-3130f0e0",
+      "path": "/Components/javascript/designPatterns.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "工厂模式",
+          "slug": "工厂模式"
+        },
+        {
+          "level": 2,
+          "title": "单例模式",
+          "slug": "单例模式"
+        },
+        {
+          "level": 2,
+          "title": "代理模式",
+          "slug": "代理模式"
+        },
+        {
+          "level": 2,
+          "title": "职责链模式",
+          "slug": "职责链模式"
+        },
+        {
+          "level": 2,
+          "title": "装饰者模式",
+          "slug": "装饰者模式"
+        },
+        {
+          "level": 2,
+          "title": "观察者-发布订阅模式",
+          "slug": "观察者-发布订阅模式"
+        }
+      ]
+    },
+    {
+      "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/extends.html",
+      "relativePath": "Components/javascript/extends.md",
+      "key": "v-45f51488",
+      "path": "/Components/javascript/extends.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
+          "slug": "一-如何获取浏览器url中查询字符串中的参数"
+        },
+        {
+          "level": 2,
+          "title": "二. js实现一个打点计时器",
+          "slug": "二-js实现一个打点计时器"
+        },
+        {
+          "level": 3,
+          "title": "setTimeout方法",
+          "slug": "settimeout方法"
+        },
+        {
+          "level": 3,
+          "title": "setInterval()方法",
+          "slug": "setinterval-方法"
+        },
+        {
+          "level": 2,
+          "title": "三. 用js实现一个标准的排序算法",
+          "slug": "三-用js实现一个标准的排序算法"
+        },
+        {
+          "level": 3,
+          "title": "冒泡排序",
+          "slug": "冒泡排序"
+        },
+        {
+          "level": 2,
+          "title": "四.防抖节流",
+          "slug": "四-防抖节流"
+        }
+      ]
+    },
+    {
+      "title": "浅拷贝与深拷贝",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/clone.html",
+      "relativePath": "Components/javascript/clone.md",
+      "key": "v-553ac608",
+      "path": "/Components/javascript/clone.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1.对象的深拷贝",
+          "slug": "_1-对象的深拷贝"
+        },
+        {
+          "level": 2,
+          "title": "2.数组的深拷贝方法",
+          "slug": "_2-数组的深拷贝方法"
+        },
+        {
+          "level": 2,
+          "title": "3.多维数组实现深拷贝",
+          "slug": "_3-多维数组实现深拷贝"
         }
       ]
     },
@@ -503,107 +613,17 @@ export const siteData = {
       ]
     },
     {
-      "title": "浅拷贝与深拷贝",
+      "title": "WebWorker",
       "frontmatter": {},
-      "regularPath": "/Components/javascript/clone.html",
-      "relativePath": "Components/javascript/clone.md",
-      "key": "v-553ac608",
-      "path": "/Components/javascript/clone.html",
+      "regularPath": "/Components/performance/WebWorker.html",
+      "relativePath": "Components/performance/WebWorker.md",
+      "key": "v-bb20220c",
+      "path": "/Components/performance/WebWorker.html",
       "headers": [
         {
           "level": 2,
-          "title": "1.对象的深拷贝",
-          "slug": "_1-对象的深拷贝"
-        },
-        {
-          "level": 2,
-          "title": "2.数组的深拷贝方法",
-          "slug": "_2-数组的深拷贝方法"
-        },
-        {
-          "level": 2,
-          "title": "3.多维数组实现深拷贝",
-          "slug": "_3-多维数组实现深拷贝"
-        }
-      ]
-    },
-    {
-      "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/extends.html",
-      "relativePath": "Components/javascript/extends.md",
-      "key": "v-45f51488",
-      "path": "/Components/javascript/extends.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
-          "slug": "一-如何获取浏览器url中查询字符串中的参数"
-        },
-        {
-          "level": 2,
-          "title": "二. js实现一个打点计时器",
-          "slug": "二-js实现一个打点计时器"
-        },
-        {
-          "level": 3,
-          "title": "setTimeout方法",
-          "slug": "settimeout方法"
-        },
-        {
-          "level": 3,
-          "title": "setInterval()方法",
-          "slug": "setinterval-方法"
-        },
-        {
-          "level": 2,
-          "title": "三. 用js实现一个标准的排序算法",
-          "slug": "三-用js实现一个标准的排序算法"
-        },
-        {
-          "level": 3,
-          "title": "冒泡排序",
-          "slug": "冒泡排序"
-        }
-      ]
-    },
-    {
-      "title": "工厂模式",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/designPatterns.html",
-      "relativePath": "Components/javascript/designPatterns.md",
-      "key": "v-3130f0e0",
-      "path": "/Components/javascript/designPatterns.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "工厂模式",
-          "slug": "工厂模式"
-        },
-        {
-          "level": 2,
-          "title": "单例模式",
-          "slug": "单例模式"
-        },
-        {
-          "level": 2,
-          "title": "代理模式",
-          "slug": "代理模式"
-        },
-        {
-          "level": 2,
-          "title": "职责链模式",
-          "slug": "职责链模式"
-        },
-        {
-          "level": 2,
-          "title": "装饰者模式",
-          "slug": "装饰者模式"
-        },
-        {
-          "level": 2,
-          "title": "观察者-发布订阅模式",
-          "slug": "观察者-发布订阅模式"
+          "title": "代码演示",
+          "slug": "代码演示"
         }
       ]
     },
@@ -614,6 +634,26 @@ export const siteData = {
       "relativePath": "Components/md_interview/Interview.md",
       "key": "v-f02bda70",
       "path": "/Components/md_interview/Interview.html"
+    },
+    {
+      "title": "Web的缓存机制",
+      "frontmatter": {},
+      "regularPath": "/Components/performance/Browser.html",
+      "relativePath": "Components/performance/Browser.md",
+      "key": "v-3487cc0e",
+      "path": "/Components/performance/Browser.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Web的缓存机制",
+          "slug": "web的缓存机制"
+        },
+        {
+          "level": 2,
+          "title": "As Total",
+          "slug": "as-total"
+        }
+      ]
     },
     {
       "title": "Vue",
@@ -716,41 +756,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "Web的缓存机制",
-      "frontmatter": {},
-      "regularPath": "/Components/performance/Browser.html",
-      "relativePath": "Components/performance/Browser.md",
-      "key": "v-3487cc0e",
-      "path": "/Components/performance/Browser.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Web的缓存机制",
-          "slug": "web的缓存机制"
-        },
-        {
-          "level": 2,
-          "title": "As Total",
-          "slug": "as-total"
-        }
-      ]
-    },
-    {
-      "title": "WebWorker",
-      "frontmatter": {},
-      "regularPath": "/Components/performance/WebWorker.html",
-      "relativePath": "Components/performance/WebWorker.md",
-      "key": "v-bb20220c",
-      "path": "/Components/performance/WebWorker.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        }
-      ]
-    },
-    {
       "title": "React中可以做的性能优化？",
       "frontmatter": {},
       "regularPath": "/Components/react/ReactPerfomance.html",
@@ -782,6 +787,46 @@ export const siteData = {
           "level": 2,
           "title": "二、常用React Hooks有哪些？",
           "slug": "二、常用react-hooks有哪些"
+        }
+      ]
+    },
+    {
+      "title": "幸运大乐透之刮刮乐",
+      "frontmatter": {},
+      "regularPath": "/Components/static/GuaguaLe.html",
+      "relativePath": "Components/static/GuaguaLe.md",
+      "key": "v-415c1e1c",
+      "path": "/Components/static/GuaguaLe.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "Button",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Button.html",
+      "relativePath": "Components/static/Button.md",
+      "key": "v-7b1a1b00",
+      "path": "/Components/static/Button.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
         }
       ]
     },
@@ -846,46 +891,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "Button",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Button.html",
-      "relativePath": "Components/static/Button.md",
-      "key": "v-7b1a1b00",
-      "path": "/Components/static/Button.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "title": "幸运大乐透之刮刮乐",
-      "frontmatter": {},
-      "regularPath": "/Components/static/GuaguaLe.html",
-      "relativePath": "Components/static/GuaguaLe.md",
-      "key": "v-415c1e1c",
-      "path": "/Components/static/GuaguaLe.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
       "title": "Icon",
       "frontmatter": {},
       "regularPath": "/Components/static/Icon.html",
@@ -936,12 +941,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "放大镜",
+      "title": "瀑布流",
       "frontmatter": {},
-      "regularPath": "/Components/static/MagnifyingGlass.html",
-      "relativePath": "Components/static/MagnifyingGlass.md",
-      "key": "v-2e8f0328",
-      "path": "/Components/static/MagnifyingGlass.html",
+      "regularPath": "/Components/static/Pinterest.html",
+      "relativePath": "Components/static/Pinterest.md",
+      "key": "v-b35c4f70",
+      "path": "/Components/static/Pinterest.html",
       "headers": [
         {
           "level": 2,
@@ -976,26 +981,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "瀑布流",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Pinterest.html",
-      "relativePath": "Components/static/Pinterest.md",
-      "key": "v-b35c4f70",
-      "path": "/Components/static/Pinterest.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
       "title": "滑块验证",
       "frontmatter": {},
       "regularPath": "/Components/static/SlideVerify.html",
@@ -1016,6 +1001,26 @@ export const siteData = {
       ]
     },
     {
+      "title": "放大镜",
+      "frontmatter": {},
+      "regularPath": "/Components/static/MagnifyingGlass.html",
+      "relativePath": "Components/static/MagnifyingGlass.md",
+      "key": "v-2e8f0328",
+      "path": "/Components/static/MagnifyingGlass.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
       "title": "Vue",
       "frontmatter": {},
       "regularPath": "/Components/vue/base.html",
@@ -1025,6 +1030,11 @@ export const siteData = {
       "headers": [
         {
           "level": 2,
+          "title": "Vue",
+          "slug": "vue"
+        },
+        {
+          "level": 3,
           "title": "（1）什么是vue生命周期?",
           "slug": "_1-什么是vue生命周期"
         },
@@ -1124,6 +1134,16 @@ export const siteData = {
       "path": "/Components/vue/code.html",
       "headers": [
         {
+          "level": 2,
+          "title": "一、数据驱动",
+          "slug": "一、数据驱动"
+        },
+        {
+          "level": 2,
+          "title": "二、vue初始化",
+          "slug": "二、vue初始化"
+        },
+        {
           "level": 3,
           "title": "",
           "slug": ""
@@ -1135,8 +1155,113 @@ export const siteData = {
         },
         {
           "level": 2,
+          "title": "三、mount 挂载",
+          "slug": "三、mount-挂载"
+        },
+        {
+          "level": 2,
+          "title": "四、组件化",
+          "slug": "四、组件化"
+        },
+        {
+          "level": 2,
           "title": "五、如何让数据变得可观测？",
           "slug": "五、如何让数据变得可观测"
+        },
+        {
+          "level": 2,
+          "title": "六、Diff算法",
+          "slug": "六、diff算法"
+        },
+        {
+          "level": 2,
+          "title": "七、Vue模板是如何编译的",
+          "slug": "七、vue模板是如何编译的"
+        },
+        {
+          "level": 3,
+          "title": "八、模板编译",
+          "slug": "八、模板编译"
+        },
+        {
+          "level": 2,
+          "title": "九、Vue中style标签中的scoped是如何工作的",
+          "slug": "九、vue中style标签中的scoped是如何工作的"
+        },
+        {
+          "level": 2,
+          "title": "十、Vue3怎么设置全局变量",
+          "slug": "十、vue3怎么设置全局变量"
+        },
+        {
+          "level": 2,
+          "title": "十一、刷新浏览器后，Vuex的数据是否存在？如何解决？",
+          "slug": "十一、刷新浏览器后-vuex的数据是否存在-如何解决"
+        },
+        {
+          "level": 3,
+          "title": "vuex-along的使用方法",
+          "slug": "vuex-along的使用方法"
+        },
+        {
+          "level": 2,
+          "title": "使用 localStorage 或者 sessionStroage",
+          "slug": "使用-localstorage-或者-sessionstroage"
+        },
+        {
+          "level": 2,
+          "title": "十二、Vite",
+          "slug": "十二、vite"
+        },
+        {
+          "level": 2,
+          "title": "十三、Vue中$route和$router有什么区别",
+          "slug": "十三、vue中-route和-router有什么区别"
+        },
+        {
+          "level": 3,
+          "title": "this.$router",
+          "slug": "this-router"
+        },
+        {
+          "level": 3,
+          "title": "this.$route",
+          "slug": "this-route"
+        },
+        {
+          "level": 2,
+          "title": "十四、Vue3响应式的使用",
+          "slug": "十四、vue3响应式的使用"
+        },
+        {
+          "level": 3,
+          "title": "引入 ref 方法",
+          "slug": "引入-ref-方法"
+        },
+        {
+          "level": 3,
+          "title": "使用方式",
+          "slug": "使用方式"
+        },
+        {
+          "level": 3,
+          "title": "实现简易 Computed 方法",
+          "slug": "实现简易-computed-方法"
+        },
+        {
+          "level": 2,
+          "title": "十五、history和hash模式的区别",
+          "slug": "十五、history和hash模式的区别"
+        },
+        {
+          "level": 3,
+          "title": "hash 模式",
+          "slug": "hash-模式"
+        },
+        {
+          "level": 3,
+          "title": "history 模式",
+          "slug": "history-模式"
         }
       ]
     },
@@ -1329,6 +1454,10 @@ export const siteData = {
             [
               "vue/code",
               "Vue源码分析"
+            ],
+            [
+              "vue/template",
+              "Ajax失败重连&Fn柯里化&Render"
             ]
           ]
         },

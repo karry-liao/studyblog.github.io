@@ -132,7 +132,7 @@ console.log(path.resolve(__dirname, "./components")),
             children: [
               ["vue/base", "Vue基础"],
               ["vue/code", "Vue源码分析"],
-              // ["static/Svg", "SVG变色图标"],
+              ["vue/template", "Ajax失败重连&Fn柯里化&Render"],
             ],
           },
           {

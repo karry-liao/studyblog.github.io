@@ -1,14 +1,14 @@
 # CSS
 
-1. **margin**和padding的区别，作用对象不同，padding作用于自身
+1. **margin**和 padding 的区别，作用对象不同，padding 作用于自身
 2. **VW**和**百分比**的区别：百分比有继承关系，继承父元素的百分比
 3. **行内元素**和**块级元素**：行内元素不换行，不可以设置大小，宽度高度由内容决定。 块级元素独占一行，并且宽度有继承关系
-4. shrink让浏览器支持小字体  transform:scale(0.5)
+4. shrink 让浏览器支持小字体 transform:scale(0.5)
 
 # JS
 
-1. **var**  声明提升，没有局部作用域，声明覆盖
-2. **let **块级作用域，不可重复声明
+1. **var** 声明提升，没有局部作用域，声明覆盖
+2. **let**块级作用域，不可重复声明
 3. **const**不可更改，不可重复声明
 
 # 深拷贝和浅拷贝
@@ -20,48 +20,44 @@
   深拷贝
 
   ```js
-  function  deepclone(source){
-      // [] => Array(基类) {} = > Object
-  	const targetObj = source.constructor === Array ? [] : {}
-      for(let Keys in source){
-          if(source.hasOwnProperty(Keys)){
-              //Keys => 3
-              if(source[keys] && typeof source[keys] === 'object'){
-                  targetObj[keys] = source[keys].constructor === Array ? [] : {}
-                  targetObj[keys] = deepclone(source[keys]) 
-              } else {
-              targetObj[keys]= source[keys]
-          	}
-          }
+  function deepclone(source) {
+    // [] => Array(基类) {} = > Object
+    const targetObj = source.constructor === Array ? [] : {};
+    for (let Keys in source) {
+      if (source.hasOwnProperty(Keys)) {
+        //Keys => 3
+        if (source[keys] && typeof source[keys] === "object") {
+          targetObj[keys] = source[keys].constructor === Array ? [] : {};
+          targetObj[keys] = deepclone(source[keys]);
+        } else {
+          targetObj[keys] = source[keys];
+        }
       }
+    }
   }
   ```
 
-  
+# 浏览器中输入 url 中，浏览器做了什么？
 
-# 浏览器中输入url中，浏览器做了什么？
-
-www.baidu.com ===》  DNS域名系统 ===》  拿到真实IP===》 建立连接（TCP的三次握手）  ===》  拿数据渲染页面 ===》  四次挥手            (读取浏览器缓存) 
+www.baidu.com ===》 DNS 域名系统 ===》 拿到真实 IP===》 建立连接（TCP 的三次握手） ===》 拿数据渲染页面 ===》 四次挥手 (读取浏览器缓存)
 
 # 性能优化
 
-​	a.加载    
+​ a.加载
 
-- 减少http请求 
+- 减少 http 请求
 
--    减小文件大小  
+- 减小文件大小
 
--    CDN（第三方库）  
+- CDN（第三方库）
 
-- SSR服务端渲染，预渲染
+- SSR 服务端渲染，预渲染
 
 - 懒加载
 
 - 分包
 
-  b减少dom操作，避免回流，文档碎片
-
-
+  b 减少 dom 操作，避免回流，文档碎片
 
 # 图片懒加载
 
@@ -84,25 +80,25 @@ function lazyload(){
 }
 ```
 
-# this指向问题
+# this 指向问题
 
-- 全局的this====》 window
-- 全局的方法会被挂载到window上，所以也会指向window
-- 箭头函数没有作用域，没有this，this永远指向上一层        apply(this,id)
+- 全局的 this====》 window
+- 全局的方法会被挂载到 window 上，所以也会指向 window
+- 箭头函数没有作用域，没有 this，this 永远指向上一层 apply(this,id)
 
-**改变this指向：**
+**改变 this 指向：**
 
-1. call()  改变this后执行，传入对象 伪数组
-2. apply()  改变this后执行  传入数组
-3. bind() :改变this后不会执行
+1. call() 改变 this 后执行，传入对象 伪数组
+2. apply() 改变 this 后执行 传入数组
+3. bind() :改变 this 后不会执行
 
-#  闭包
+# 闭包
 
 **为甚要有闭包：**
 
 1. 避免变量被污染，
-2. 私有化 
-3.  保存变量，常驻内存
+2. 私有化
+3. 保存变量，常驻内存
 
 **满足闭包的条件：**函数嵌套，内部嫩书运用外部函数的变量，必须以返回函数作为对应的一种返回形式
 
@@ -110,19 +106,19 @@ function lazyload(){
 
 # new
 
-**new的过程发生了什么：**
+**new 的过程发生了什么：**
 
-1.创建一个空对象 ---------------------   Object.create(null)   纯净的，没有原型链
+1.创建一个空对象 --------------------- Object.create(null) 纯净的，没有原型链
 
-let obj = new Object()   Object====>基类
+let obj = new Object() Object====>基类
 
 2.设置他的原型链
 
 obj._proto_ == Person.prototype
 
-3.改变this指向
+3.改变 this 指向
 
-let result  = Person.call(obj)
+let result = Person.call(obj)
 
 4.判断返回值类型
 
@@ -133,14 +129,14 @@ if(typeof (result) == "object"){
 
 } else {
 
-​	person1 = obj	
+​	person1 = obj
 
 }
 ```
 
-# 原生JS实现事件委托
+# 原生 JS 实现事件委托
 
-   ul   li
+ul li
 
 ```
 let ul = document.getElementById("ul")
@@ -155,7 +151,7 @@ let ul = document.getElementById("ul")
 
     if(tartget.nodeName == 'LI'){
 
-    ​	alert(target.innerHTML)	
+    ​	alert(target.innerHTML)
 
 	}
 
@@ -199,40 +195,38 @@ btn.onclick = function() {
 		 		nodes[i].textContent = text
 		 	}
 		 }
-		 return nodes 
+		 return nodes
 	}
 })(window)
 ```
 
-
-
-# VUE3响应式------Proxy
+# VUE3 响应式------Proxy
 
 ```js
 let obj = {
-    name: '小明',
-    age: 17
-}
+  name: "小明",
+  age: 17,
+};
 const p = new Proxy(obj, {
-    //增加 && 读取
-    get(target,propName){
-        console.log(`读取P的${propName}属性`)
-        return target[PropName]
-    },
-    //修改
-    set(target,propName,value){
-        console.log(`修改P的${propName}属性`)
-        target[PropName] = value
-    },
-    //删除
-    deleteProperty(target, propNmae){
-        console.log(`删除了P的${propName}属性`)
-        return delete target[propName]
-    }
-})
+  //增加 && 读取
+  get(target, propName) {
+    console.log(`读取P的${propName}属性`);
+    return target[PropName];
+  },
+  //修改
+  set(target, propName, value) {
+    console.log(`修改P的${propName}属性`);
+    target[PropName] = value;
+  },
+  //删除
+  deleteProperty(target, propNmae) {
+    console.log(`删除了P的${propName}属性`);
+    return delete target[propName];
+  },
+});
 ```
 
-# 手写Promise
+# 手写 Promise
 
 ```js
 //概念 &&  用法
@@ -268,11 +262,11 @@ function MyPromise(excute){      //excute 执行器
     self.status = 'pending'    //状态
     self.value = null;  //成功的值
     self.reason = nill; //失败的原因
-    
+
     //数据缓存区
     self.onFulfiledCallbacks = []
     self.onRejectedCallbacks = []
-    //4.成功   
+    //4.成功
     resolve(value){
         if(self.status === 'pending'){
             self.value = value   //保存成功结果
@@ -285,7 +279,7 @@ function MyPromise(excute){      //excute 执行器
         	if(self.status === 'pending'){
             self.reason = reason   //保存失败结果
             self.status = 'rejected'
-                
+
             self.onRejectedCallbacks.forEach(item =>item(reason))
         }
     }
@@ -295,13 +289,13 @@ function MyPromise(excute){      //excute 执行器
     }catch(err){
         reject(err)
     }
-    
+
     //2  .then
     MyPromise.prototype.then = function((onFulfilled, onRejected)){
         onFulfilled = typeof onFulfilled ==='function' ? onFulfilled : function(data) {resolve(data)}
         onRejected = typeof onRejected ==='function' ? onRejected : function(err) {throw err}
     }
-    
+
     //let self = this
     //if(selft.status === 'pending'){
     //    self.onFulfiledCallbacks.push(onFulfilled)
@@ -339,11 +333,11 @@ function MyPromise(excute){      //excute 执行器
             }
         })
     }
-    
+
     MyPromise.prototype.catch(()=>{
         return this.then(null, fn)
     })
-    
+
     let demo = new MyPromise((resolve,reject) => {
         console.log('哈哈哈哈哈哈哈哈哈')
     })
@@ -351,54 +345,51 @@ function MyPromise(excute){      //excute 执行器
 
 ```
 
-# Vue插件
+# Vue 插件
 
 1. 组件
 2. 组件=》插件
 3. 配置入口文件
 4. 测试
 5. 打包
-6. 上传npm官网
+6. 上传 npm 官网
 7. 测试
 
 "license":'MIT'
 
 "description":"这是一段描述"
 
-- 打包："lib":vue-cli-service build --target lib --name "项目名称" --dest lib src/plugins/index.js   
-- 在项目目录下生成lib文件夹 
-- 然后在package.json文件夹中配置入口     "main":"lib/vue-msg-karry.umd.min.js"
-- 在终端输入npm login  输入npm官网用户名和密码 emaill 登录
-- 登录完成后直接输入  npm publish 命令 发布包
+- 打包："lib":vue-cli-service build --target lib --name "项目名称" --dest lib src/plugins/index.js
+- 在项目目录下生成 lib 文件夹
+- 然后在 package.json 文件夹中配置入口 "main":"lib/vue-msg-karry.umd.min.js"
+- 在终端输入 npm login 输入 npm 官网用户名和密码 emaill 登录
+- 登录完成后直接输入 npm publish 命令 发布包
 
 ```js
-const requireComponent = require.context('./',true,/\.vue$/)  //动态引入文件
+const requireComponent = require.context("./", true, /\.vue$/); //动态引入文件
 const install = (Vue) => {
-    if(install.installed) return
-    install.installed
-    
-    requireComponent.keys().forEach(fileName => {  //requireComponent.keys() => []
-        const config = requireComponent(fileName) 
-        const conponemtName = config.default.name   //组件名
-        
-        Vue.component(componentName, config.default || config )
-    })
-    Vue.directive('focus',{
-        inserted: function(el){
-            el.focus(); 
-        }
-    })
-}
+  if (install.installed) return;
+  install.installed;
 
-if(typeof window !== 'undefined' && window.Vue){
-    install(window.Vue)
+  requireComponent.keys().forEach((fileName) => {
+    //requireComponent.keys() => []
+    const config = requireComponent(fileName);
+    const conponemtName = config.default.name; //组件名
+
+    Vue.component(componentName, config.default || config);
+  });
+  Vue.directive("focus", {
+    inserted: function (el) {
+      el.focus();
+    },
+  });
+};
+
+if (typeof window !== "undefined" && window.Vue) {
+  install(window.Vue);
 }
 
 export default {
-    install
-}
+  install,
+};
 ```
-
-
-
-
