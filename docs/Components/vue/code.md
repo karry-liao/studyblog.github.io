@@ -474,3 +474,220 @@ history.forward() // 前进
 history.go(-2) // 后退2次
 ```
 
+## 十六、VNode有哪些属性
+
+1. __v_isVNode: true，内部属性，表示为Vnode
+2. __v_skip: true，内部属性，表示跳过响应式转换，Reactive转换时会根据此属性进行判断
+3. isCompatRoot?: *true*，用于是否做了兼容处理的判断
+4. type: VNodeTypes，虚拟节点的类型
+5. props: (VNodeProps & ExtraProps) | *null*，虚拟节点的props
+6. key: *string* | *number* | *null*，虚拟阶段的key，可用于diff
+7. ref: VNodeNormalizedRef | *null*，虚拟阶段的引用
+8. children: VNodeNormalizedChildren，子节点
+9. component: ComponentInternalInstance | null，组件实例
+10. scopeId: *string* | *null*，仅限于SFC(单文件组件)，在设置currentRenderingInstance当前渲染实例时，一期设置
+11. slotScopeIds: *string*[] | *null*，仅限于单文件组件，与单文件组件的插槽有关
+12. transition: TransitionHooks | null，TransitionHooks
+13. dirs: DirectiveBinding[] | null，当前Vnode绑定的指令
+
+## 十七、Vue2.0为什么不能检查数组的变化
+
+​		**Vue检测数据的变动是通过Object.defineProperty实现的，所以无法监听数组的添加操作是可以理解的，因为是在构造函数中就已经为所有属性做了这个检测绑定操作。无法检测通过索引改变数组的操作。即vm.items[indexOfItem] = newValue？**
+
+​		Vue对数组的7个变异方法（push、pop、shift、unshift、splice、sort、reverse）实现了响应式。这里就不做测试了。
+
+​		对于对象而言，每一次的数据变更都会对对象的属性进行一次枚举，一般对象本身的属性数量有限，所以对于遍历枚举等方式产生的性能损耗可以忽略不计，但是对于数组而言呢？数组包含的元素量是可能达到成千上万，假设对于每一次数组元素的更新都触发了枚举/遍历，其带来的性能损耗将与获得的用户体验不成正比，故vue无法检测数组的变动。Vue3.0用proxy代替了```defineProperty```之后就解决了这个问题。
+
+### 解决方案
+
+#### 		数组
+
+```javascript
+//1.这是个深度的修改，某些情况下可能导致你不希望的结果，因此最好还是慎用
+this.dataArr = this.originArr
+this.$set(this.dataArr, 0, {data: '修改第一个元素'})
+console.log(this.dataArr)        
+console.log(this.originArr)  //同样的 源数组也会被修改 在某些情况下会导致你不希望的结果 
+this.$set(array, index, data)
+//2.splice
+splice（）
+//3.利用临时变量进行中转
+let tempArr = [...this.targetArr]
+tempArr[0] = {data: 'test'}
+this.targetArr = tempArr
+```
+
+#### 		对象
+
+```javascript
+//this.$set(obj, key ,value) - 可实现增、改
+//watch时添加deep：true深度监听，只能监听到属性值的变化，新增、删除属性无法监听
+this.$watch('blog', this.getCatalog, {
+    deep: true
+    // immediate: true // 是否第一次触发
+  });
+//watch时直接监听某个key
+watch: {
+  'obj.name'(curVal, oldVal) {
+    // TODO
+  }
+}
+```
+
+## 十八、Vue页面渲染流程
+
+`_render` 开始构建 `VNode`，核心方法为 `createElement`，一般会创建普通的 `VNode` ，遇到组件就创建组件类型的 `VNode`，否则就是未知标签的 `VNode`，构建完成传递给 `_update`。
+
+`patch` 阶段根据 `VNode` 创建真实节点树，核心方法为 `createElm`，首先遇到组件类型的 `VNode`，内部会执行 `$mount`，再走一遍相同的流程。普通节点类型则创建一个真实节点，如果它有子节点开始递归调用 `createElm`，使用 `insert` 插入子节点，直到没有子节点就填充内容节点。最后递归完成后，同样也是使用 `insert` 将整个节点树插入到页面中，再将旧的根节点移除。
+
+## 十九、React与Vue区别
+
+React 是由Facebook创建的JavaScript UI框架，React推广了 Virtual DOM( 虚拟 DOM )并创造了 JSX 语法。JSX 语法的出现允许我们在 javascript 中书写 HTML 代码。
+
+VUE 是由尤雨溪开发的，VUE 使用了模板系统而不是JSX，因其实模板系统都是用的普通的 HTML，所以对应用的升级更方便、更容易，而不需要整体重构。
+
+VUE 相较于 React 更容易上手，如果是一个有一定开发经验的开发者，甚至都不需要花额外的时间去学习，直接一遍开发一遍查文挡即可。
+
+React 整体是函数式的思想，在 React 中是单向数据流，推崇结合 immutable 来实现数据不可变。
+
+而 Vue 的思想是响应式的，也就是基于是数据可变的，通过对每一个属性建立 Watcher 来监听，当属性变化的时候，响应式的更新对应的虚拟 DOM。
+
+如上，所以 React 的性能优化需要手动去做，而Vue的性能优化是自动的，但是Vue的响应式机制也有问题，就是当 state 特别多的时候，Watcher 会很多，会导致卡顿。
+
+## 二十、computed和watch的区别
+
+### computed
+
+​		计算属性基于 data 中声明过或者父组件传递的 props 中的数据通过计算得到的一个**新值**，这个新值只会根据已知值的变化而变化，简言之：这个属性依赖其他属性，由**其他属性计算而来**的。具有缓存的特性，只有**依赖型数据**发生**改变**，computed 才会重新计算。如果 computed 属性值是一个函数，那么默认会走 get 方法，必须要有一个返回值，函数的返回值就是属性的属性值。计算属性定义了 fullName 并返回对应的结果给这个变量，变量不可被重复定义和赋值。
+
+**计算属性的高级**
+
+在computed 中的属性都有一个 **get** 和一个 **set** 方法，当数据变化时，调用 set 方法。下面我们通过计算属性的 getter/setter 方法来实现对属性数据的显示和监视，即双向绑定。
+
+```javascript
+computed: {
+    fullName: {
+        get() { //读取当前属性值的回调，根据相关的数据计算并返回当前属性的值
+            return this.firstName + ' ' + this.lastName
+        },
+        set(val) { // 当属性值发生改变时回调，更新相关的属性数据，val就是fullName的最新属性值
+            const names = val ? val.split(' ') : [];
+            this.firstName = names[0]
+            this.lastName = names[1]
+        }
+    }
+}
+```
+
+### **watch 监听属性**
+
+​		通过 vm 对象的 $watch() 或 watch 配置来监听 Vue 实例上的属性变化，或某些特定数据的变化，然后执行某些具体的业务逻辑操作。当属性变化时，回调函数自动调用，在函数内部进行计算。其可以监听的数据来源：data，props，computed 内的数据。
+
+ 		监听函数有两个参数，第一个参数是最新的值，第二个参数是输入之前的值，顺序一定是**新值，旧值**，如果只写一个参数，那就是最新属性值
+
+​		当需要在数据变化时执行异步或开销较大的操作时，watch方式是最有用的。所以 watch 一定是**支持异步**的。
+
+​        deep: true    深度监听对象内部值的变化，可以在选项参数中指定，注意监听数组的变更不需要这么做。
+
+### 总结：
+
+#### **computed**
+
+- 初始化显示或者相关的 data、props 等属性数据发生变化的时候调用；
+- 计算属性不在 data 中，它是基于data 或 props 中的数据通过计算得到的一个新值，这个新值根据已知值的变化而变化；
+- 在 computed 属性对象中定义计算属性的方法，和取data对象里的数据属性一样，以属性访问的形式调用；
+- 如果 computed 属性值是函数，那么默认会走 get 方法，必须要有一个返回值，函数的返回值就是属性的属性值；
+- computed 属性值默认会**缓存**计算结果，在重复的调用中，只要依赖数据不变，直接取缓存中的计算结果，只有**依赖型数据**发生**改变**，computed 才会重新计算；
+- 在computed中的，属性都有一个 get 和一个 set 方法，当数据变化时，调用 set 方法。
+
+#### **watch**
+
+- 主要用来监听某些特定数据的变化，从而进行某些具体的业务逻辑操作，可以看作是 computed 和 methods 的结合体；
+- 可以监听的数据来源：data，props，computed内的数据；
+- watch**支持异步**；
+- **不支持缓存**，监听的数据改变，直接会触发相应的操作；
+- 监听函数有两个参数，第一个参数是最新的值，第二个参数是输入之前的值，顺序一定是新值，旧值。
+
+## 二十一、Vue-Loader
+
+```
+使用 vue-loader 的之前， 我们需要安装一些必要的 loader。。
+
+必需的 loader 包括：vue-loader、vue-style-loader、vue-template-compiler、css-loader。 可能需要的 loader 包含：sass-loader、less-loader、url-loader 等。
+```
+
+一个包含 **vue-loader** 的简单 **webpack配置** 如下：
+
+```javascript
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { VueLoaderPlugin } = require('vue-loader')
+const isProduction = process.env.NODE_ENV === 'production'
+const extractLoader = {
+    loader: MiniCssExtractPlugin.loader,
+    options: {
+        publicPath: '../',
+        hmr: process.env.NODE_ENV === 'development'
+    },
+}
+const cssExtractplugin = new MiniCssExtractPlugin({
+    filename: '[name].css',
+    chunkFilename: '[id].css',
+    ignoreOrder: false
+})
+const webpackConfig = {
+    entry: {...},
+    output: {...},
+    optimization: {...},
+    resolve: {...},
+    modules: {
+        rules: [{
+            test: /\.vue$/,
+            loader: 'vue-loader'
+        }, {
+            test: /\.css$/,
+            oneOf: [{
+                resourceQuery: /\?vue/,
+                use: [isProduction ? extractLoader  : 'vue-style-loader', 'css-loader']
+            }, {
+                use: [isProduction ? extractLoader  : 'style-loader', 'css-loader']
+            }]
+        },
+        ...
+        ]
+    },
+    plugins: [
+        new VueLoaderPlugin(),
+        isProduction ? cssExtractplugin : ''
+    ]
+
+}
+
+```
+
+### vue-loader 工作原理
+
+​		通过vue-loader，webpack可以将.vue文件转化为浏览器可识别的javascript。
+
+**vue-loader** 的工作流程， 简单来说，分为以下几个步骤:
+
+1. 将一个 **.vue 文件** 切割成 **template**、**script**、**styles** 三个部分。
+2. **template 部分** 通过 **compile** 生成 **render**、 **staticRenderFns**。
+3. 获取 **script 部分** 返回的配置项对象 **scriptExports**。
+4. **styles 部分**，会通过 **css-loader**、**vue-style-loader**， 添加到 **head** 中， 或者通过 **css-loader**、**MiniCssExtractPlugin** 提取到一个 **公共的css文件** 中。
+5. 使用 **vue-loader** 提供的 **normalizeComponent** 方法， **合并 scriptExports、render、staticRenderFns**， 返回 **构建vue组件需要的配置项对象 - options**， 即 **{data, props, methods, render, staticRenderFns...}**。
+
+**css scoped** 的 **工作流程** 如下:
+
+1. 使用 **vue-loader** 处理 **.vue** 文件， 根据 **.vue 文件** 的 **请求路径** 和 **文件内容**， 生成 **.vue 文件** 的 **hash** 值, 如：**7ba5bd90**；
+2. 如果 **.vue 文件** 的 **某一个 style 标签** 有 **scoped** 属性， 为 **.vue 文件** 生成一个 **scopedId**，**scopedId** 的格式为 **data-v-hash**， 如：**data-v-7ba5bd90**；
+3. 使用 **vue-loader** 从 **.vue 文件** 中获取 **style区域块(scoped)** 的 **样式内容(字符串)\**；如果使用了 \**less** 或者 **sass**， 要使用 **less-loader** 或者 **sass-loader** 处理 **样式内容**，使 **样式内容** 变为 **浏览器可识别的css样式**； 然后使用 **PostCSS** 提供的 **parser** 处理 **样式内容**， 为 **样式内容** 中的每一个 **css选择器** 添加 **[data-v-hash]\**； 再使用 \**css-loader**；最后使用 **style-loader** 把 **css 样式** 添加到 **head** 中或者通过 **miniCssExtractPlugin** 将 **css 样式** 提取一个公共的 **css** 文件中。
+4. 通过 **normalizer** 方法返回 **完整的组件配置项 options**， **options** 中有属性 **_scopeId**, 如 **_scopedId: data-v-7ba5bd90**;
+5. 使用 **组件配置项 options** 构建组件实例， 给 **组件** 中每一个 **dom元素** 添加属性: **data-v-hash**。
+
+### CSS Modules
+
+我们也可以在 .vue 文件 的 style 标签 上添加 module 属性， 使得 style 标签 中的 样式 变为 组件私有，具体使用方法详见 - 官网。
+
+**css scoped** 的实质是利用 **css属性选择器** 使得 **样式** 称为 **局部样式**，而 **css modules** 的实质是让 **样式的类名、id名唯一** 使得 **样式** 称为 **局部样式**。
+
+使用 **vue-loader** 处理 **.vue** 文件， 将 **.vue 文件内容** 转化为 **js 代码**。 如果 **.vue 文件** 中的 **style 标签** 中有 **module** 属性， 向 **js 代码** 中注入一个 **injectStyle** 方法
