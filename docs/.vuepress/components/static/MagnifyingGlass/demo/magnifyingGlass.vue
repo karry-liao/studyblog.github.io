@@ -3,7 +3,7 @@
       <div class="left">
         <img class="leftImg" :src="imgSrc" alt="" />
         <!-- 鼠标层罩 -->
-        <div v-show="topShow" class="top" :style="topStyle"></div>
+        <div v-if="topShow" class="top" :style="topStyle"></div>
         <!-- 最顶层覆盖了整个原图空间的透明层罩 -->
         <div
           class="maskTop"
@@ -12,7 +12,7 @@
           @mouseout="outHandler"
         ></div>
       </div>
-        <div v-show="true" class="right">
+        <div v-if="true" class="right">
         <img
           :style="r_img"
           class="rightImg"

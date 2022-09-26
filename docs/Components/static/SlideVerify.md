@@ -173,7 +173,7 @@ display: block;
     <p>拖动滑块使图片角度为正</p>
     <div class="img-con">
       <img src="https://z3.ax1x.com/2021/08/06/fn7X4S.png"  :style="{transform: imgAngle}" />
-    <div v-show="showError" class="check-state" >
+    <div v-if="showError" class="check-state" >
         错误
     </div>
     <div v-else-if="showSuccess" class="check-state">

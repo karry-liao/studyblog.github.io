@@ -1,7 +1,7 @@
 <template>
   <div
     class="markbox"
-    v-show="loading"
+    v-if="loading"
     style="background-color: rgba(0, 0, 0, 0.5)"
   >
     <div class="sun-loading">xxxxxxxx</div>
