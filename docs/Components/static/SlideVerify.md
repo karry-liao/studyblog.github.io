@@ -124,31 +124,32 @@
 </style>
 
 .msg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .msg .active{
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    min-height: 0;
-    text-align: center;
-    background-color: rgba(0, 255, 76, 0.1);
-    border-radius: 5px;
-    border: 2px solid rgba(22, 123, 22, 0.3);
-    color: #632020;
-    transition: all 0.5s;
-    z-index: 99;
-    opacity: 1;
-    min-width: 150px;
-    min-height: 25px;
-    text-align: center;
-    display: block;
+position: absolute;
+left: 50%;
+top: 20%;
+transform: translate(-50%, -50%);
+width: 0;
+min-height: 0;
+text-align: center;
+background-color: rgba(0, 255, 76, 0.1);
+border-radius: 5px;
+border: 2px solid rgba(22, 123, 22, 0.3);
+color: #632020;
+transition: all 0.5s;
+z-index: 99;
+opacity: 1;
+min-width: 150px;
+min-height: 25px;
+text-align: center;
+display: block;
 }
 </style>
+
 ````
 :::
 </ShowCode>
@@ -172,7 +173,7 @@
     <p>拖动滑块使图片角度为正</p>
     <div class="img-con">
       <img src="https://z3.ax1x.com/2021/08/06/fn7X4S.png"  :style="{transform: imgAngle}" />
-    <div v-if="showError" class="check-state" >
+    <div v-show="showError" class="check-state" >
         错误
     </div>
     <div v-else-if="showSuccess" class="check-state">
@@ -225,7 +226,7 @@ export default {
         // 设置状态为滑动中
         this.sliding = true;
         // 下面三个变量不需要监听变化，因此不放到 data 中
-        
+
         // clientX 事件属性返回当事件被触发时鼠标指针相对于浏览器页面（或客户区）的水平坐标。
         // 记录鼠标按下时的x位置
         this.sliderLeft = event.clientX;

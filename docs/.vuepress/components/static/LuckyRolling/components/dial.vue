@@ -6,7 +6,7 @@
     <div class="dial-run" @click="run">
       <span>点击抽奖<br />10超级币/次</span>
     </div>
-    <div class="dial-mork-wrap" @touchmove.prevent.stop v-if="isrun"></div>
+    <div class="dial-mork-wrap" @touchmove.prevent.stop v-show="isrun"></div>
     <!-- 抽奖进行中，禁用页面所有操作 z-index: 99; -->
   </div>
 </template>
