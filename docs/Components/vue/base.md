@@ -296,4 +296,211 @@ this.$store.commit('toShowLoginDoalog',false)
 
 computed是属性调用，而method是函数调用;
 
-computed带有缓存功能，而method没有。
+computed带有缓存功能，而metho
+
+## 跨域解决方式
+
+### CORS
+
+​	
+
+```javascript
+app.use(async (ctx, next)=> {
+  ctx.set('Access-Control-Allow-Origin', '*');
+  ctx.set('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild');
+  ctx.set('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+  if (ctx.method == 'OPTIONS') {
+    ctx.body = 200; 
+  } else {
+    await next();
+  }
+})
+```
+
+### Proxy
+
+```javascript
+//方案一
+amodule.exports = {
+    devServer: {
+        host: '127.0.0.1',
+        port: 8084,
+        open: true,// vue项目启动时自动打开浏览器
+        proxy: {
+            '/api': { // '/api'是代理标识，用于告诉node，url前面是/api的就是使用代理的
+                target: "http://xxx.xxx.xx.xx:8080", //目标地址，一般是指后台服务器地址
+                changeOrigin: true, //是否跨域
+                pathRewrite: { // pathRewrite 的作用是把实际Request Url中的'/api'用""代替
+                    '^/api': "" 
+                }
+            }
+        }
+    }
+}
+//通过axios发送请求中，配置请求的根路径
+
+axios.defaults.baseURL = '/api'
+
+//方案二
+//此外，还可通过服务端实现代理请求转发
+//以express框架为例
+
+var express = require('express');
+const proxy = require('http-proxy-middleware')
+const app = express()
+app.use(express.static(__dirname + '/'))
+app.use('/api', proxy({ target: 'http://localhost:4000', changeOrigin: false
+                      }));
+module.exports = app
+//方案三
+//通过配置nginx实现代理
+server {
+    listen    80;
+    # server_name www.josephxia.com;
+    location / {
+        root  /var/www/html;
+        index  index.html index.htm;
+        try_files $uri $uri/ /index.html;
+    }
+    location /api {
+        proxy_pass  http://127.0.0.1:3000;
+        proxy_redirect   off;
+        proxy_set_header  Host       $host;
+        proxy_set_header  X-Real-IP     $remote_addr;
+        proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;
+    }
+}
+```
+
+### JSONP
+
+## 权限控制
+
+前端权限控制可以分为四个方面：
+
+- 接口权限
+- 按钮权限
+- 菜单权限
+- 路由权限
+
+### 接口权限
+
+接口权限目前一般采用`jwt`的形式来验证，没有通过的话一般返回`401`，跳转到登录页面重新进行登录
+
+登录完拿到`token`，将`token`存起来，通过`axios`请求拦截器进行拦截，每次请求的时候头部携带`token`
+
+```javascript
+axios.interceptors.request.use(config => {
+    config.headers['token'] = cookie.get('token')
+    return config
+})
+axios.interceptors.response.use(res=>{},{response}=>{
+    if (response.data.code === 40099 || response.data.code === 40098) { //token过期或者错误
+        router.push('/login')
+    }
+})
+```
+
+### 路由权限控制
+
+**方案一**
+
+初始化即挂载全部路由，并且在路由上标记相应的权限信息，每次路由跳转前做校验
+
+```javascript
+const routerMap = [
+  {
+    path: '/permission',
+    component: Layout,
+    redirect: '/permission/index',
+    alwaysShow: true, // will always show the root menu
+    meta: {
+      title: 'permission',
+      icon: 'lock',
+      roles: ['admin', 'editor'] // you can set roles in root nav
+    },
+    children: [{
+      path: 'page',
+      component: () => import('@/views/permission/page'),
+      name: 'pagePermission',
+      meta: {
+        title: 'pagePermission',
+        roles: ['admin'] // or you can only set roles in sub nav
+      }
+    }, {
+      path: 'directive',
+      component: () => import('@/views/permission/directive'),
+      name: 'directivePermission',
+      meta: {
+        title: 'directivePermission'
+        // if do not set roles, means: this page does not require permission
+      }
+    }]
+  }]
+```
+
+### 菜单权限
+
+菜单权限可以理解成将页面与理由进行解耦
+
+#### 方案一
+
+菜单与路由分离，菜单由后端返回
+
+前端定义路由信息
+
+```javascript
+{
+    name: "login",
+    path: "/login",
+    component: () => import("@/pages/Login.vue")
+}
+```
+
+### 按钮权限
+
+#### 方案一
+
+按钮权限也可以用`v-if`判断
+
+但是如果页面过多，每个页面页面都要获取用户权限`role`和路由表里的`meta.btnPermissions`，然后再做判断
+
+这种方式就不展开举例了
+
+自定义权限鉴定指令
+
+```javascript
+import Vue from 'vue'
+/**权限指令**/
+const has = Vue.directive('has', {
+    bind: function (el, binding, vnode) {
+        // 获取页面按钮权限
+        let btnPermissionsArr = [];
+        if(binding.value){
+            // 如果指令传值，获取指令参数，根据指令参数和当前登录人按钮权限做比较。
+            btnPermissionsArr = Array.of(binding.value);
+        }else{
+            // 否则获取路由中的参数，根据路由的btnPermissionsArr和当前登录人按钮权限做比较。
+            btnPermissionsArr = vnode.context.$route.meta.btnPermissions;
+        }
+        if (!Vue.prototype.$_has(btnPermissionsArr)) {
+            el.parentNode.removeChild(el);
+        }
+    }
+});
+// 权限检查方法
+Vue.prototype.$_has = function (value) {
+    let isExist = false;
+    // 获取用户按钮权限
+    let btnPermissionsStr = sessionStorage.getItem("btnPermissions");
+    if (btnPermissionsStr == undefined || btnPermissionsStr == null) {
+        return false;
+    }
+    if (value.indexOf(btnPermissionsStr) > -1) {
+        isExist = true;
+    }
+    return isExist;
+};
+export {has}
+```
+
