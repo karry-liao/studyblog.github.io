@@ -66,21 +66,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "数据可视化",
-      "frontmatter": {},
-      "regularPath": "/Components/Echarts/echarts.html",
-      "relativePath": "Components/Echarts/echarts.md",
-      "key": "v-dee70954",
-      "path": "/Components/Echarts/echarts.html"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-5948fc08",
-      "path": "/Components/base/introduce.html"
-    },
-    {
       "title": "MiniPrograme",
       "frontmatter": {},
       "regularPath": "/Components/MiniPrograme/base.html",
@@ -101,29 +86,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "快速上手",
+      "title": "数据可视化",
       "frontmatter": {},
-      "regularPath": "/Components/base/start.html",
-      "relativePath": "Components/base/start.md",
-      "key": "v-1ed84da8",
-      "path": "/Components/base/start.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "获取组件",
-          "slug": "获取组件"
-        },
-        {
-          "level": 2,
-          "title": "引入组件",
-          "slug": "引入组件"
-        },
-        {
-          "level": 2,
-          "title": "使用组件",
-          "slug": "使用组件"
-        }
-      ]
+      "regularPath": "/Components/Echarts/echarts.html",
+      "relativePath": "Components/Echarts/echarts.md",
+      "key": "v-dee70954",
+      "path": "/Components/Echarts/echarts.html"
     },
     {
       "title": "创建第一个应用",
@@ -161,6 +129,45 @@ export const siteData = {
       ]
     },
     {
+      "frontmatter": {},
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-5948fc08",
+      "path": "/Components/base/introduce.html"
+    },
+    {
+      "title": "快速上手",
+      "frontmatter": {},
+      "regularPath": "/Components/base/start.html",
+      "relativePath": "Components/base/start.md",
+      "key": "v-1ed84da8",
+      "path": "/Components/base/start.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "获取组件",
+          "slug": "获取组件"
+        },
+        {
+          "level": 2,
+          "title": "引入组件",
+          "slug": "引入组件"
+        },
+        {
+          "level": 2,
+          "title": "使用组件",
+          "slug": "使用组件"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/NodeJs/Node.html",
+      "relativePath": "Components/NodeJs/Node.md",
+      "key": "v-69a880da",
+      "path": "/Components/NodeJs/Node.html"
+    },
+    {
       "title": "找出出现次数最多的字符",
       "frontmatter": {},
       "regularPath": "/Components/dataStructureAndCount/count.html",
@@ -179,13 +186,6 @@ export const siteData = {
           "slug": "null与undefined"
         }
       ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/NodeJs/Node.html",
-      "relativePath": "Components/NodeJs/Node.md",
-      "key": "v-69a880da",
-      "path": "/Components/NodeJs/Node.html"
     },
     {
       "title": "一、Flex布局表示弹性布局，为盒模型提供最大灵活性。",
@@ -283,21 +283,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "递归实现无限树型结构",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/RecursionTree.html",
-      "relativePath": "Components/javascript/RecursionTree.md",
-      "key": "v-1c79e368",
-      "path": "/Components/javascript/RecursionTree.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "递归实现无限树型结构",
-          "slug": "递归实现无限树型结构"
-        }
-      ]
-    },
-    {
       "title": "var、let、const",
       "frontmatter": {},
       "regularPath": "/Components/javascript/ESsix.html",
@@ -323,6 +308,21 @@ export const siteData = {
       ]
     },
     {
+      "title": "递归实现无限树型结构",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/RecursionTree.html",
+      "relativePath": "Components/javascript/RecursionTree.md",
+      "key": "v-1c79e368",
+      "path": "/Components/javascript/RecursionTree.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "递归实现无限树型结构",
+          "slug": "递归实现无限树型结构"
+        }
+      ]
+    },
+    {
       "title": "浅拷贝与深拷贝",
       "frontmatter": {},
       "regularPath": "/Components/javascript/clone.html",
@@ -344,46 +344,6 @@ export const siteData = {
           "level": 2,
           "title": "3.多维数组实现深拷贝",
           "slug": "_3-多维数组实现深拷贝"
-        }
-      ]
-    },
-    {
-      "title": "工厂模式",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/designPatterns.html",
-      "relativePath": "Components/javascript/designPatterns.md",
-      "key": "v-3130f0e0",
-      "path": "/Components/javascript/designPatterns.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "工厂模式",
-          "slug": "工厂模式"
-        },
-        {
-          "level": 2,
-          "title": "单例模式",
-          "slug": "单例模式"
-        },
-        {
-          "level": 2,
-          "title": "代理模式",
-          "slug": "代理模式"
-        },
-        {
-          "level": 2,
-          "title": "职责链模式",
-          "slug": "职责链模式"
-        },
-        {
-          "level": 2,
-          "title": "装饰者模式",
-          "slug": "装饰者模式"
-        },
-        {
-          "level": 2,
-          "title": "观察者-发布订阅模式",
-          "slug": "观察者-发布订阅模式"
         }
       ]
     },
@@ -568,14 +528,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "CSS",
-      "frontmatter": {},
-      "regularPath": "/Components/md_interview/Interview.html",
-      "relativePath": "Components/md_interview/Interview.md",
-      "key": "v-f02bda70",
-      "path": "/Components/md_interview/Interview.html"
-    },
-    {
       "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
       "frontmatter": {},
       "regularPath": "/Components/javascript/extends.html",
@@ -619,6 +571,54 @@ export const siteData = {
           "slug": "四-防抖节流"
         }
       ]
+    },
+    {
+      "title": "工厂模式",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/designPatterns.html",
+      "relativePath": "Components/javascript/designPatterns.md",
+      "key": "v-3130f0e0",
+      "path": "/Components/javascript/designPatterns.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "工厂模式",
+          "slug": "工厂模式"
+        },
+        {
+          "level": 2,
+          "title": "单例模式",
+          "slug": "单例模式"
+        },
+        {
+          "level": 2,
+          "title": "代理模式",
+          "slug": "代理模式"
+        },
+        {
+          "level": 2,
+          "title": "职责链模式",
+          "slug": "职责链模式"
+        },
+        {
+          "level": 2,
+          "title": "装饰者模式",
+          "slug": "装饰者模式"
+        },
+        {
+          "level": 2,
+          "title": "观察者-发布订阅模式",
+          "slug": "观察者-发布订阅模式"
+        }
+      ]
+    },
+    {
+      "title": "CSS",
+      "frontmatter": {},
+      "regularPath": "/Components/md_interview/Interview.html",
+      "relativePath": "Components/md_interview/Interview.md",
+      "key": "v-f02bda70",
+      "path": "/Components/md_interview/Interview.html"
     },
     {
       "title": "Vue",
@@ -721,6 +721,36 @@ export const siteData = {
       ]
     },
     {
+      "title": "前端性能监控",
+      "frontmatter": {},
+      "regularPath": "/Components/performance/BorserPerformance.html",
+      "relativePath": "Components/performance/BorserPerformance.md",
+      "key": "v-0ec807b4",
+      "path": "/Components/performance/BorserPerformance.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前端性能监控",
+          "slug": "前端性能监控"
+        },
+        {
+          "level": 2,
+          "title": "性能指标",
+          "slug": "性能指标"
+        },
+        {
+          "level": 2,
+          "title": "window.performance基础",
+          "slug": "window-performance基础"
+        },
+        {
+          "level": 2,
+          "title": "各指标计算方式",
+          "slug": "各指标计算方式"
+        }
+      ]
+    },
+    {
       "title": "Web的缓存机制",
       "frontmatter": {},
       "regularPath": "/Components/performance/Browser.html",
@@ -771,12 +801,92 @@ export const siteData = {
       ]
     },
     {
-      "title": "Button",
+      "title": "一、何为dangerouslySetInnerHtml？",
       "frontmatter": {},
-      "regularPath": "/Components/static/Button.html",
-      "relativePath": "Components/static/Button.md",
-      "key": "v-7b1a1b00",
-      "path": "/Components/static/Button.html",
+      "regularPath": "/Components/react/Reacthooks.html",
+      "relativePath": "Components/react/Reacthooks.md",
+      "key": "v-3283f1c2",
+      "path": "/Components/react/Reacthooks.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一、何为dangerouslySetInnerHtml？",
+          "slug": "一、何为dangerouslysetinnerhtml"
+        },
+        {
+          "level": 2,
+          "title": "二、常用React Hooks有哪些？",
+          "slug": "二、常用react-hooks有哪些"
+        }
+      ]
+    },
+    {
+      "title": "初识 React",
+      "frontmatter": {},
+      "regularPath": "/Components/react/base.html",
+      "relativePath": "Components/react/base.md",
+      "key": "v-c4d5817c",
+      "path": "/Components/react/base.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "初识 React",
+          "slug": "初识-react"
+        },
+        {
+          "level": 3,
+          "title": "特性：",
+          "slug": "特性"
+        },
+        {
+          "level": 3,
+          "title": "React-Component",
+          "slug": "react-component"
+        },
+        {
+          "level": 3,
+          "title": "组件的特点：",
+          "slug": "组件的特点"
+        },
+        {
+          "level": 3,
+          "title": "React 的优势",
+          "slug": "react-的优势"
+        },
+        {
+          "level": 2,
+          "title": "React 的生命周期",
+          "slug": "react-的生命周期"
+        },
+        {
+          "level": 2,
+          "title": "Redux 和 Vuex 区别",
+          "slug": "redux-和-vuex-区别"
+        },
+        {
+          "level": 2,
+          "title": "共同思想",
+          "slug": "共同思想"
+        },
+        {
+          "level": 2,
+          "title": "Redux 中的 connect 有什么作用？",
+          "slug": "redux-中的-connect-有什么作用"
+        },
+        {
+          "level": 2,
+          "title": "Redux 状态管理和变量挂载在 window中的区别",
+          "slug": "redux-状态管理和变量挂载在-window中的区别"
+        }
+      ]
+    },
+    {
+      "title": "幸运大乐透之刮刮乐",
+      "frontmatter": {},
+      "regularPath": "/Components/static/GuaguaLe.html",
+      "relativePath": "Components/static/GuaguaLe.md",
+      "key": "v-415c1e1c",
+      "path": "/Components/static/GuaguaLe.html",
       "headers": [
         {
           "level": 2,
@@ -791,12 +901,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "幸运大乐透之刮刮乐",
+      "title": "Button",
       "frontmatter": {},
-      "regularPath": "/Components/static/GuaguaLe.html",
-      "relativePath": "Components/static/GuaguaLe.md",
-      "key": "v-415c1e1c",
-      "path": "/Components/static/GuaguaLe.html",
+      "regularPath": "/Components/static/Button.html",
+      "relativePath": "Components/static/Button.md",
+      "key": "v-7b1a1b00",
+      "path": "/Components/static/Button.html",
       "headers": [
         {
           "level": 2,
@@ -831,66 +941,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "初识React",
-      "frontmatter": {},
-      "regularPath": "/Components/react/base.html",
-      "relativePath": "Components/react/base.md",
-      "key": "v-c4d5817c",
-      "path": "/Components/react/base.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "初识React",
-          "slug": "初识react"
-        },
-        {
-          "level": 3,
-          "title": "特性：",
-          "slug": "特性"
-        },
-        {
-          "level": 3,
-          "title": "React-Component",
-          "slug": "react-component"
-        },
-        {
-          "level": 3,
-          "title": "组件的特点：",
-          "slug": "组件的特点"
-        },
-        {
-          "level": 3,
-          "title": "React的优势",
-          "slug": "react的优势"
-        },
-        {
-          "level": 2,
-          "title": "React的生命周期",
-          "slug": "react的生命周期"
-        },
-        {
-          "level": 2,
-          "title": "Redux 和 Vuex区别",
-          "slug": "redux-和-vuex区别"
-        },
-        {
-          "level": 2,
-          "title": "共同思想",
-          "slug": "共同思想"
-        },
-        {
-          "level": 2,
-          "title": "Redux中的connect有什么作用？",
-          "slug": "redux中的connect有什么作用"
-        },
-        {
-          "level": 2,
-          "title": "Redux状态管理和变量挂载带window中的区别",
-          "slug": "redux状态管理和变量挂载带window中的区别"
-        }
-      ]
-    },
-    {
       "title": "幸运大乐透之刮刮乐",
       "frontmatter": {},
       "regularPath": "/Components/static/LuckyRolling.html",
@@ -921,12 +971,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "Button",
+      "title": "放大镜",
       "frontmatter": {},
-      "regularPath": "/Components/static/Message.html",
-      "relativePath": "Components/static/Message.md",
-      "key": "v-4d070ab0",
-      "path": "/Components/static/Message.html",
+      "regularPath": "/Components/static/MagnifyingGlass.html",
+      "relativePath": "Components/static/MagnifyingGlass.md",
+      "key": "v-2e8f0328",
+      "path": "/Components/static/MagnifyingGlass.html",
       "headers": [
         {
           "level": 2,
@@ -941,12 +991,32 @@ export const siteData = {
       ]
     },
     {
-      "title": "放大镜",
+      "title": "滑块验证",
       "frontmatter": {},
-      "regularPath": "/Components/static/MagnifyingGlass.html",
-      "relativePath": "Components/static/MagnifyingGlass.md",
-      "key": "v-2e8f0328",
-      "path": "/Components/static/MagnifyingGlass.html",
+      "regularPath": "/Components/static/SlideVerify.html",
+      "relativePath": "Components/static/SlideVerify.md",
+      "key": "v-1aced8c8",
+      "path": "/Components/static/SlideVerify.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "Detail",
+          "slug": "detail"
+        }
+      ]
+    },
+    {
+      "title": "Button",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Message.html",
+      "relativePath": "Components/static/Message.md",
+      "key": "v-4d070ab0",
+      "path": "/Components/static/Message.html",
       "headers": [
         {
           "level": 2,
@@ -981,42 +1051,42 @@ export const siteData = {
       ]
     },
     {
-      "title": "一、何为dangerouslySetInnerHtml？",
+      "title": "Axios封装",
       "frontmatter": {},
-      "regularPath": "/Components/react/Reacthooks.html",
-      "relativePath": "Components/react/Reacthooks.md",
-      "key": "v-3283f1c2",
-      "path": "/Components/react/Reacthooks.html",
+      "regularPath": "/Components/vue/Axios.html",
+      "relativePath": "Components/vue/Axios.md",
+      "key": "v-0d994ec6",
+      "path": "/Components/vue/Axios.html",
       "headers": [
         {
           "level": 2,
-          "title": "一、何为dangerouslySetInnerHtml？",
-          "slug": "一、何为dangerouslysetinnerhtml"
+          "title": "Axios封装",
+          "slug": "axios封装"
         },
         {
-          "level": 2,
-          "title": "二、常用React Hooks有哪些？",
-          "slug": "二、常用react-hooks有哪些"
-        }
-      ]
-    },
-    {
-      "title": "滑块验证",
-      "frontmatter": {},
-      "regularPath": "/Components/static/SlideVerify.html",
-      "relativePath": "Components/static/SlideVerify.md",
-      "key": "v-1aced8c8",
-      "path": "/Components/static/SlideVerify.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
+          "level": 3,
+          "title": "设置接口请求前缀",
+          "slug": "设置接口请求前缀"
         },
         {
-          "level": 2,
-          "title": "Detail",
-          "slug": "detail"
+          "level": 3,
+          "title": "设置请求头与超时时间",
+          "slug": "设置请求头与超时时间"
+        },
+        {
+          "level": 3,
+          "title": "封装请求方法",
+          "slug": "封装请求方法"
+        },
+        {
+          "level": 3,
+          "title": "请求拦截器",
+          "slug": "请求拦截器"
+        },
+        {
+          "level": 3,
+          "title": "响应拦截器",
+          "slug": "响应拦截器"
         }
       ]
     },
@@ -1135,16 +1205,6 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "在VUE中封装axios",
-          "slug": "在vue中封装axios"
-        },
-        {
-          "level": 3,
-          "title": "请求响应之then  catch",
-          "slug": "请求响应之then-catch"
-        },
-        {
-          "level": 2,
           "title": "Vuex状态管理",
           "slug": "vuex状态管理"
         },
@@ -1222,110 +1282,31 @@ export const siteData = {
           "level": 3,
           "title": "按钮权限",
           "slug": "按钮权限"
-        }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/vue/template.html",
-      "relativePath": "Components/vue/template.md",
-      "key": "v-4bb298c2",
-      "path": "/Components/vue/template.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
-          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
-        },
-        {
-          "level": 3,
-          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
-          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
-        }
-      ]
-    },
-    {
-      "title": "一、Vuex",
-      "frontmatter": {},
-      "regularPath": "/Components/vue/vuex.html",
-      "relativePath": "Components/vue/vuex.md",
-      "key": "v-19e209c2",
-      "path": "/Components/vue/vuex.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "一、Vuex",
-          "slug": "一、vuex"
-        },
-        {
-          "level": 3,
-          "title": "State",
-          "slug": "state"
-        },
-        {
-          "level": 3,
-          "title": "Getter",
-          "slug": "getter"
-        },
-        {
-          "level": 3,
-          "title": "Mutation",
-          "slug": "mutation"
-        },
-        {
-          "level": 3,
-          "title": "Action",
-          "slug": "action"
-        },
-        {
-          "level": 3,
-          "title": "Module",
-          "slug": "module"
         },
         {
           "level": 2,
-          "title": "二、Vuex中的辅助函数",
-          "slug": "二、vuex中的辅助函数"
+          "title": "Vue常用修饰符和应用场景",
+          "slug": "vue常用修饰符和应用场景"
         },
         {
           "level": 3,
-          "title": "如何使用辅助函数",
-          "slug": "如何使用辅助函数"
+          "title": "二、修饰符的作用",
+          "slug": "二、修饰符的作用"
         },
         {
           "level": 3,
-          "title": "辅助函数如何去映射vuex.store中的属性",
-          "slug": "辅助函数如何去映射vuex-store中的属性"
-        }
-      ]
-    },
-    {
-      "title": "一、keep-alive",
-      "frontmatter": {},
-      "regularPath": "/Components/vue/innerComponents.html",
-      "relativePath": "Components/vue/innerComponents.md",
-      "key": "v-2a433f5a",
-      "path": "/Components/vue/innerComponents.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "一、keep-alive",
-          "slug": "一、keep-alive"
+          "title": "事件修饰符",
+          "slug": "事件修饰符"
         },
         {
           "level": 3,
-          "title": "include和exclude指定是否缓存某些组件",
-          "slug": "include和exclude指定是否缓存某些组件"
+          "title": "鼠标按钮修饰符",
+          "slug": "鼠标按钮修饰符"
         },
         {
           "level": 3,
-          "title": "keep-alive的钩子函数执行顺序",
-          "slug": "keep-alive的钩子函数执行顺序"
-        },
-        {
-          "level": 2,
-          "title": "keep-alive的应用场景举例",
-          "slug": "keep-alive的应用场景举例"
+          "title": "v-bind修饰符",
+          "slug": "v-bind修饰符"
         }
       ]
     },
@@ -1550,6 +1531,125 @@ export const siteData = {
       ]
     },
     {
+      "title": "一、keep-alive",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/innerComponents.html",
+      "relativePath": "Components/vue/innerComponents.md",
+      "key": "v-2a433f5a",
+      "path": "/Components/vue/innerComponents.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一、keep-alive",
+          "slug": "一、keep-alive"
+        },
+        {
+          "level": 3,
+          "title": "include和exclude指定是否缓存某些组件",
+          "slug": "include和exclude指定是否缓存某些组件"
+        },
+        {
+          "level": 3,
+          "title": "keep-alive的钩子函数执行顺序",
+          "slug": "keep-alive的钩子函数执行顺序"
+        },
+        {
+          "level": 2,
+          "title": "keep-alive的应用场景举例",
+          "slug": "keep-alive的应用场景举例"
+        },
+        {
+          "level": 2,
+          "title": "四、思考题：缓存后如何获取数据",
+          "slug": "四、思考题-缓存后如何获取数据"
+        },
+        {
+          "level": 3,
+          "title": "beforeRouteEnter",
+          "slug": "beforerouteenter"
+        },
+        {
+          "level": 3,
+          "title": "actived",
+          "slug": "actived"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/vue/template.html",
+      "relativePath": "Components/vue/template.md",
+      "key": "v-4bb298c2",
+      "path": "/Components/vue/template.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
+          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
+        },
+        {
+          "level": 3,
+          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
+          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
+        }
+      ]
+    },
+    {
+      "title": "一、Vuex",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/vuex.html",
+      "relativePath": "Components/vue/vuex.md",
+      "key": "v-19e209c2",
+      "path": "/Components/vue/vuex.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一、Vuex",
+          "slug": "一、vuex"
+        },
+        {
+          "level": 3,
+          "title": "State",
+          "slug": "state"
+        },
+        {
+          "level": 3,
+          "title": "Getter",
+          "slug": "getter"
+        },
+        {
+          "level": 3,
+          "title": "Mutation",
+          "slug": "mutation"
+        },
+        {
+          "level": 3,
+          "title": "Action",
+          "slug": "action"
+        },
+        {
+          "level": 3,
+          "title": "Module",
+          "slug": "module"
+        },
+        {
+          "level": 2,
+          "title": "二、Vuex中的辅助函数",
+          "slug": "二、vuex中的辅助函数"
+        },
+        {
+          "level": 3,
+          "title": "如何使用辅助函数",
+          "slug": "如何使用辅助函数"
+        },
+        {
+          "level": 3,
+          "title": "辅助函数如何去映射vuex.store中的属性",
+          "slug": "辅助函数如何去映射vuex-store中的属性"
+        }
+      ]
+    },
+    {
       "title": "Home",
       "frontmatter": {
         "home": true,
@@ -1735,6 +1835,10 @@ export const siteData = {
             [
               "vue/Vuethree",
               "Vue3.0"
+            ],
+            [
+              "vue/Axios",
+              "Axios"
             ]
           ]
         },
@@ -1770,6 +1874,10 @@ export const siteData = {
           "title": "Web性能提升篇",
           "collapsable": true,
           "children": [
+            [
+              "performance/BorserPerformance",
+              "前端性能监控"
+            ],
             [
               "performance/Browser",
               "Web缓存"

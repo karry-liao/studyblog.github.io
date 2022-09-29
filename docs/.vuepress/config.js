@@ -136,6 +136,7 @@ console.log(path.resolve(__dirname, "./components")),
               ["vue/vuex", "Vuex状态管理"],
               ["vue/innerComponents", "Vue内置组件"],
               ["vue/Vuethree", "Vue3.0"],
+              ["vue/Axios", "Axios"],
             ],
           },
           {
@@ -160,8 +161,10 @@ console.log(path.resolve(__dirname, "./components")),
             title: "Web性能提升篇",
             collapsable: true,
             children: [
+              ["performance/BorserPerformance", "前端性能监控"],
               ["performance/Browser", "Web缓存"],
               ["performance/WebWorker", "WebWorker"],
+
               // ["static/Svg", "SVG变色图标"],
             ],
           },

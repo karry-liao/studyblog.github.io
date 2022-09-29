@@ -108,22 +108,6 @@ instance.interceptors.request.use(function() { ....});
 
 ​	config: {}
 
-## 在VUE中封装axios
-
-**mutations**中的state，接收Vuex中的state对象。
-
-**action**中固有的参数——context，context是state的父级，包含getters和state
-
-
-
-### 请求响应之then  catch
-
-请求响应成功执行.then的内容，失败执行 .catch内容
-
-.then .catch都有自己的作用域，无法在里面直接访问this，无法访问Vue实例。只需添加**.bind(this)**就可以解决
-
-
-
 ## Vuex状态管理
 
 **state：**驱动应用的数据源。
@@ -503,4 +487,194 @@ Vue.prototype.$_has = function (value) {
 };
 export {has}
 ```
+
+## Vue常用修饰符和应用场景
+
+`vue`中修饰符分为以下五种：
+
+- 表单修饰符
+- 事件修饰符
+- 鼠标按键修饰符
+- 键值修饰符
+- v-bind修饰符
+
+### 二、修饰符的作用
+
+#### 表单修饰符
+
+在我们填写表单的时候用得最多的是`input`标签，指令用得最多的是`v-model`
+
+关于表单的修饰符有如下：
+
+- lazy
+- trim
+- number
+
+#### lazy
+
+在我们填完信息，光标离开标签的时候，才会将值赋予给`value`，也就是在`change`事件之后再进行信息同步
+
+```javascript
+<input type="text" v-model.lazy="value"> <p>{{value}}</p>
+```
+
+#### trim
+
+自动过滤用户输入的首空格字符，而中间的空格不会过滤
+
+```javascript
+<input type="text" v-model.trim="value">
+```
+
+#### number
+
+自动将用户的输入值转为数值类型，但如果这个值无法被`parseFloat`解析，则会返回原来的值
+
+```javascript
+<input v-model.number="age" type="number">
+```
+
+### 事件修饰符
+
+事件修饰符是对事件捕获以及目标进行了处理，有如下修饰符：
+
+- stop
+- prevent
+- self
+- once
+- capture
+- passive
+- native
+
+#### stop
+
+阻止了事件冒泡，相当于调用了`event.stopPropagation`方法
+
+```javascript
+<div @click="shout(2)">
+  <button @click.stop="shout(1)">ok</button>
+</div>
+//只输出1
+```
+
+#### prevent
+
+阻止了事件的默认行为，相当于调用了`event.preventDefault`方法
+
+```javascript
+<form v-on:submit.prevent="onSubmit"></form>
+```
+
+#### self
+
+只当在 `event.target` 是当前元素自身时触发处理函数
+
+```javascript
+<div v-on:click.self="doThat">...</div>
+```
+
+#### once
+
+绑定了事件以后只能触发一次，第二次就不会触发
+
+```javascript
+<button @click.once="shout(1)">ok</button>
+```
+
+#### capture
+
+使事件触发从包含这个元素的顶层开始往下触发
+
+```javascript
+<div @click.capture="shout(1)">
+    obj1
+<div @click.capture="shout(2)">
+    obj2
+<div @click="shout(3)">
+    obj3
+<div @click="shout(4)">
+    obj4
+</div>
+</div>
+</div>
+</div>
+// 输出结构: 1 2 4 3 
+```
+
+#### passive
+
+在移动端，当我们在监听元素滚动事件的时候，会一直触发`onscroll`事件会让我们的网页变卡，因此我们使用这个修饰符的时候，相当于给`onscroll`事件整了一个`.lazy`修饰符
+
+```javascript
+<!-- 滚动事件的默认行为 (即滚动行为) 将会立即触发 -->
+<!-- 而不会等待 `onScroll` 完成  -->
+<!-- 这其中包含 `event.preventDefault()` 的情况 -->
+<div v-on:scroll.passive="onScroll">...</div>
+```
+
+#### native
+
+让组件变成像`html`内置标签那样监听根元素的原生事件，否则组件上使用 `v-on` 只会监听自定义事件
+
+```javascript
+<my-component v-on:click.native="doSomething"></my-component>
+```
+
+### 鼠标按钮修饰符
+
+鼠标按钮修饰符针对的就是左键、右键、中键点击，有如下：
+
+- left 左键点击
+- right 右键点击
+- middle 中键点击
+
+```javascript
+<button @click.left="shout(1)">ok</button> <button @click.right="shout(1)">ok</button> <button @click.middle="shout(1)">ok</button>
+```
+
+键盘修饰符是用来修饰键盘事件（`onkeyup`，`onkeydown`）的，有如下：
+
+`keyCode`存在很多，但`vue`为我们提供了别名，分为以下两种：
+
+- 普通键（enter、tab、delete、space、esc、up...）
+- 系统修饰键（ctrl、alt、meta、shift...）
+
+```javascript
+// 只有按键为keyCode的时候才触发
+<input type="text" @keyup.keyCode="shout()">
+    
+//还可以通过以下方式自定义一些全局的键盘码别名
+Vue.config.keyCodes.f2 = 113
+```
+
+### v-bind修饰符
+
+v-bind修饰符主要是为属性进行操作，用来分别有如下：
+
+- async
+- prop
+- camel
+
+#### async
+
+能对`props`进行一个双向绑定
+
+```javascript
+//父组件
+<comp :myMessage.sync="bar"></comp> 
+//子组件
+this.$emit('update:myMessage',params);
+//以上这种方法相当于以下的简写
+//父亲组件
+<comp :myMessage="bar" @update:myMessage="func"></comp>
+func(e){
+ this.bar = e;
+}
+//子组件js
+func2(){
+  this.$emit('update:myMessage',params);
+}
+```
+
+
 

@@ -42,3 +42,36 @@ exclude相当于include的反义词，就是除了的意思，指定哪些组件
 
 - 查看表格某条数据详情页，返回还是之前的状态，比如还是之前的筛选结果，还是之前的页数等
 - 填写的表单的内容路由跳转返回还在，比如input框、下选择拉框、开关切换等用户输入了一大把东西，跳转再回来不能清空啊，不用让用户再写一遍
+
+## 四、思考题：缓存后如何获取数据
+
+解决方案可以有以下两种：
+
+- beforeRouteEnter
+- actived
+
+### beforeRouteEnter
+
+每次组件渲染的时候，都会执行`beforeRouteEnter`
+
+```javascript
+beforeRouteEnter(to, from, next){
+    next(vm=>{
+        console.log(vm)
+        // 每次进入路由执行
+        vm.getData()  // 获取数据
+    })
+},
+```
+
+### actived
+
+在`keep-alive`缓存的组件被激活的时候，都会执行`actived`钩子
+
+```javascript
+activated(){    
+    this.getData() // 获取数据
+},
+```
+
+注意：服务器端渲染期间`avtived`不被调用

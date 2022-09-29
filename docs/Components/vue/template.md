@@ -34,7 +34,13 @@ render(){
 
 <keep-alive :include="cached"></keep-alive>
 
+`createComponent`生成`VNode`的三个关键流程：
 
+- 构造子类构造函数`Ctor`
+- `installComponentHooks`安装组件钩子函数
+- 实例化 `vnode`
+
+`createElement` 创建 `VNode` 的过程，每个 `VNode` 有 `children`，`children` 每个元素也是一个`VNode`，这样就形成了一个虚拟树结构，用于描述真实的`DOM`树结构
 
 ### 柯里化：一个函数可以接受多个参数，反复被调用
 
