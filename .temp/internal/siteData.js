@@ -66,6 +66,14 @@ export const siteData = {
       ]
     },
     {
+      "title": "数据可视化",
+      "frontmatter": {},
+      "regularPath": "/Components/Echarts/echarts.html",
+      "relativePath": "Components/Echarts/echarts.md",
+      "key": "v-dee70954",
+      "path": "/Components/Echarts/echarts.html"
+    },
+    {
       "title": "MiniPrograme",
       "frontmatter": {},
       "regularPath": "/Components/MiniPrograme/base.html",
@@ -82,49 +90,6 @@ export const siteData = {
           "level": 2,
           "title": "钩子函数",
           "slug": "钩子函数"
-        }
-      ]
-    },
-    {
-      "title": "数据可视化",
-      "frontmatter": {},
-      "regularPath": "/Components/Echarts/echarts.html",
-      "relativePath": "Components/Echarts/echarts.md",
-      "key": "v-dee70954",
-      "path": "/Components/Echarts/echarts.html"
-    },
-    {
-      "title": "创建第一个应用",
-      "frontmatter": {},
-      "regularPath": "/Components/NodeJs/Start.html",
-      "relativePath": "Components/NodeJs/Start.md",
-      "key": "v-32e28668",
-      "path": "/Components/NodeJs/Start.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "创建第一个应用",
-          "slug": "创建第一个应用"
-        },
-        {
-          "level": 2,
-          "title": "Node包管理工具-npm",
-          "slug": "node包管理工具-npm"
-        },
-        {
-          "level": 2,
-          "title": "Node.js REPL(交互式解析器)",
-          "slug": "node-js-repl-交互式解析器"
-        },
-        {
-          "level": 2,
-          "title": "Node.js回调函数",
-          "slug": "node-js回调函数"
-        },
-        {
-          "level": 2,
-          "title": "Node.js事件循环",
-          "slug": "node-js事件循环"
         }
       ]
     },
@@ -168,22 +133,17 @@ export const siteData = {
       "path": "/Components/NodeJs/Node.html"
     },
     {
-      "title": "找出出现次数最多的字符",
+      "title": "Font样式",
       "frontmatter": {},
-      "regularPath": "/Components/dataStructureAndCount/count.html",
-      "relativePath": "Components/dataStructureAndCount/count.md",
-      "key": "v-33a06ec4",
-      "path": "/Components/dataStructureAndCount/count.html",
+      "regularPath": "/Components/htmlcss/FontCss.html",
+      "relativePath": "Components/htmlcss/FontCss.md",
+      "key": "v-e4c77034",
+      "path": "/Components/htmlcss/FontCss.html",
       "headers": [
         {
           "level": 2,
-          "title": "找出出现次数最多的字符",
-          "slug": "找出出现次数最多的字符"
-        },
-        {
-          "level": 2,
-          "title": "null与undefined",
-          "slug": "null与undefined"
+          "title": "代码演示",
+          "slug": "代码演示"
         }
       ]
     },
@@ -268,17 +228,37 @@ export const siteData = {
       ]
     },
     {
-      "title": "Font样式",
+      "title": "创建第一个应用",
       "frontmatter": {},
-      "regularPath": "/Components/htmlcss/FontCss.html",
-      "relativePath": "Components/htmlcss/FontCss.md",
-      "key": "v-e4c77034",
-      "path": "/Components/htmlcss/FontCss.html",
+      "regularPath": "/Components/NodeJs/Start.html",
+      "relativePath": "Components/NodeJs/Start.md",
+      "key": "v-32e28668",
+      "path": "/Components/NodeJs/Start.html",
       "headers": [
         {
           "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
+          "title": "创建第一个应用",
+          "slug": "创建第一个应用"
+        },
+        {
+          "level": 2,
+          "title": "Node包管理工具-npm",
+          "slug": "node包管理工具-npm"
+        },
+        {
+          "level": 2,
+          "title": "Node.js REPL(交互式解析器)",
+          "slug": "node-js-repl-交互式解析器"
+        },
+        {
+          "level": 2,
+          "title": "Node.js回调函数",
+          "slug": "node-js回调函数"
+        },
+        {
+          "level": 2,
+          "title": "Node.js事件循环",
+          "slug": "node-js事件循环"
         }
       ]
     },
@@ -304,46 +284,6 @@ export const siteData = {
           "level": 2,
           "title": "实例对象新增的方法",
           "slug": "实例对象新增的方法"
-        }
-      ]
-    },
-    {
-      "title": "递归实现无限树型结构",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/RecursionTree.html",
-      "relativePath": "Components/javascript/RecursionTree.md",
-      "key": "v-1c79e368",
-      "path": "/Components/javascript/RecursionTree.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "递归实现无限树型结构",
-          "slug": "递归实现无限树型结构"
-        }
-      ]
-    },
-    {
-      "title": "浅拷贝与深拷贝",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/clone.html",
-      "relativePath": "Components/javascript/clone.md",
-      "key": "v-553ac608",
-      "path": "/Components/javascript/clone.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1.对象的深拷贝",
-          "slug": "_1-对象的深拷贝"
-        },
-        {
-          "level": 2,
-          "title": "2.数组的深拷贝方法",
-          "slug": "_2-数组的深拷贝方法"
-        },
-        {
-          "level": 2,
-          "title": "3.多维数组实现深拷贝",
-          "slug": "_3-多维数组实现深拷贝"
         }
       ]
     },
@@ -528,6 +468,41 @@ export const siteData = {
       ]
     },
     {
+      "title": "找出出现次数最多的字符",
+      "frontmatter": {},
+      "regularPath": "/Components/dataStructureAndCount/count.html",
+      "relativePath": "Components/dataStructureAndCount/count.md",
+      "key": "v-33a06ec4",
+      "path": "/Components/dataStructureAndCount/count.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "找出出现次数最多的字符",
+          "slug": "找出出现次数最多的字符"
+        },
+        {
+          "level": 2,
+          "title": "null与undefined",
+          "slug": "null与undefined"
+        }
+      ]
+    },
+    {
+      "title": "递归实现无限树型结构",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/RecursionTree.html",
+      "relativePath": "Components/javascript/RecursionTree.md",
+      "key": "v-1c79e368",
+      "path": "/Components/javascript/RecursionTree.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "递归实现无限树型结构",
+          "slug": "递归实现无限树型结构"
+        }
+      ]
+    },
+    {
       "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
       "frontmatter": {},
       "regularPath": "/Components/javascript/extends.html",
@@ -571,54 +546,6 @@ export const siteData = {
           "slug": "四-防抖节流"
         }
       ]
-    },
-    {
-      "title": "工厂模式",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/designPatterns.html",
-      "relativePath": "Components/javascript/designPatterns.md",
-      "key": "v-3130f0e0",
-      "path": "/Components/javascript/designPatterns.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "工厂模式",
-          "slug": "工厂模式"
-        },
-        {
-          "level": 2,
-          "title": "单例模式",
-          "slug": "单例模式"
-        },
-        {
-          "level": 2,
-          "title": "代理模式",
-          "slug": "代理模式"
-        },
-        {
-          "level": 2,
-          "title": "职责链模式",
-          "slug": "职责链模式"
-        },
-        {
-          "level": 2,
-          "title": "装饰者模式",
-          "slug": "装饰者模式"
-        },
-        {
-          "level": 2,
-          "title": "观察者-发布订阅模式",
-          "slug": "观察者-发布订阅模式"
-        }
-      ]
-    },
-    {
-      "title": "CSS",
-      "frontmatter": {},
-      "regularPath": "/Components/md_interview/Interview.html",
-      "relativePath": "Components/md_interview/Interview.md",
-      "key": "v-f02bda70",
-      "path": "/Components/md_interview/Interview.html"
     },
     {
       "title": "Vue",
@@ -719,6 +646,79 @@ export const siteData = {
           "slug": "vue中computed和method-区别"
         }
       ]
+    },
+    {
+      "title": "浅拷贝与深拷贝",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/clone.html",
+      "relativePath": "Components/javascript/clone.md",
+      "key": "v-553ac608",
+      "path": "/Components/javascript/clone.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1.对象的深拷贝",
+          "slug": "_1-对象的深拷贝"
+        },
+        {
+          "level": 2,
+          "title": "2.数组的深拷贝方法",
+          "slug": "_2-数组的深拷贝方法"
+        },
+        {
+          "level": 2,
+          "title": "3.多维数组实现深拷贝",
+          "slug": "_3-多维数组实现深拷贝"
+        }
+      ]
+    },
+    {
+      "title": "工厂模式",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/designPatterns.html",
+      "relativePath": "Components/javascript/designPatterns.md",
+      "key": "v-3130f0e0",
+      "path": "/Components/javascript/designPatterns.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "工厂模式",
+          "slug": "工厂模式"
+        },
+        {
+          "level": 2,
+          "title": "单例模式",
+          "slug": "单例模式"
+        },
+        {
+          "level": 2,
+          "title": "代理模式",
+          "slug": "代理模式"
+        },
+        {
+          "level": 2,
+          "title": "职责链模式",
+          "slug": "职责链模式"
+        },
+        {
+          "level": 2,
+          "title": "装饰者模式",
+          "slug": "装饰者模式"
+        },
+        {
+          "level": 2,
+          "title": "观察者-发布订阅模式",
+          "slug": "观察者-发布订阅模式"
+        }
+      ]
+    },
+    {
+      "title": "CSS",
+      "frontmatter": {},
+      "regularPath": "/Components/md_interview/Interview.html",
+      "relativePath": "Components/md_interview/Interview.md",
+      "key": "v-f02bda70",
+      "path": "/Components/md_interview/Interview.html"
     },
     {
       "title": "前端性能监控",
@@ -921,12 +921,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "Icon",
+      "title": "放大镜",
       "frontmatter": {},
-      "regularPath": "/Components/static/Icon.html",
-      "relativePath": "Components/static/Icon.md",
-      "key": "v-84328e1c",
-      "path": "/Components/static/Icon.html",
+      "regularPath": "/Components/static/MagnifyingGlass.html",
+      "relativePath": "Components/static/MagnifyingGlass.md",
+      "key": "v-2e8f0328",
+      "path": "/Components/static/MagnifyingGlass.html",
       "headers": [
         {
           "level": 2,
@@ -971,12 +971,32 @@ export const siteData = {
       ]
     },
     {
-      "title": "放大镜",
+      "title": "Button",
       "frontmatter": {},
-      "regularPath": "/Components/static/MagnifyingGlass.html",
-      "relativePath": "Components/static/MagnifyingGlass.md",
-      "key": "v-2e8f0328",
-      "path": "/Components/static/MagnifyingGlass.html",
+      "regularPath": "/Components/static/Message.html",
+      "relativePath": "Components/static/Message.md",
+      "key": "v-4d070ab0",
+      "path": "/Components/static/Message.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
+        }
+      ]
+    },
+    {
+      "title": "瀑布流",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Pinterest.html",
+      "relativePath": "Components/static/Pinterest.md",
+      "key": "v-b35c4f70",
+      "path": "/Components/static/Pinterest.html",
       "headers": [
         {
           "level": 2,
@@ -1011,32 +1031,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "Button",
+      "title": "Icon",
       "frontmatter": {},
-      "regularPath": "/Components/static/Message.html",
-      "relativePath": "Components/static/Message.md",
-      "key": "v-4d070ab0",
-      "path": "/Components/static/Message.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "title": "瀑布流",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Pinterest.html",
-      "relativePath": "Components/static/Pinterest.md",
-      "key": "v-b35c4f70",
-      "path": "/Components/static/Pinterest.html",
+      "regularPath": "/Components/static/Icon.html",
+      "relativePath": "Components/static/Icon.md",
+      "key": "v-84328e1c",
+      "path": "/Components/static/Icon.html",
       "headers": [
         {
           "level": 2,
@@ -1087,6 +1087,66 @@ export const siteData = {
           "level": 3,
           "title": "响应拦截器",
           "slug": "响应拦截器"
+        }
+      ]
+    },
+    {
+      "title": "SPA(单页应用)  首屏加载速度慢怎么解决",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/FirstLoad.html",
+      "relativePath": "Components/vue/FirstLoad.md",
+      "key": "v-b954e374",
+      "path": "/Components/vue/FirstLoad.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "SPA(单页应用)  首屏加载速度慢怎么解决",
+          "slug": "spa-单页应用-首屏加载速度慢怎么解决"
+        },
+        {
+          "level": 3,
+          "title": "一、加载慢的原因",
+          "slug": "一、加载慢的原因"
+        },
+        {
+          "level": 3,
+          "title": "三、解决方案",
+          "slug": "三、解决方案"
+        },
+        {
+          "level": 3,
+          "title": "减小入口文件体积",
+          "slug": "减小入口文件体积"
+        },
+        {
+          "level": 3,
+          "title": "静态资源本地缓存",
+          "slug": "静态资源本地缓存"
+        },
+        {
+          "level": 3,
+          "title": "UI框架按需加载",
+          "slug": "ui框架按需加载"
+        },
+        {
+          "level": 3,
+          "title": "组件重复打包",
+          "slug": "组件重复打包"
+        },
+        {
+          "level": 3,
+          "title": "图片资源的压缩",
+          "slug": "图片资源的压缩"
+        },
+        {
+          "level": 3,
+          "title": "开启GZip压缩",
+          "slug": "开启gzip压缩"
+        },
+        {
+          "level": 3,
+          "title": "使用SSR",
+          "slug": "使用ssr"
         }
       ]
     },
@@ -1307,6 +1367,46 @@ export const siteData = {
           "level": 3,
           "title": "v-bind修饰符",
           "slug": "v-bind修饰符"
+        },
+        {
+          "level": 2,
+          "title": "NextTick",
+          "slug": "nexttick"
+        },
+        {
+          "level": 2,
+          "title": "Vue组件通信方案",
+          "slug": "vue组件通信方案"
+        },
+        {
+          "level": 3,
+          "title": "$attrs 与$ listeners",
+          "slug": "attrs-与-listeners"
+        },
+        {
+          "level": 2,
+          "title": "Vue中给对象添加新属性时，界面不刷新的问题",
+          "slug": "vue中给对象添加新属性时-界面不刷新的问题"
+        },
+        {
+          "level": 3,
+          "title": "Vue.set()",
+          "slug": "vue-set"
+        },
+        {
+          "level": 3,
+          "title": "Object.assign()",
+          "slug": "object-assign"
+        },
+        {
+          "level": 3,
+          "title": "$forceUpdate",
+          "slug": "forceupdate"
+        },
+        {
+          "level": 3,
+          "title": "小结",
+          "slug": "小结"
         }
       ]
     },
@@ -1576,6 +1676,36 @@ export const siteData = {
       ]
     },
     {
+      "title": "Mixin是什么？",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/mixin.html",
+      "relativePath": "Components/vue/mixin.md",
+      "key": "v-7368b5a0",
+      "path": "/Components/vue/mixin.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Mixin是什么？",
+          "slug": "mixin是什么"
+        },
+        {
+          "level": 2,
+          "title": "Vue中的Mixin",
+          "slug": "vue中的mixin"
+        },
+        {
+          "level": 3,
+          "title": "局部混入",
+          "slug": "局部混入"
+        },
+        {
+          "level": 3,
+          "title": "全局混入",
+          "slug": "全局混入"
+        }
+      ]
+    },
+    {
       "frontmatter": {},
       "regularPath": "/Components/vue/template.html",
       "relativePath": "Components/vue/template.md",
@@ -1817,16 +1947,20 @@ export const siteData = {
               "Vue基础"
             ],
             [
-              "vue/code",
-              "Vue源码分析"
-            ],
-            [
               "vue/template",
               "Ajax失败重连&Fn柯里化&Render"
             ],
             [
               "vue/vuex",
               "Vuex状态管理"
+            ],
+            [
+              "vue/FirstLoad",
+              "首屏加载优化"
+            ],
+            [
+              "vue/mixin",
+              "VueMixin混入"
             ],
             [
               "vue/innerComponents",
@@ -1839,6 +1973,10 @@ export const siteData = {
             [
               "vue/Axios",
               "Axios"
+            ],
+            [
+              "vue/code",
+              "Vue源码分析"
             ]
           ]
         },

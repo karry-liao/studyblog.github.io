@@ -676,5 +676,184 @@ func2(){
 }
 ```
 
+## NextTick
+
+​		`Vue` 在更新 `DOM` 时是异步执行的。当数据发生变化，`Vue`将开启一个异步更新队列，视图需要等队列中所有数据变化完成之后，再统一进行更新
+
+`$nextTick()` 会返回一个 `Promise` 对象，可以是用`async/await`完成相同作用的事情
+
+```javascript
+this.message = '修改后的值'
+console.log(this.$el.textContent) // => '原始的值'
+await this.$nextTick()
+console.log(this.$el.textContent) // => '修改后的值'
+```
+
+**小结：**
+
+1. 把回调函数放入callbacks等待执行
+2. 将执行函数放到微任务或者宏任务中
+3. 事件循环到了微任务或者宏任务，执行函数依次执行callbacks中的回调
+
+## Vue组件通信方案
+
+整理`vue`中8种常规的通信方案
+
+1. 通过 props 传递
+2. 通过 $emit 触发自定义事件
+3. 使用 ref
+4. EventBus
+
+```javascript
+// 创建一个中央时间总线类  
+class Bus {  
+  constructor() {  
+    this.callbacks = {};   // 存放事件的名字  
+  }  
+  $on(name, fn) {  
+    this.callbacks[name] = this.callbacks[name] || [];  
+    this.callbacks[name].push(fn);  
+  }  
+  $emit(name, args) {  
+    if (this.callbacks[name]) {  
+      this.callbacks[name].forEach((cb) => cb(args));  
+    }  
+  }  
+}  
+
+// main.js  
+Vue.prototype.$bus = new Bus() // 将$bus挂载到vue实例的原型上  
+// 另一种方式  
+Vue.prototype.$bus = new Vue() // Vue已经实现了Bus的功能  
+//Children1.vue
+this.$bus.$emit('foo')  
+//Children2.vue
+this.$bus.$on('foo', this.handle) 
+```
+
+1. $parent 或$root
+
+#### $parent 或$ root
+
+- 通过共同祖辈`$parent`或者`$root`搭建通信侨联
+
+兄弟组件
+
+```javascript
+this.$parent.on('add',this.add)
+```
+
+另一个兄弟组件
+
+```javascript
+this.$parent.emit('add')
+```
+
+1. attrs 与 listeners
+
+### $attrs 与$ listeners
+
+- 适用场景：祖先传递数据给子孙
+- 设置批量向下传属性`$attrs`和 `$listeners`
+- 包含了父级作用域中不作为 `prop` 被识别 (且获取) 的特性绑定 ( class 和 style 除外)。
+- 可以通过 `v-bind="$attrs"` 传⼊内部组件
+
+```javascript
+// child：并未在props中声明foo  
+<p>{{$attrs.foo}}</p>  
+
+// parent  
+<HelloWorld foo="foo"/>  
+
+// 给Grandson隔代传值，communication/index.vue  
+<Child2 msg="lalala" @some-event="onSomeEvent"></Child2>  
+
+// Child2做展开  
+<Grandson v-bind="$attrs" v-on="$listeners"></Grandson>  
+
+// Grandson使⽤  
+<div @click="$emit('some-event', 'msg from grandson')">  
+{{msg}}  
+</div>  
+```
 
 
+
+1. Provide 与 Inject
+
+- 在祖先组件定义`provide`属性，返回传递的值
+- 在后代组件通过`inject`接收组件传递过来的值
+
+```javascript
+provide(){  
+    return {  
+        foo:'foo'  
+    }  
+}  
+
+inject:['foo'] // 获取到祖先组件传递过来的值  
+```
+
+
+
+1. Vuex
+
+适用场景: 复杂关系的组件数据传递
+
+Vuex作用相当于一个用来存储共享变量的容器
+
+1. `state`用来存放共享变量的地方
+2. `getter`，可以增加一个`getter`派生状态，(相当于`store`中的计算属性），用来获得共享变量的值
+3. `mutations`用来存放修改`state`的方法。
+4. `actions`也是用来存放修改state的方法，不过`action`是在`mutations`的基础上进行。常用来做一些异步操作
+
+- 父子关系的组件数据传递选择 `props` 与 `$emit`进行传递，也可选择`ref`
+- 兄弟关系的组件数据传递可选择`$bus`，其次可以选择`$parent`进行传递
+- 祖先与后代组件数据传递可选择`attrs`与`listeners`或者 `Provide`与 `Inject`
+- 复杂关系的组件数据传递可以通过`vuex`存放共享的变量
+
+## Vue中给对象添加新属性时，界面不刷新的问题
+
+#### 三、解决方案
+
+`Vue` 不允许在已经创建的实例上动态添加新的响应式属性
+
+若想实现数据与视图同步更新，可采取下面三种解决方案：
+
+- Vue.set()
+- Object.assign()
+- $forcecUpdated()
+
+### Vue.set()
+
+Vue.set( target, propertyName/index, value )
+
+参数
+
+- `{Object | Array} target`
+- `{string | number} propertyName/index`
+- `{any} value`
+
+返回值：设置的值
+
+通过`Vue.set`向响应式对象中添加一个`property`，并确保这个新 `property `同样是响应式的，且触发视图更新
+
+### Object.assign()
+
+直接使用`Object.assign()`添加到对象的新属性不会触发更新
+
+应创建一个新的对象，合并原对象和混入对象的属性
+
+```javascript
+this.someObject = Object.assign({},this.someObject,{newProperty1:1,newProperty2:2 ...})
+```
+
+### $forceUpdate
+
+### 小结
+
+- 如果为对象添加少量的新属性，可以直接采用`Vue.set()`
+- 如果需要为新对象添加大量的新属性，则通过`Object.assign()`创建新对象
+- 如果你实在不知道怎么操作时，可采取`$forceUpdate()`进行强制刷新 (不建议)
+
+PS：`vue3`是用过`proxy`实现数据响应式的，直接动态添加新属性仍可以实现数据响应式
