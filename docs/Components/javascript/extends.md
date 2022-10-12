@@ -217,3 +217,188 @@ document.documentElement.clientHeight//获取屏幕可视区域的高度 element
 ```
 
 因为JavaScript 会阻塞 DOM 生成，而样式文件又会阻塞 JavaScript 的执行，所以在实际的工程中需要重点关注 JavaScript 文件和样式表文件，使用不当会影响到页面性能的。
+
+## 六、如何预防用户快速连续点击，造成数据多次提交
+
+为了防止重复提交，前端一般会在第一次提交的结果返回前，将提交按钮禁用。
+
+实现的方法有很多种：
+
+- css设置 `pointer-events` 为 `none`
+- 增加变量控制，当变量满足条件时才执行点击事件的后续代码
+- 如果按钮使用 button 标签实现，可以使用 `disabled` 属性
+- 加遮罩层，比如一个全屏的loading，避免触发按钮的点击事件
+
+## 七、如何判断是PC还是移动端访问
+
+### 一、navigator.userAgent
+
+JS 通过`navigator.userAgent`属性拿到这个字符串，只要里面包含`mobi`、`android`、`iphone`等关键字，就可以认定是移动设备。
+
+```javascript
+if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+  // 当前设备是移动设备
+}
+
+// 另一种写法
+if (
+  navigator.userAgent.match(/Mobi/i) ||
+  navigator.userAgent.match(/Android/i) ||
+  navigator.userAgent.match(/iPhone/i)
+) {
+  // 当前设备是移动设备
+}
+```
+
+这种方法的优点是简单方便，缺点是不可靠，因为用户可以修改这个字符串，让手机浏览器伪装成桌面浏览器。
+
+```javascript
+if (/Android|iPhone|iPad|iPod/i.test(navigator.platform)) {
+ // 当前设备是移动设备
+} 
+```
+
+### 二、window.screen，window.innerWidth
+
+`window.screen`对象返回用户设备的屏幕信息，该对象的`width`属性是屏幕宽度（单位为像素）。
+
+```javascript
+if (window.screen.width < 500) {
+ // 当前设备是移动设备 
+}
+```
+
+这个方法的缺点在于，如果手机横屏使用，就识别不了。
+
+另一个属性`window.innerWidth`返回浏览器窗口里面的网页可见部分的宽度，比较适合指定网页在不同宽度下的样式。
+
+```javascript
+const getBrowserWidth = function() {
+ if (window.innerWidth < 768) {
+   return "xs";
+ } else if (window.innerWidth < 991) {
+   return "sm";
+ } else if (window.innerWidth < 1199) {
+   return "md";
+ } else {
+   return "lg";
+ }
+};
+```
+
+### 三、window.orientation
+
+第三种方法是侦测屏幕方向，手机屏幕可以随时改变方向（横屏或竖屏），桌面设备做不到。
+
+`window.orientation`属性用于获取屏幕的当前方向，只有移动设备才有这个属性，桌面设备会返回`undefined`。
+
+```javascript
+if (typeof window.orientation !== 'undefined') {
+ // 当前设备是移动设备 
+}
+```
+
+注意，iPhone 的 Safari 浏览器不支持该属性。
+
+### 四、touch 事件
+
+第四种方法是，手机浏览器的 DOM 元素可以通过`ontouchstart`属性，为`touch`事件指定监听函数。桌面设备没有这个属性。
+
+```javascript
+function isMobile() { 
+ return ('ontouchstart' in document.documentElement); 
+}
+
+// 另一种写法
+function isMobile() {
+try {
+   document.createEvent("TouchEvent"); return true;
+ } catch(e) {
+   return false; 
+ }
+}
+```
+
+### 五、window.matchMedia()
+
+CSS 通过 media query（媒介查询）为网页指定响应式样式。如果某个针对手机的 media query 语句生效了，就可以认为当前设备是移动设备。
+
+`window.matchMedia()`方法接受一个 CSS 的 media query 语句作为参数，判断这个语句是否生效。
+
+```javascript
+let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+//除了通过屏幕宽度判断，还可以通过指针的精确性判断。
+let isMobile = window.matchMedia("(pointer:coarse)").matches;
+//有些设备支持多种指针，比如同时支持鼠标和触摸。pointer:coarse只用来判断主指针，此外还有一个any-pointer命令判断所有指针。
+let isMobile = window.matchMedia("(any-pointer:coarse)").matches;
+```
+
+### 六、工具包
+
+除了上面这些方法，也可以使用别人写好的工具包。这里推荐 react-device-detect，它支持多种粒度的设备侦测。
+
+```javascript
+import {isMobile} from 'react-device-detect';
+
+if (isMobile) {
+ // 当前设备是移动设备
+}
+```
+
+## 八、如何使用js生成海报
+
+### 方案一：DOM->canvas->image
+
+将目标 DOM 节点绘制到 canvas 画布，然后利用 canvas 相关的 API 以图片形式导出。
+
+可简单标记为绘制阶段和导出阶段两个步骤：
+
+- 绘制阶段：选择希望绘制的 DOM 节点，根据 DOM 的 `nodeType` 属性调用 `canvas` 对象的对应 API，将目标 DOM 节点绘制到 `canvas` 画布（例如对于 img 标签的绘制使用 drawImage 方法)。
+- 导出阶段：通过 canvas 的 `toDataURL` 或 `getImageData` 等对外接口，最终实现画布内容的导出。
+
+### 方案二：DOM->svg->canvas->image
+
+将 html 作为 svg 的外联元素，利用 svg 的 API 导出为图片
+
+### 方案三：使用NodeJS 调用浏览器方法
+
+在后端生成海报，比如可以使用nodeJS，通过 `puppter` 等库，调用浏览器的 page 对象，基于 page.screenshots 截图并保存到磁盘。
+
+## 九、如何获取页面滚动距离
+
+_**pageYOffset**_：属window对象，IE9+、Firefox、Chrome、Opera均支持该方式获取页面滚动敢赌值，并且会忽略DOCTYPE定义规则。
+
+```javascript
+window.pageYOffset
+```
+
+_**scrollY**_：属于window对象，Firefox、Chrome、Opera均支持，IE不支持，忽略DOCTYPE定义规则。
+
+```
+window.scrollY
+```
+
+页面如果未定义DOCTYPE文档头，所有浏览器都支持docume.body.scrollTop属性获取滚动高度。
+
+```
+document.body.scrollTop
+```
+
+如果页面定义了DOCTYPE文档头，那么HTML元素上的scrollT属性在IE、Firefox、Opera（presto内核）下都可以获取滚动高度值，而在Chrome和Safari下其值为0。
+
+```
+document.documentElement.scrollTop; //Chrome,Safari下为0
+```
+
+此在获取页面滚动高度的时候优先考虑使用 window.pageYOffset 然后在使用scrollTop。
+
+```javascript
+var _scrollLeft = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft 
+ var _scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop
+```
+
+## 十、如何顺序执行10个异步任务
+
+### 解法1：for 循环 + await
+
+## 解法2：Array.prototype.reduce
