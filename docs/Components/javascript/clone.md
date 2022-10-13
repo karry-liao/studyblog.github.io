@@ -10,7 +10,7 @@
 
 ​	**1.递归实现深拷贝—推荐**
 
-```
+```javascript
 	function deepClone(obj){
 	let objClone = Array.isArray(obj) ? [] : {};
 	if(obj && typeof obj === 'object'){
@@ -54,7 +54,7 @@ functiom deepClone(obj){
 
 ​	**1.concat(arr1,arr2,....)**
 
-```
+```javascript
 functiom deepClone(arr){
 	if(arr instanceof Array){
 		return [].concat(arr);
@@ -66,7 +66,7 @@ functiom deepClone(arr){
 
 ​	**2. slice**(idx1,idx2)
 
-```
+```javascript
 function deepClone(arr){
 	if(arr instance Array){
 		return arr.slice()
@@ -78,7 +78,7 @@ function deepClone(arr){
 
 ​	**3.Json方式**
 
-```
+```javascript
 function deepClone(arr){
 	let _arr = JSON.stringfy(arr)
 	return JSON.parse(_arr)
@@ -87,7 +87,7 @@ function deepClone(arr){
 
 ## **3.多维数组实现深拷贝**
 
-```
+```javascript
 function deepClone(arr){
 	var out = [],i = 0,len = arr.lenth
 	for(let i=0; i< len; i++){

@@ -382,7 +382,7 @@ const age = 18
 foo `这是${name},他的年龄是${age}岁` 
 ```
 
-<img src='../images/string.jpe'/>
+<img src='../images/string.jpg'/>
 
 在模板字符串中，如果输入无效的unicode字符，还是会报错。只有在便签模板中 从es9开始才不会报错。
 
