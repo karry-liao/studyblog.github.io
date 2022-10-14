@@ -172,3 +172,166 @@
 ​		},100)) // 79
 ​		//开始的时候100-1=99，之后99-2=97，之后97-3=94，之后
 ​		//94-4=90，之后90-5=85，最后85-6=79
+
+## 四、Object和map的区别
+
+- Object
+
+在ECMAScript中，`Object`是一个特殊的对象。它本身是一个顶级对象，同时还是一个构造函数，可以通过它（如：`new Object()`）来创建一个对象。我们可以认为JavaScript中所有的对象都是`Object`的一个实例，对象可以用字面量的方法const obj = {}即可声明。
+
+- Map
+
+Map是Object的一个子类，可以有序保存任意类型的数据，使用键值对去存储，其中键可以存储任意类型，通过const m = new Map();即可得到一个map实例。
+
+### 访问
+
+map: 通过map.get(key)方法去属性, 不存在则返回undefined
+
+object: 通过obj.a或者obj['a']去访问一个属性, 不存在则返回undefined
+
+map: 通过map.set去设置一个值，key可以是任意类型
+
+object: 通过object.a = 1或者object['a'] = 1，去赋值，key只能是字符串，数字或symbol
+
+### 删除
+
+map: 通过map.delete去删除一个值，试图删除一个不存在的属性会返回false
+
+object: 通过delete操作符才能删除对象的一个属性，诡异的是，即使对象不存在该属性，删除也返回true，当然可以通过**Reflect.deleteProperty(target, prop)** 删除不存在的属性还是会返回true。
+
+```javascript
+var obj = {}; // undefined
+delete obj.a // true
+```
+
+### 迭代
+
+map: 拥有迭代器，可以通过for-of forEach去直接迭代元素，切遍历顺序是确定的
+
+object: 并没有实现迭代器，需要自行实现，不实现只能通过for-in循环去迭代，遍历顺序是不确定的
+
+## 五、postmessage的使用场景
+
+​		`window.postMessage()` 方法可以安全地实现跨源通信。`window.postMessage()` 方法提供了一种受控机制来规避此限制，只要正确的使用，这种方法就很安全
+
+```javascript
+otherWindow.postMessage(message, targetOrigin, [transfer]);
+```
+
+### 例子
+
+#### 子框架传递信息
+
+```javascript
+<script>
+
+// 子框架向父框架发送信息
+
+function goParentIfromPostMessage(msg,parentUrl){
+
+    var parentUrl = window.parent.location.origin;
+
+        window.onload=function(){
+
+        window.parent.postMessage(msg,parentUrl);
+
+        }
+    }
+ }
+
+    goParentIfromPostMessage('msgStr',parentIfromUrl)
+
+</script>
+```
+
+#### 父框架接收端
+
+```javascript
+<script>
+
+        window.addEventListener('message',function(e){
+
+            console.log(e.origin,e.data);
+
+            console.log(e.data);
+
+        })
+
+</script>
+```
+
+## 六、e.target和e.currentTarget有什么区别
+
+## addEventListener
+
+`addEventListener`是为元素绑定事件的方法，他接收三个参数：
+
+- 第一个参数：绑定的事件名
+- 第二个参数：执行的函数
+- 第三个参数：
+  - false：默认，代表冒泡时绑定
+  - true：代表捕获时绑定
+
+我们给四个div元素绑定事件，且`addEventListener`第三个参数不设置，则默认设置为`false`
+
+```javascript
+const a = document.getElementById('a')
+const b = document.getElementById('b')
+const c = document.getElementById('c')
+const d = document.getElementById('d')
+a.addEventListener('click', (e) => {
+  const {
+    target,
+    currentTarget
+  } = e
+  console.log(`target是${target.id}`)
+  console.log(`currentTarget是${currentTarget.id}`)
+})
+b.addEventListener('click', (e) => {
+  const {
+    target,
+    currentTarget
+  } = e
+  console.log(`target是${target.id}`)
+  console.log(`currentTarget是${currentTarget.id}`)
+})
+c.addEventListener('click', (e) => {
+  const {
+    target,
+    currentTarget
+  } = e
+  console.log(`target是${target.id}`)
+  console.log(`currentTarget是${currentTarget.id}`)
+})
+d.addEventListener('click', (e) => {
+  const {
+    target,
+    currentTarget
+  } = e
+  console.log(`target是${target.id}`)
+  console.log(`currentTarget是${currentTarget.id}`)
+})
+
+//现在我们点击，看看输出的东西，可以看出触发的是d，而执行的元素是冒泡的顺序
+//target是d currentTarget是d
+//target是d currentTarget是c
+//target是d currentTarget是b
+//target是d currentTarget是a
+
+```
+
+### true
+
+我们把四个事件第三个参数都设置为`true`，我们看看输出结果，可以看出触发的是d，而执行的元素是捕获的顺序
+
+```
+target是d currentTarget是a
+target是d currentTarget是b
+target是d currentTarget是c
+target是d currentTarget是d
+```
+
+
+
+- `e.target`：**触发**事件的元素
+- `e.currentTarget`：**绑定**事件的元素

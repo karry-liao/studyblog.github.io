@@ -45,6 +45,46 @@ Array(3) // [, , ,]
 Array(3, 11, 8) // [3, 11, 8]
 ```
 
+## ES5的几种继承方式
+
+#### 		ES6提供了Class关键字来实现类的定义，Class 可以通过extends关键字实现继承，让子类继承父类的属性和方法。
+
+#### 原型链继承
+
+原型链继承的原理很简单，直接让子类的原型对象指向父类实例，当子类实例找不到对应的属性和方法时，就会往它的原型对象，也就是父类实例上找，从而实现对父类的属性和方法的继承
+
+##### 缺陷
+
+1. 由于所有Student实例原型都指向同一个Person实例, 因此对某个Student实例的来自父类的引用类型变量修改会影响所有的Student实例
+
+####  构造函数继承
+
+构造函数继承，即在子类的构造函数中执行父类的构造函数，并为其绑定子类的this，让父类的构造函数把成员属性和方法都挂到子类的this上去，这样既能避免实例之间共享一个原型实例，又能向父类构造方法传参。
+
+##### 缺陷
+
+继承不到父类原型上的属性和方法
+
+Students类实际上是调用Person类来生成的实例
+
+#### 组合式继承
+
+组合是继承结合了原型集成和构造函数继承的特点。
+
+##### 缺陷
+
+- 每次创建子类实例都执行了两次构造函数(Person.apply和new Person())，虽然这并不影响对父类的继承，但子类创建实例时，原型中会存在两份相同的属性和方法，这并不优雅。
+
+#### 寄生式组合继承
+
+解决构造函数被执行两次的问题, 我们将指向父类实例改为指向父类原型, 减去一次构造函数的执行。
+
+### 总结
+
+- 说到js继承，最开始想到的应该是是原型链继承，通过把子类实例的原型指向父类实例来继承父类的属性和方法，但原型链继承的缺陷在于对子类实例继承的引用类型的修改会影响到所有的实例对象以及无法向父类的构造方法传参。
+- 构造函数继承, 通过在子类构造函数中调用父类构造函数并传入子类this来获取父类的属性和方法，但构造函数继承也存在缺陷，构造函数继承不能继承到父类原型链上的属性和方法。
+- 后面有了组合式继承，但也有了新的问题，每次都会执行两次父类的构造方法，最终有了寄生式组合式继承。
+
 ## 实例对象新增的方法
 
 - copyWithin(target-必须,start-可选,end-可选)：将指定位置的成员复制到其他位置（会覆盖原有成员），然后返回当前数组。
@@ -296,6 +336,46 @@ str.padStart(targetLength [, padString])
 
 - await 只能在 async 标记的函数内部使用，单独使用会触发 Syntax error。
 - await后面需要跟异步操作，不然就没有意义，而且await后面的Promise对象不必写then，因为await的作用之一就是获取后面Promise对象成功状态传递出来的参数。
+
+#### async/await错误处理
+
+​	一般情况下 async/await 在错误处理方面，主要使用 try/catch。async/await 本质就是 promise 的语法糖，既然是 promise 那么就可以使用 then 函数了
+
+```javascript
+(async () => {
+    const fetchData = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('fetch data is me')
+            }, 1000)
+        })
+    }
+
+    // 抽离成公共方法
+    const awaitWrap = (promise) => {
+        return promise
+            .then(data => [null, data])
+            .catch(err => [err, null])
+    }
+
+    const [err, data] = await awaitWrap(fetchData())
+    console.log('err', err)
+    console.log('data', data)
+    // err null
+    // data fetch data is me
+})()
+```
+
+```typescript
+//TS版本
+function awaitWrap<T, U = any>(promise: Promise<T>): Promise<[U | null, T | null]> {
+    return promise
+        .then<[null, T]>((data: T) => [null, data])
+        .catch<[U, null]>(err => [err, null])
+}
+```
+
+
 
 ### ES2018(ES9)
 
@@ -714,3 +794,4 @@ budget === 10 ** 12 // true
 只要参数实例有一个变成`fulfilled`状态，包装实例就会变成`fulfilled`状态；如果所有参数实例都变成`rejected`状态，包装实例就会变成`rejected`状态。
 
 `Promise.any()`跟`Promise.race()`方法很像，只有一点不同，就是`Promise.any()`不会因为某个 Promise 变成`rejected`状态而结束，必须等到所有参数 Promise 变成`rejected`状态才会结束。
+

@@ -88,7 +88,9 @@ console.log(path.resolve(__dirname, "./components")),
             collapsable: false,
             children: [
               ["htmlcss/Flex", "Flex布局"],
+              ["htmlcss/animation", "前端动画"],
               ["htmlcss/FontCss", "花式字体"],
+
               // ["base/start", "快速开始"],
             ],
           },
@@ -111,6 +113,7 @@ console.log(path.resolve(__dirname, "./components")),
             collapsable: true,
             children: [
               ["javascript/base", "JS基础"],
+              ["javascript/Array", "数组的常用方法"],
               ["javascript/clone", "浅拷贝与深拷贝"],
               ["javascript/ESsix", "ES6新拓展"],
               ["javascript/extends", "JavaScript扩展"],
