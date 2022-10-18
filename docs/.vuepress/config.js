@@ -163,6 +163,14 @@ console.log(path.resolve(__dirname, "./components")),
             ],
           },
           {
+            title: "业务功能篇",
+            collapsable: true,
+            children: [
+              ["work/Scan", "扫码登录"],
+              // ["static/Svg", "SVG变色图标"],
+            ],
+          },
+          {
             title: "NodeJS篇",
             collapsable: true,
             children: [
