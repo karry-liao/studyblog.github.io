@@ -92,7 +92,7 @@ optimization: {
 
 ​		相比`Vue2`，`Vue3`整体体积变小了，除了移出一些不常用的API，再重要的是`Tree shanking`
 
-## 三、响应式系统
+### 3.响应式系统
 
 `vue2`中采用 `defineProperty`来劫持整个对象，然后进行深度遍历所有属性，给每个属性添加`getter`和`setter`，实现响应式
 
