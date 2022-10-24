@@ -695,6 +695,12 @@ console.log(this.$el.textContent) // => '修改后的值'
 2. 将执行函数放到微任务或者宏任务中
 3. 事件循环到了微任务或者宏任务，执行函数依次执行callbacks中的回调
 
+## Vue双向绑定
+
+​		Vue示例首先通过complie解析指令，通过解析后初始化视图，同时定义一个函数和watcher，将来对数据变化watcher会调用更新函数，然后更新视图。其次通过observe劫持监听所有属性，当属性发生变化，通知给管家Dep，管家Dep将变化通知给watcher，同时watcher也会添加订阅者，订阅Dep，将来一旦data发生变化，首先会找到对应的Dep，通知所有watcher执行更新函数。
+
+<img src='../images/VueBind.jpg'/>
+
 ## Vue组件通信方案
 
 整理`vue`中8种常规的通信方案

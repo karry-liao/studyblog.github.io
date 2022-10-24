@@ -80,6 +80,7 @@ console.log(path.resolve(__dirname, "./components")),
             collapsable: false,
             children: [
               ["base/introduce", "介绍"],
+              ["base/Reg", "正则表达式"],
               // ["base/start", "快速开始"],
             ],
           },
