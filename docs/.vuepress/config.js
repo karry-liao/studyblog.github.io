@@ -89,6 +89,7 @@ console.log(path.resolve(__dirname, "./components")),
             title: "HTML&CSS篇",
             collapsable: false,
             children: [
+              ["htmlcss/CSS", "CSS样式"],
               ["htmlcss/Selector", "CSS选择器"],
               ["htmlcss/Flex", "Flex布局"],
               ["htmlcss/animation", "前端动画"],

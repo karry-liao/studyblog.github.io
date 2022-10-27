@@ -9,14 +9,6 @@ import GlobalLayout from "C:\\Users\\liao.kailun\\Desktop\\New folder (2)\\markd
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-7d90b73c",
-    path: "/Components/CpNet/base.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7d90b73c").then(next)
-    },
-  },
-  {
     name: "v-dee70954",
     path: "/Components/Echarts/echarts.html",
     component: GlobalLayout,
@@ -25,19 +17,11 @@ export const routes = [
     },
   },
   {
-    name: "v-668422b0",
-    path: "/Components/MiniPrograme/delay.html",
+    name: "v-7d90b73c",
+    path: "/Components/CpNet/base.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-668422b0").then(next)
-    },
-  },
-  {
-    name: "v-be9653d4",
-    path: "/Components/MiniPrograme/base.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-be9653d4").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-7d90b73c").then(next)
     },
   },
   {
@@ -49,19 +33,19 @@ export const routes = [
     },
   },
   {
-    name: "v-729ac2da",
-    path: "/Components/WebPack/TreeShaking.html",
+    name: "v-be9653d4",
+    path: "/Components/MiniPrograme/base.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-729ac2da").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-be9653d4").then(next)
     },
   },
   {
-    name: "v-580a4394",
-    path: "/Components/WebPack/LoaderAndPlugin.html",
+    name: "v-668422b0",
+    path: "/Components/MiniPrograme/delay.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-580a4394").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-668422b0").then(next)
     },
   },
   {
@@ -73,11 +57,11 @@ export const routes = [
     },
   },
   {
-    name: "v-49887862",
-    path: "/Components/WebPack/sourcemap.html",
+    name: "v-580a4394",
+    path: "/Components/WebPack/LoaderAndPlugin.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-49887862").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-580a4394").then(next)
     },
   },
   {
@@ -86,6 +70,22 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-31c46882").then(next)
+    },
+  },
+  {
+    name: "v-729ac2da",
+    path: "/Components/WebPack/TreeShaking.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-729ac2da").then(next)
+    },
+  },
+  {
+    name: "v-49887862",
+    path: "/Components/WebPack/sourcemap.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-49887862").then(next)
     },
   },
   {
@@ -145,19 +145,27 @@ export const routes = [
     },
   },
   {
-    name: "v-e4c77034",
-    path: "/Components/htmlcss/FontCss.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-e4c77034").then(next)
-    },
-  },
-  {
     name: "v-7fad3f62",
     path: "/Components/htmlcss/Flex.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-7fad3f62").then(next)
+    },
+  },
+  {
+    name: "v-242e3c70",
+    path: "/Components/htmlcss/CSS.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-242e3c70").then(next)
+    },
+  },
+  {
+    name: "v-e4c77034",
+    path: "/Components/htmlcss/FontCss.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-e4c77034").then(next)
     },
   },
   {
@@ -177,11 +185,11 @@ export const routes = [
     },
   },
   {
-    name: "v-738ea9e8",
-    path: "/Components/javascript/AST.html",
+    name: "v-1c79e368",
+    path: "/Components/javascript/RecursionTree.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-738ea9e8").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-1c79e368").then(next)
     },
   },
   {
@@ -193,6 +201,14 @@ export const routes = [
     },
   },
   {
+    name: "v-738ea9e8",
+    path: "/Components/javascript/AST.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-738ea9e8").then(next)
+    },
+  },
+  {
     name: "v-b0e78630",
     path: "/Components/javascript/ESsix.html",
     component: GlobalLayout,
@@ -201,19 +217,19 @@ export const routes = [
     },
   },
   {
-    name: "v-1c79e368",
-    path: "/Components/javascript/RecursionTree.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1c79e368").then(next)
-    },
-  },
-  {
     name: "v-7eb0eba8",
     path: "/Components/javascript/TypeError.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-7eb0eba8").then(next)
+    },
+  },
+  {
+    name: "v-5a19bdc0",
+    path: "/Components/javascript/base.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-5a19bdc0").then(next)
     },
   },
   {
@@ -233,14 +249,6 @@ export const routes = [
     },
   },
   {
-    name: "v-45f51488",
-    path: "/Components/javascript/extends.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-45f51488").then(next)
-    },
-  },
-  {
     name: "v-ade7a7b0",
     path: "/Components/javascript/fileUpload.html",
     component: GlobalLayout,
@@ -257,22 +265,6 @@ export const routes = [
     },
   },
   {
-    name: "v-4f7a0fd8",
-    path: "/Components/md_view/vue.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4f7a0fd8").then(next)
-    },
-  },
-  {
-    name: "v-5a19bdc0",
-    path: "/Components/javascript/base.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5a19bdc0").then(next)
-    },
-  },
-  {
     name: "v-0ec807b4",
     path: "/Components/performance/BorserPerformance.html",
     component: GlobalLayout,
@@ -286,6 +278,22 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-3487cc0e").then(next)
+    },
+  },
+  {
+    name: "v-4f7a0fd8",
+    path: "/Components/md_view/vue.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4f7a0fd8").then(next)
+    },
+  },
+  {
+    name: "v-45f51488",
+    path: "/Components/javascript/extends.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-45f51488").then(next)
     },
   },
   {
@@ -313,14 +321,6 @@ export const routes = [
     },
   },
   {
-    name: "v-3283f1c2",
-    path: "/Components/react/Reacthooks.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3283f1c2").then(next)
-    },
-  },
-  {
     name: "v-c4d5817c",
     path: "/Components/react/base.html",
     component: GlobalLayout,
@@ -337,11 +337,11 @@ export const routes = [
     },
   },
   {
-    name: "v-7b1a1b00",
-    path: "/Components/static/Button.html",
+    name: "v-3283f1c2",
+    path: "/Components/react/Reacthooks.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7b1a1b00").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-3283f1c2").then(next)
     },
   },
   {
@@ -350,6 +350,22 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-84328e1c").then(next)
+    },
+  },
+  {
+    name: "v-7b1a1b00",
+    path: "/Components/static/Button.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7b1a1b00").then(next)
+    },
+  },
+  {
+    name: "v-d504b7f0",
+    path: "/Components/static/IconStyle.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-d504b7f0").then(next)
     },
   },
   {
@@ -377,27 +393,11 @@ export const routes = [
     },
   },
   {
-    name: "v-d504b7f0",
-    path: "/Components/static/IconStyle.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-d504b7f0").then(next)
-    },
-  },
-  {
     name: "v-1aced8c8",
     path: "/Components/static/SlideVerify.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-1aced8c8").then(next)
-    },
-  },
-  {
-    name: "v-b954e374",
-    path: "/Components/vue/FirstLoad.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b954e374").then(next)
     },
   },
   {
@@ -414,6 +414,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-0d994ec6").then(next)
+    },
+  },
+  {
+    name: "v-b954e374",
+    path: "/Components/vue/FirstLoad.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-b954e374").then(next)
     },
   },
   {
@@ -465,19 +473,19 @@ export const routes = [
     },
   },
   {
-    name: "v-15bd0256",
-    path: "/Components/vue/permissionControl.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-15bd0256").then(next)
-    },
-  },
-  {
     name: "v-4bb298c2",
     path: "/Components/vue/template.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-4bb298c2").then(next)
+    },
+  },
+  {
+    name: "v-15bd0256",
+    path: "/Components/vue/permissionControl.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-15bd0256").then(next)
     },
   },
   {
