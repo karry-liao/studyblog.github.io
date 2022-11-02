@@ -171,7 +171,6 @@ console.log(path.resolve(__dirname, "./components")),
               ["react/base", "初识React"],
               ["react/Reacthooks", "常用ReactHooks"],
               ["react/ReactPerfomance", "React性能提升"],
-              // ["static/Svg", "SVG变色图标"],
             ],
           },
           {
@@ -180,7 +179,8 @@ console.log(path.resolve(__dirname, "./components")),
             children: [
               ["work/Scan", "扫码登录"],
               ["work/WebSocket", "WebSocket"],
-              // ["static/Svg", "SVG变色图标"],
+              ["work/SendeCode", "验证码发送倒计时"],
+              ["work/debAndThr", "防抖与节流"],
             ],
           },
           {
@@ -188,7 +188,6 @@ console.log(path.resolve(__dirname, "./components")),
             collapsable: true,
             children: [
               ["NodeJs/Start", "初识NodeJS"],
-              // ["static/Svg", "SVG变色图标"],
             ],
           },
           {
@@ -199,8 +198,6 @@ console.log(path.resolve(__dirname, "./components")),
               ["performance/BorserPerformance", "前端性能监控"],
               ["performance/Browser", "Web缓存"],
               ["performance/WebWorker", "WebWorker"],
-
-              // ["static/Svg", "SVG变色图标"],
             ],
           },
           {
@@ -210,7 +207,7 @@ console.log(path.resolve(__dirname, "./components")),
               ["MiniPrograme/base", "初识小程序"],
               ["MiniPrograme/package", "小程序打包体积问题"],
               ["MiniPrograme/delay", "移动端事件延时"],
-              // ["static/Svg", "SVG变色图标"],
+              
             ],
           },
           {
@@ -218,7 +215,7 @@ console.log(path.resolve(__dirname, "./components")),
             collapsable: true,
             children: [
               // ["static/Icon", "图标"],
-              // ["static/Svg", "SVG变色图标"],
+              
             ],
           },
           {
@@ -226,7 +223,7 @@ console.log(path.resolve(__dirname, "./components")),
             collapsable: true,
             children: [
               ["CpNet/base", "计算机网络基础"],
-              // ["static/Svg", "SVG变色图标"],
+              
             ],
           },
           {
@@ -236,7 +233,7 @@ console.log(path.resolve(__dirname, "./components")),
               ["dataStructureAndCount/DoCode", "编程"],
               ["dataStructureAndCount/count", "算法"],
               ["dataStructureAndCount/StackAndHeap", "堆与栈"],
-              // ["static/Svg", "SVG变色图标"],
+              
             ],
           },
         ],
