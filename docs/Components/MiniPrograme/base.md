@@ -1,5 +1,32 @@
 # MiniPrograme
 
+## app入口文件可以做什么
+
+1. 定义globalData，page通过const app =getApp()获取globalData
+2. 判断小程序的进入场景
+3. 获取用户的信息   wx.getUserInfo (将弃用) 后续使用open-type=“getUserInfo”  bingdGetUserInfi='handleGetUserInfo'添加按钮绑定事件获取用户信息
+4. 还可通过``` <open-data type='userNickName'></open-type>```直接获取用户信息
+
+## 内置组件
+
+image： 单标签或者双标签，默认自己的大小 320X240   行内块元素(inline-block) , scaleFill     widthFix
+
+```
+ wx.chooseImage({
+​	success:function(res){
+        console.log(res)
+​	}
+})
+```
+
+botton: hover-class   open-type   size   loading
+
+text:行内元素
+
+view：块级元素   hidden
+
+input
+
 ## **生命周期**
 
 - ​	onLuach：通常在用户启动的时候触发，用于获取用户个人信息
