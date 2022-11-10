@@ -40,14 +40,82 @@ input
 
 - ​	onPullDownRefresh：监听用户下拉动作，需配置enabelPulldownRefresh：true
 - ​	onReachBottom：上拉触底处理函数
-
 - ​	onShareAppMessage：用户点击右上角分享
-
 - ​	onPageScroll：页面滚动触发函数
-
 - ​	onResize：横屏触发，需要在页面的json文件添加：“pageOrientation“：”auto”
-
 - ​	onTabItemTap：点击页面的tabitem才会触发
+
+# conponent
+
+```js
+components({
+​	properties:{
+​		title:{
+		observer:function(newvalue,oldvalue){}
+		}
+	},
+    methods:{
+           fool(){}
+    },
+
+     optiones:{	//定义组件的配置选项
+​		multipleSlots:true	//​	multipleSlots:在使用多插槽是需设置true
+        styleIsolation://设置样式的隔离方式，跟scoped类似
+	},
+    //外界给组件传入额外的样式
+    externalClass:[],
+        Observers(){      //监听properties/data的改变  拿不到lodVal
+        	counter:function(newVal)
+    },
+    //组件中监听生命周期函数
+    //1.监听所在页面的生命周期
+    pageLifetimes:{
+        show(){
+            console.log('监听组件所在页面显示出来的生命周期')
+        }，
+       	hide(){
+            console.log('监听组件所在页面隐藏出来的生命周期')
+        }，
+        resize(){
+            console.log('监听页面尺寸改变')
+        }
+    }
+    //2.监听组件本身的生命周期
+        lifetimes:{
+            created(){},
+            attached(){
+            	console.log('组件被添加到页面')
+            },
+            ready(){ }//组件被渲染出来
+            move(){}//组件被移动到另一个节点，
+            detached(){}//组件被移除
+        }
+})
+
+
+```
+
+# 小程序系统API
+
+```js
+wx.request({
+    url:'',
+    data:'',
+    method:''
+    success:function(res){
+        console.log(res)
+    },
+    fail:function(){
+        
+    },
+    header:'',
+    reponseType:'',
+    completer:'',
+    dataType:'' //接口调用结束的回调函数，成功失败都会执行
+})
+```
+
+
 
 # uni-app页面生命周期
 
