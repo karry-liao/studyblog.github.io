@@ -89,6 +89,7 @@ console.log(path.resolve(__dirname, "./components")),
             title: "HTML&CSS篇",
             collapsable: false,
             children: [
+              ["htmlcss/AutoResize", "响应式布局方案"],
               ["htmlcss/CSS", "CSS样式"],
               ["htmlcss/Selector", "CSS选择器"],
               ["htmlcss/Flex", "Flex布局"],
@@ -181,15 +182,13 @@ console.log(path.resolve(__dirname, "./components")),
               ["work/WebSocket", "WebSocket"],
               ["work/SendeCode", "验证码发送倒计时"],
               ["work/debAndThr", "防抖与节流"],
-              ['work/eventTraking',"数据埋点"]
+              ["work/eventTraking", "数据埋点"],
             ],
           },
           {
             title: "NodeJS篇",
             collapsable: true,
-            children: [
-              ["NodeJs/Start", "初识NodeJS"],
-            ],
+            children: [["NodeJs/Start", "初识NodeJS"]],
           },
           {
             title: "Web性能提升篇",
@@ -208,7 +207,6 @@ console.log(path.resolve(__dirname, "./components")),
               ["MiniPrograme/base", "初识小程序"],
               ["MiniPrograme/package", "小程序打包体积问题"],
               ["MiniPrograme/delay", "移动端事件延时"],
-              
             ],
           },
           {
@@ -216,16 +214,12 @@ console.log(path.resolve(__dirname, "./components")),
             collapsable: true,
             children: [
               // ["static/Icon", "图标"],
-              
             ],
           },
           {
             title: "计算机网络知识篇",
             collapsable: true,
-            children: [
-              ["CpNet/base", "计算机网络基础"],
-              
-            ],
+            children: [["CpNet/base", "计算机网络基础"]],
           },
           {
             title: "数据结构与算法篇",
@@ -234,7 +228,6 @@ console.log(path.resolve(__dirname, "./components")),
               ["dataStructureAndCount/DoCode", "编程"],
               ["dataStructureAndCount/count", "算法"],
               ["dataStructureAndCount/StackAndHeap", "堆与栈"],
-              
             ],
           },
         ],
