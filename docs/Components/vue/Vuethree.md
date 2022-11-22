@@ -1165,3 +1165,211 @@ optimization: {
 - 可以监听动态属性的添加
 - 可以监听到数组的索引和数组`length`属性
 - 可以监听删除属性
+
+# 六、从Vue2.0到Vue3.0
+
+## 1.父组件数据传递到子组件
+
+**defineProps()**:
+
+```tsx
+<script setup>
+const props = defineProps({
+  someProp: {
+    type: String,
+    required: true
+  }
+})
+</script>
+```
+
+**!Notice!**:注意：`defineProps` 、`defineEmits` 、 `defineExpose` 和 `withDefaults` 这四个宏函数只能在 `<script setup>` 中使用。他们不需要导入，会随着 `<script setup>` 的处理过程中一起被编译。
+
+## 2.子组件数据向父组件传递
+
+**$emit：**`$emit` 无法在 `<script setup>` 中使用，这时候我们需要使用 `defineEmits()`：
+
+```js
+const emit = defineEmits(['someEvent'])
+function onClick() {
+  emit('someEvent', 'child message')
+}
+//父组件接受并且定义函数
+  <ChildView @some-event="someEvent" />
+function someEvent(value) {
+  console.log(value) // child message
+}
+```
+
+## 3.父组件使用子组件数据
+
+在 `<script setup>` 中，组件的属性和方法默认都是私有的。父组件无法访问到子组件中的任何东西，除非子组件通过 `defineExpose` 显式的暴露出去：
+
+```js
+<!-- 子组件 -->
+<script setup>
+import { ref } from 'vue'
+
+const msg = ref('hello vue3!')
+function change() {
+  msg.value = 'hi vue3!'
+  console.log(msg.value)
+}
+// 属性或方法必须暴露出去，父组件才能使用
+defineExpose({ msg, change })
+</script>
+
+<!-- 父组件 -->
+<script setup>
+import ChildView from './ChildView.vue'
+import { ref, onMounted } from 'vue'
+
+const child = ref(null)
+onMounted(() => {
+  console.log(child.value.msg) // hello vue3!
+  child.value.change() // hi vue3!
+})
+</script>
+
+<template>
+  <ChildView ref="child"></ChildView>
+</template>
+```
+
+## 4.组件之间双向绑定
+
+ Vue2 中组件的双向绑定采用的是 `v-model` 或 `.snyc` 修饰符，两种写法多少显得有点重复，于是在 Vue3 中合成了一种。Vue3 统一使用 `v-model` 进行处理，并且可以和多个数据进行绑定，如 `v-model:foo`、`v-model:bar`。
+
+```
+v-model` 等价于 `:model-value="someValue"` 和 `@update:model-value="someValue = $event"
+v-model:foo` 等价于 `:foo="someValue"` 和 `@update:foo="someValue = $event"
+```
+
+## 5.路由跳转，获取路由参数
+
+Vue2 中我们通常是使用 `this.$router` 或 `this.$route` 来进行路由的跳转和参数获取，但在 `<script-setup>`中，是这些方法无法使用的。我们可以使用 `vue-router` 提供的 `useRouter` 方法，来进行路由跳转：
+
+```js
+<script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+function onClick() {
+  router.push({
+    path: '/about',
+    query: {
+      msg: 'hello vue3!'
+    }
+  })
+}
+</script>
+```
+
+## 6.获取上下文
+
+vue3的setup中无法使用this这个上下文，蛋可以使用getCurrentInstance
+
+```js
+<script setup>
+import { getCurrentInstance } from 'vue'
+
+// 以下两种方法都可以获取到上下文对象
+const { ctx } = getCurrentInstance()
+const { proxy }  = getCurrentInstance()
+</script>
+
+```
+
+注意：`ctx` 只能在开发环境使用，生成环境为 undefined 。 推荐使用 `proxy` ，在开发环境和生产环境都可以使用。
+
+## 7.插槽的使用
+
+ Vue2 的中一般是通过 `slot` 属性指定模板的位置，通过 `slot-scope` 获取作用域插槽的数据
+
+```js
+<!-- 父组件 -->
+<script setup>
+import ChildView from './ChildView.vue'
+</script>
+
+<template>
+  <div>parent<div>
+  <ChildView>
+    <template slot="content" slot-scope="{ msg }">
+      <div>{{ msg }}</div>
+    </template>
+  </ChildView>
+</template>
+<!-- 子组件 -->
+//slot <===> name    slot-scope<===>slot绑定是数据（插槽作用域数据） 
+<template>
+  <div>child</div>
+  <slot name="content" msg="hello vue3!"></slot>
+</template>
+```
+
+Vue3 中则是通过 `v-slot` 这个指令来指定模板的位置，同时获取作用域插槽的数据，如：
+
+```js
+<!-- 父组件 -->
+<script setup>
+import ChildView from './ChildView.vue'
+</script>
+
+<template>
+  <div>parent</div>
+  <ChildView>
+    <template v-slot:content="{ msg }">
+      <div>{{ msg }}</div>
+    </template>
+  </ChildView>
+</template>
+
+<!-- ChildView 也可以简写为： -->
+<ChildView>
+  <template #content="{ msg }">
+    <div>{{ msg }}</div>
+  </template>
+</ChildView>
+<!-- 子组件 -->
+<template>
+  <div>child</div>
+  <slot name="content" msg="hello vue3!"></slot>
+</template>
+```
+
+## 8.缓存路由组件
+
+缓存一般的动态组件，Vue3 和 Vue2 的用法是一样的，都是使用 `KeepAlive` 包裹 `Component`。但缓存路由组件，Vue3 需要结合插槽一起使用：
+
+```js
+// Vue2 中缓存路由组件
+<KeepAlive>
+  <RouterView />
+</KeepAlive>
+// Vue3 中缓存路由组件
+<RouterView v-slot="{ Component }">
+  <KeepAlive>
+    <Component :is="Component">		       </Component>
+  </KeepAlive>
+</RouterView>
+```
+
+一个持续存在的组件可以通过 `onActivated()` 和 `onDeactivated()` 两个生命周期钩子注入相应的逻辑：
+
+```js
+<script setup>
+import { onActivated, onDeactivated } from 'vue'
+
+onActivated(() => {
+  // 调用时机为首次挂载
+  // 以及每次从缓存中被重新插入时
+})
+
+onDeactivated(() => {
+  // 调用时机为从 DOM 上移除、进入缓存
+  // 以及组件卸载时
+})
+</script>
+```
+
