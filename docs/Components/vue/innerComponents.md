@@ -193,10 +193,6 @@ const posts = await res.json()
 
 # Suspense[#](https://cn.vuejs.org/guide/built-ins/suspense.html#suspense)
 
-[![img](https://app.vuejobs.com/storage/96/d199fe84-556d-4f1e-8a71-f51648109f83.png)Frontend Vuejs, Nuxtjs, TailwindCSS developerNCT · Remote](https://vuejobs.com/jobs/2272-frontend-vuejs-nuxtjs-tailwindcss-developer?utm_medium=referral&utm_source=vuejs&utm_content=job_link&utm_campaign=jobs_widget)[![img](https://app.vuejobs.com/storage/84/732bd8ca-f14c-4087-b11d-29503277a795.png)Front End Web Developer (Manager)Hudson Creative · New York City, NY, USA](https://vuejobs.com/jobs/2231-front-end-web-developer-manager?utm_medium=referral&utm_source=vuejs&utm_content=job_link&utm_campaign=jobs_widget)
-
-Jobs by [vuejobs.com](https://vuejobs.com/?utm_source=vuejs&utm_medium=referral&utm_campaign=jobs_widget&utm_content=bottom_link)
-
 实验性功能
 
 `<Suspense>` 是一项实验性功能。它不一定会最终成为稳定功能，并且在稳定之前相关 API 也可能会发生变化。
