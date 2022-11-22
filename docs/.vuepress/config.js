@@ -117,6 +117,7 @@ console.log(path.resolve(__dirname, "./components")),
             title: "JavaScript篇",
             collapsable: true,
             children: [
+              ["javascript/APLCode", "JS单行实用代码"],
               ["javascript/base", "JS基础"],
               ["javascript/TypeError", "JavaScript的错误类型"],
               ["javascript/Array", "数组的常用方法"],
