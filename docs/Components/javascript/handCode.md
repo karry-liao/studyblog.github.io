@@ -811,3 +811,454 @@ function sumBigNumber(a,b){
 }
 ```
 
+### 类数组转化为数组
+
+```js
+//通过 call 调用数组的 slice 方法来实现转换
+Array.prototype.slice.call(arraylike)
+//通过call调用数组的splice方法来实现转换
+Array.prototype.splice.call(arrayLike, 0);
+//通过apply调用数组的concat方法来实现转换
+Array.prototype.concat.apply([],arrayLike)
+//通过es6的Array.from方法
+Array.from(arrayLike)
+```
+
+### 使用reduce求和
+
+```js
+arr.reduce((prev,curr)=> {prev+curr},0)
+```
+
+### JS对象转换为树形结构
+
+```js
+function jsonToTree(data){
+    let result = []
+    if(!Array.isArray(data)){
+        return result
+    }
+    let map = {}
+    data.forEach(item=>{
+        map[item.id] = item
+    })
+    
+    data.forEach(item=>{
+        let parent = map[item.pid]
+        if(parent){
+            (parent.children || (parent.children=[])).push(item)
+        }else{
+            result.push(item)
+        }
+    })
+    return result
+}
+```
+
+## 场景你该用
+
+### 循环打印红黄绿
+
+通过这个问题来对比几种异步编程方法：**红灯 3s 亮一次，绿灯 1s 亮一次，黄灯 2s 亮一次；如何让三个灯不断交替重复亮灯？**
+
+```js
+function red() {
+    console.log('red');
+}
+function green() {
+    console.log('green');
+}
+function yellow() {
+    console.log('yellow');
+}
+//（1）用 callback 实现
+const task = (timer,light,callback)=>{
+    setTimeout(()=>{
+        if(light === 'red'){
+            red()
+        }else if(light==='green'){
+            green()
+        }else if(light ==='yellow'){
+            yellow()
+        }
+        callback()
+    },timer)
+}
+const step = ()=>{
+        task(3000,'red',()=>{
+        task(2000,'green',()=>{
+            task(1000,'yellow',Function.prototype)
+        })
+	})
+}
+step()
+//方法二   使用promise
+const task = (timer, light) => 
+    new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (light === 'red') {
+                red()
+            }
+            else if (light === 'green') {
+                green()
+            }
+            else if (light === 'yellow') {
+                yellow()
+            }
+            resolve()
+        }, timer)
+    })
+const step = () => {
+    task(3000, 'red')
+        .then(() => task(2000, 'green'))
+        .then(() => task(1000, 'yellow'))
+        .then(step)
+}
+step()
+//（3）用 async/await 实现
+const taskRunner = async()=>{
+    await task(3000,'red')
+    await task(2000,'green')
+    await task(1000,'yellow')
+    taskRunner()
+}
+taskRunner()
+```
+
+实现没间隔一秒打印1,2,3,4
+
+```js
+for(var i=0; i<5;i++){
+    (function(i){
+        setTimeout(function(){
+            console.log(i)
+        },i*1000)
+    })(i)
+}
+//块级作用域
+for(let i=0;i<5;i++){
+    setTimeout(function()){
+        console.log(i)  
+    },i*1000
+}
+```
+
+### 小孩报数
+
+```js
+function childNum(num, count){
+    let allplayer = []
+    for(let i = 0; i< num; i++){
+        allplayer[i]=i+1
+    }
+    
+    let exitCount = 0 //离开人数
+    let counter = 0      //记录报数
+    let curIndex = 0     //当前下标
+    
+    while(exitCount < num-1){
+        if(allplayer[currIndex] !== 0) counter++
+        if(counter == count){
+            allplayer[curIndex] = 0
+            counter =0
+            exitCount++
+        }
+        curIndex++
+        if(curIndex == num){
+            curIndex = 0 
+        }
+    }
+    for(i=0; i< num; i++){
+        if(allplayer[i] !== 0){
+            return allplayer[i]
+        }
+    }
+}
+childNum(30,3)
+```
+
+### 使用Promise实现图片的异步加载
+
+```js
+let imageAsync=(url)=>{
+    return new Promise((resolve,reject)=>{
+        let img = new Image();
+        img.src = url;
+        img.onload = ()=>{
+            resolve(img)
+        }
+        img.onerror=(err)=>{
+            reject(err)
+        }
+    })
+}
+
+imageAsync('url').then(()=>{
+    console.log("加载成功")
+}).catch((error)=>{
+    console.log('加载失败',error)
+})
+```
+
+### 实现发布订阅模式
+
+```js
+class EventCenter{
+    let handlers = {}
+	
+	addEventListener(type,handler){
+        if(!this.handlers[type]){
+            this.handlers[tyep]=[]
+        }
+        this.handlers[type].push(handler)
+    }
+
+	dispatchEvent(type,params){
+        if(!this.handlers[type]){
+            return new Error('该事件未注册')
+        }
+        this.handlers[type].forEach(handler=>{
+            handler(...params)
+        })
+    }
+removeEventListener(type,handler){
+    if(!this.handlers[type]){
+        return new Error('事件无效')
+    }
+    if(!handler){
+        delete this.handler[type]
+    }else{
+        const index = this.handlers[type].findIndex(el=>el===handler)
+        if(index === -1){
+            return new Error('无该绑定事件')
+        }
+        this.handlers[type].splice(index,1)
+        if(this.handlers[type].length === 0){
+            delete this.handlers[type]
+        }
+    }
+}
+}
+
+```
+
+### 找出文章中出现频率最高的单词
+
+```js
+function findMostWord(article){
+    if(!article) return;
+    
+    article = article.trim.toLowerCase()
+    let wordList =  article.match(/[a-z]+/g)
+    visited = []
+    maxNum = 0
+    maxWord = ""
+    
+    article = " "+wordList.join(" ") + " ";
+    
+    wordList.forEach((item=>{
+        if(visited.indexOf(item)<0){
+            visited.push(item)
+            let word = new RegExp(" ")+ item + " ","g"
+            num = article.match(word).length
+            if(num>maxNum){
+                maxNum = num
+                maxWord = item
+            }
+        }
+    }))
+    return maxWord + " " + maxNum
+}
+```
+
+### 封装异步的fetch，使用async await方式来使用
+
+```js
+(async ()=>{
+    class HttpRequestUtil{
+        async get(url){
+            const res = await fetch(url)
+            const data = await res.json()
+            return data
+        }
+        async post(url,data){
+            const res = await fetch(url,{
+                method:"post",
+                headers:{
+                    'Content-Type':'application/josn'
+                }
+                body:JSON.stringfy(data)
+            })
+            const result = await res.json()
+            return result
+        }
+		async put(url,data){
+            const res = await fetch(url,{
+                method:'PUT',
+                headers:{
+                'Content-Type':'application/json'
+                },
+                data:JSON.stringfy(data)
+    		})
+        const result = await res.json()
+        return result
+		}
+    }
+    const httpRequestUtil = new HttpRequestUtil()
+    const res = await httpReqeustUtil.get("http://xxxxxxx")
+    console.log(res)
+})()
+```
+
+### 实现原型链继承
+
+```js
+function SupperFunction(flag1){
+    this.flag1 = flag1
+}
+function SunFuction(flag2){
+    this.flag2 = flag2
+}
+
+var superInstance = new SupperFunction(true)
+
+SubFunction.prototype = superInstance
+
+var subInstance = new SubFunction(flase)
+
+subInstance.flag1
+subInstance.flag2
+```
+
+### 实现双向数据绑定
+
+```js
+let obj= {}
+let input = document.getElementById('input')
+let span = document.getElementById('span')
+
+Object.defineProperty(obj,'text',{
+    configurble:true,
+    enumrable:true,
+    get(){
+      console.log("get到数据")  
+    },
+    set(newval){
+        console.log("数据更新")
+        input.value = newval
+        span.innerHtml = newval
+    }
+})
+input.addEventListener('keyup',function(e){
+    obj.text = e.target.value
+})
+```
+
+### 实现简单路由
+
+```js
+class Route{
+    constructor(){
+        this.routes = {}
+        this.currentHash = ''
+        this.freshRoute = this.freshRoute.bind(this)
+        
+        window.addEventListener('load',this.freshRoute,false)
+        window.addEventListener('hashchange',this.freshRoute,false)
+        storeRoute(path,cb){
+            this.routes[path] = cb || function(){}
+        }
+        freshRoute(){
+            this.currentHash = location.hash.slice(1)||'/'
+            this.routes[this.currentHasn]()
+            
+        }
+    }
+}
+```
+
+### 实现斐波那契数列
+
+```js
+//递归
+fn(n){
+    if(n==0) return 0
+    if(n==1) return 1
+    return fn(n-2)+fn(n-1)
+}
+//
+function fibonacci2(n){
+	const arr = [1,1,2]
+    const arrlen = arr.length
+    
+    if(n<=arrLen){
+        return arr[n]
+    }
+    for(let i = arrLen; i<n;i++){
+        arr.push(arr[i-1]+arr[i-2])
+    }
+    return arr[arr.length-1]
+}
+function fu(n){
+    let pre1 = 1
+    let pre2 = 1
+    let current = 2
+    
+    if(n<=2){
+        return current
+    }
+    
+    for(let i =2; i< n; i++){
+        pre1 = pre2;
+        pre2 = currebt;
+        current = pre1+ pre2
+    }
+    return current
+}
+```
+
+### 字符串出现的不重复长度最长长度
+
+```js
+var lengthOfLongestSubString = function(s){
+    let map = new Map()
+    let i = -1
+    let res = 0
+    let n = s.length
+    for(let j =0 ; j<n; j++){
+        if(map.has(s[j])){
+            i=Math.Max(i,map.get(s[j]))
+        }
+        res = Math.max(res,j-1)
+        map.set(s[j],j)
+    }
+    return res
+}
+```
+
+### 实现jsonp
+
+```js
+// 动态的加载js文件
+function addScript(src) {
+  const script = document.createElement('script');
+  script.src = src;
+  script.type = "text/javascript";
+  document.body.appendChild(script);
+}
+addScript("http://xxx.xxx.com/xxx.js?callback=handleRes");
+// 设置一个全局的callback函数来接收回调结果
+function handleRes(res) {
+  console.log(res);
+}
+// 接口返回的数据格式
+handleRes({a: 1, b: 2});
+
+```
+
+### 使用setTimeout实现setInterval
+
+```js
+js
+```
+
