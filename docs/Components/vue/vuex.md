@@ -108,3 +108,13 @@ methods:{
 - `namespace：true`在多人协作开发的时候，可能子模块和主模块中的函数名字会相同，这样在调用函数的时候，相同名字的函数都会被调用，就会发生问题。为了解决这个问题，导出模块的时候要加`namespace：true`.
 
 那么怎么调用子模块中的函数呢？假如我的子模块名字为todo.js。 函数名字就需要改成todo/函数名字。
+
+## Vuex的核心原理
+
+vuex的本质是一个对象
+
+vuex对象有两个属性，一个是install方法，一个是store类
+
+install方法的作用是将store这实例挂载到所有组件上，注意是同一个store实例
+
+store这个类拥有commit方法，dispatch方法，store类里将用户传入的state包装成data，作为new vue的参数，从而实现state值的响应式

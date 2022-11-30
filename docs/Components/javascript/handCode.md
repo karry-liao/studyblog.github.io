@@ -1259,6 +1259,67 @@ handleRes({a: 1, b: 2});
 ### 使用setTimeout实现setInterval
 
 ```js
-js
+function mySetInterval(fn, timeout) {
+  // 控制器，控制定时器是否继续执行
+  var timer = {
+    flag: true
+  };
+  // 设置递归函数，模拟定时器执行。
+  function interval() {
+    if (timer.flag) {
+      fn();
+      setTimeout(interval, timeout);
+    }
+  }
+  // 启动定时器
+  setTimeout(interval, timeout);
+  // 返回控制器
+  return timer;
+}
+```
+
+### 判断是否存在循环引用
+
+```js
+const isCycleObjec = (obj,parent)=>{
+    const parentArr = parent || [obj]
+    for(let i in obj){
+        if(typeof obj[i] === 'obj'){
+            let flag = false
+            parentArr.forEach((pObj)=>{
+                if(pObj===obj[j]){
+                    flag = true
+                }
+            })
+            if(flag) return true
+            flag = isCycleObject(obj[i],[...parentArr,obj[i]])
+            if(flag) return true
+        }
+    }
+    return false
+}
+```
+
+### 查找有序二维数组的目标值
+
+```js
+var findNumberIn2Array = function(matrix,target){
+    if(matrix == null || matrix.length == 0){
+        return false
+    }
+    let row = 0
+let colum = matrix[0].length -1
+while(row < matrix.length && colum >=0){
+    if(matrix[row][cloumn] == target){
+        return true
+    }else if(matrix[row][cloumn]>target){
+        column--
+    }else{
+        row++
+    }
+}
+return false
+}
+
 ```
 
