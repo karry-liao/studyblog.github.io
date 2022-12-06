@@ -16,54 +16,12 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "计算机网络基础知识总结",
+      "title": "解决小程序打包上线包体过大导致失败的问题",
       "frontmatter": {},
-      "regularPath": "/Components/CpNet/base.html",
-      "relativePath": "Components/CpNet/base.md",
-      "key": "v-7d90b73c",
-      "path": "/Components/CpNet/base.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "网络层次划分",
-          "slug": "网络层次划分"
-        },
-        {
-          "level": 3,
-          "title": "物理层",
-          "slug": "物理层"
-        },
-        {
-          "level": 3,
-          "title": "数据链路层",
-          "slug": "数据链路层"
-        },
-        {
-          "level": 3,
-          "title": "网络层",
-          "slug": "网络层"
-        },
-        {
-          "level": 3,
-          "title": "传输层",
-          "slug": "传输层"
-        },
-        {
-          "level": 3,
-          "title": "会话层",
-          "slug": "会话层"
-        },
-        {
-          "level": 3,
-          "title": "表示层",
-          "slug": "表示层"
-        },
-        {
-          "level": 3,
-          "title": "应用层",
-          "slug": "应用层"
-        }
-      ]
+      "regularPath": "/Components/MiniPrograme/package.html",
+      "relativePath": "Components/MiniPrograme/package.md",
+      "key": "v-118a0748",
+      "path": "/Components/MiniPrograme/package.html"
     },
     {
       "title": "数据可视化",
@@ -129,14 +87,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "解决小程序打包上线包体过大导致失败的问题",
-      "frontmatter": {},
-      "regularPath": "/Components/MiniPrograme/package.html",
-      "relativePath": "Components/MiniPrograme/package.md",
-      "key": "v-118a0748",
-      "path": "/Components/MiniPrograme/package.html"
-    },
-    {
       "title": "如何判断当前脚本运行在浏览器端还是node环境中？",
       "frontmatter": {},
       "regularPath": "/Components/NodeJs/Node.html",
@@ -150,6 +100,119 @@ export const siteData = {
           "slug": "如何判断当前脚本运行在浏览器端还是node环境中"
         }
       ]
+    },
+    {
+      "title": "计算机网络基础知识总结",
+      "frontmatter": {},
+      "regularPath": "/Components/CpNet/base.html",
+      "relativePath": "Components/CpNet/base.md",
+      "key": "v-7d90b73c",
+      "path": "/Components/CpNet/base.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "网络层次划分",
+          "slug": "网络层次划分"
+        },
+        {
+          "level": 3,
+          "title": "物理层",
+          "slug": "物理层"
+        },
+        {
+          "level": 3,
+          "title": "数据链路层",
+          "slug": "数据链路层"
+        },
+        {
+          "level": 3,
+          "title": "网络层",
+          "slug": "网络层"
+        },
+        {
+          "level": 3,
+          "title": "传输层",
+          "slug": "传输层"
+        },
+        {
+          "level": 3,
+          "title": "会话层",
+          "slug": "会话层"
+        },
+        {
+          "level": 3,
+          "title": "表示层",
+          "slug": "表示层"
+        },
+        {
+          "level": 3,
+          "title": "应用层",
+          "slug": "应用层"
+        }
+      ]
+    },
+    {
+      "title": "创建第一个应用",
+      "frontmatter": {},
+      "regularPath": "/Components/NodeJs/Start.html",
+      "relativePath": "Components/NodeJs/Start.md",
+      "key": "v-32e28668",
+      "path": "/Components/NodeJs/Start.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建第一个应用",
+          "slug": "创建第一个应用"
+        },
+        {
+          "level": 2,
+          "title": "Node包管理工具-npm",
+          "slug": "node包管理工具-npm"
+        },
+        {
+          "level": 2,
+          "title": "Node.js REPL(交互式解析器)",
+          "slug": "node-js-repl-交互式解析器"
+        },
+        {
+          "level": 2,
+          "title": "Node.js回调函数",
+          "slug": "node-js回调函数"
+        },
+        {
+          "level": 2,
+          "title": "Node.js事件循环",
+          "slug": "node-js事件循环"
+        }
+      ]
+    },
+    {
+      "title": "Treeshaking及其工作原理",
+      "frontmatter": {},
+      "regularPath": "/Components/WebPack/TreeShaking.html",
+      "relativePath": "Components/WebPack/TreeShaking.md",
+      "key": "v-729ac2da",
+      "path": "/Components/WebPack/TreeShaking.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "tree shaking的原理是什么?",
+          "slug": "tree-shaking的原理是什么"
+        },
+        {
+          "level": 2,
+          "title": "好处",
+          "slug": "好处"
+        }
+      ]
+    },
+    {
+      "title": "Webpack-dev-server",
+      "frontmatter": {},
+      "regularPath": "/Components/WebPack/WebPackDevServer.html",
+      "relativePath": "Components/WebPack/WebPackDevServer.md",
+      "key": "v-31c46882",
+      "path": "/Components/WebPack/WebPackDevServer.html"
     },
     {
       "title": "Webpack loader 和 plugin 实现原理",
@@ -202,90 +265,35 @@ export const siteData = {
       ]
     },
     {
-      "title": "Treeshaking及其工作原理",
+      "title": "一、实现连续数字合并转换",
       "frontmatter": {},
-      "regularPath": "/Components/WebPack/TreeShaking.html",
-      "relativePath": "Components/WebPack/TreeShaking.md",
-      "key": "v-729ac2da",
-      "path": "/Components/WebPack/TreeShaking.html",
+      "regularPath": "/Components/dataStructureAndCount/DoCode.html",
+      "relativePath": "Components/dataStructureAndCount/DoCode.md",
+      "key": "v-30b9ade2",
+      "path": "/Components/dataStructureAndCount/DoCode.html"
+    },
+    {
+      "title": "正则表达式",
+      "frontmatter": {},
+      "regularPath": "/Components/base/Reg.html",
+      "relativePath": "Components/base/Reg.md",
+      "key": "v-5168da28",
+      "path": "/Components/base/Reg.html",
       "headers": [
         {
           "level": 2,
-          "title": "tree shaking的原理是什么?",
-          "slug": "tree-shaking的原理是什么"
+          "title": "正则表达式的匹配规则",
+          "slug": "正则表达式的匹配规则"
         },
         {
           "level": 2,
-          "title": "好处",
-          "slug": "好处"
-        }
-      ]
-    },
-    {
-      "title": "Webpack-dev-server",
-      "frontmatter": {},
-      "regularPath": "/Components/WebPack/WebPackDevServer.html",
-      "relativePath": "Components/WebPack/WebPackDevServer.md",
-      "key": "v-31c46882",
-      "path": "/Components/WebPack/WebPackDevServer.html"
-    },
-    {
-      "title": "创建第一个应用",
-      "frontmatter": {},
-      "regularPath": "/Components/NodeJs/Start.html",
-      "relativePath": "Components/NodeJs/Start.md",
-      "key": "v-32e28668",
-      "path": "/Components/NodeJs/Start.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "创建第一个应用",
-          "slug": "创建第一个应用"
+          "title": "正则表达式标记",
+          "slug": "正则表达式标记"
         },
         {
           "level": 2,
-          "title": "Node包管理工具-npm",
-          "slug": "node包管理工具-npm"
-        },
-        {
-          "level": 2,
-          "title": "Node.js REPL(交互式解析器)",
-          "slug": "node-js-repl-交互式解析器"
-        },
-        {
-          "level": 2,
-          "title": "Node.js回调函数",
-          "slug": "node-js回调函数"
-        },
-        {
-          "level": 2,
-          "title": "Node.js事件循环",
-          "slug": "node-js事件循环"
-        }
-      ]
-    },
-    {
-      "title": "SourceMap",
-      "frontmatter": {},
-      "regularPath": "/Components/WebPack/sourcemap.html",
-      "relativePath": "Components/WebPack/sourcemap.md",
-      "key": "v-49887862",
-      "path": "/Components/WebPack/sourcemap.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "SourceMap",
-          "slug": "sourcemap"
-        },
-        {
-          "level": 3,
-          "title": "浏览器怎么知道源文件和 source map 的关系？",
-          "slug": "浏览器怎么知道源文件和-source-map-的关系"
-        },
-        {
-          "level": 3,
-          "title": "source map 的应用",
-          "slug": "source-map-的应用"
+          "title": "匹配方法",
+          "slug": "匹配方法"
         }
       ]
     },
@@ -345,62 +353,52 @@ export const siteData = {
       ]
     },
     {
-      "title": "ES6中的Set和Map的区别",
+      "title": "SourceMap",
       "frontmatter": {},
-      "regularPath": "/Components/base/MapAndSet.html",
-      "relativePath": "Components/base/MapAndSet.md",
-      "key": "v-3734d1f0",
-      "path": "/Components/base/MapAndSet.html",
+      "regularPath": "/Components/WebPack/sourcemap.html",
+      "relativePath": "Components/WebPack/sourcemap.md",
+      "key": "v-49887862",
+      "path": "/Components/WebPack/sourcemap.html",
       "headers": [
         {
           "level": 2,
-          "title": "一、Set",
-          "slug": "一、set"
-        },
-        {
-          "level": 2,
-          "title": "二、Map",
-          "slug": "二、map"
-        },
-        {
-          "level": 2,
-          "title": "三、WeakSet 和 WeakMap",
-          "slug": "三、weakset-和-weakmap"
+          "title": "SourceMap",
+          "slug": "sourcemap"
         },
         {
           "level": 3,
-          "title": "WeakSet",
-          "slug": "weakset"
+          "title": "浏览器怎么知道源文件和 source map 的关系？",
+          "slug": "浏览器怎么知道源文件和-source-map-的关系"
         },
         {
           "level": 3,
-          "title": "WeakMap",
-          "slug": "weakmap"
+          "title": "source map 的应用",
+          "slug": "source-map-的应用"
         }
       ]
     },
     {
-      "title": "正则表达式",
+      "title": "找出出现次数最多的字符",
       "frontmatter": {},
-      "regularPath": "/Components/base/Reg.html",
-      "relativePath": "Components/base/Reg.md",
-      "key": "v-5168da28",
-      "path": "/Components/base/Reg.html",
+      "regularPath": "/Components/dataStructureAndCount/count.html",
+      "relativePath": "Components/dataStructureAndCount/count.md",
+      "key": "v-33a06ec4",
+      "path": "/Components/dataStructureAndCount/count.html",
       "headers": [
         {
           "level": 2,
-          "title": "正则表达式的匹配规则",
-          "slug": "正则表达式的匹配规则"
+          "title": "找出出现次数最多的字符",
+          "slug": "找出出现次数最多的字符"
         },
         {
           "level": 2,
-          "title": "正则表达式标记",
-          "slug": "正则表达式标记"
+          "title": "JS实现二分查找",
+          "slug": "js实现二分查找"
         },
         {
           "level": 2,
-          "title": "匹配方法",
-          "slug": "匹配方法"
+          "title": "null与undefined",
+          "slug": "null与undefined"
         }
       ]
     },
@@ -428,21 +426,6 @@ export const siteData = {
           "slug": "使用组件"
         }
       ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/Components/base/introduce.html",
-      "relativePath": "Components/base/introduce.md",
-      "key": "v-5948fc08",
-      "path": "/Components/base/introduce.html"
-    },
-    {
-      "title": "一、实现连续数字合并转换",
-      "frontmatter": {},
-      "regularPath": "/Components/dataStructureAndCount/DoCode.html",
-      "relativePath": "Components/dataStructureAndCount/DoCode.md",
-      "key": "v-30b9ade2",
-      "path": "/Components/dataStructureAndCount/DoCode.html"
     },
     {
       "title": "堆与栈的区别",
@@ -480,29 +463,47 @@ export const siteData = {
       ]
     },
     {
-      "title": "找出出现次数最多的字符",
+      "title": "ES6中的Set和Map的区别",
       "frontmatter": {},
-      "regularPath": "/Components/dataStructureAndCount/count.html",
-      "relativePath": "Components/dataStructureAndCount/count.md",
-      "key": "v-33a06ec4",
-      "path": "/Components/dataStructureAndCount/count.html",
+      "regularPath": "/Components/base/MapAndSet.html",
+      "relativePath": "Components/base/MapAndSet.md",
+      "key": "v-3734d1f0",
+      "path": "/Components/base/MapAndSet.html",
       "headers": [
         {
           "level": 2,
-          "title": "找出出现次数最多的字符",
-          "slug": "找出出现次数最多的字符"
+          "title": "一、Set",
+          "slug": "一、set"
         },
         {
           "level": 2,
-          "title": "JS实现二分查找",
-          "slug": "js实现二分查找"
+          "title": "二、Map",
+          "slug": "二、map"
         },
         {
           "level": 2,
-          "title": "null与undefined",
-          "slug": "null与undefined"
+          "title": "三、WeakSet 和 WeakMap",
+          "slug": "三、weakset-和-weakmap"
+        },
+        {
+          "level": 3,
+          "title": "WeakSet",
+          "slug": "weakset"
+        },
+        {
+          "level": 3,
+          "title": "WeakMap",
+          "slug": "weakmap"
         }
       ]
+    },
+    {
+      "title": "行内元素和块级元素",
+      "frontmatter": {},
+      "regularPath": "/Components/htmlcss/CSS.html",
+      "relativePath": "Components/htmlcss/CSS.md",
+      "key": "v-242e3c70",
+      "path": "/Components/htmlcss/CSS.html"
     },
     {
       "title": "PC端响应式布局方案",
@@ -545,12 +546,11 @@ export const siteData = {
       ]
     },
     {
-      "title": "行内元素和块级元素",
       "frontmatter": {},
-      "regularPath": "/Components/htmlcss/CSS.html",
-      "relativePath": "Components/htmlcss/CSS.md",
-      "key": "v-242e3c70",
-      "path": "/Components/htmlcss/CSS.html"
+      "regularPath": "/Components/base/introduce.html",
+      "relativePath": "Components/base/introduce.md",
+      "key": "v-5948fc08",
+      "path": "/Components/base/introduce.html"
     },
     {
       "title": "一、Flex布局表示弹性布局，为盒模型提供最大灵活性。",
@@ -629,21 +629,6 @@ export const siteData = {
           "level": 3,
           "title": "12.align-self属性",
           "slug": "_12-align-self属性"
-        }
-      ]
-    },
-    {
-      "title": "Font样式",
-      "frontmatter": {},
-      "regularPath": "/Components/htmlcss/FontCss.html",
-      "relativePath": "Components/htmlcss/FontCss.md",
-      "key": "v-e4c77034",
-      "path": "/Components/htmlcss/FontCss.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
         }
       ]
     },
@@ -749,6 +734,21 @@ export const siteData = {
           "level": 3,
           "title": "11. 实现镜像、倒影等效果（-webkit-box-reflect）",
           "slug": "_11-实现镜像、倒影等效果-webkit-box-reflect"
+        }
+      ]
+    },
+    {
+      "title": "Font样式",
+      "frontmatter": {},
+      "regularPath": "/Components/htmlcss/FontCss.html",
+      "relativePath": "Components/htmlcss/FontCss.md",
+      "key": "v-e4c77034",
+      "path": "/Components/htmlcss/FontCss.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
         }
       ]
     },
@@ -1176,6 +1176,46 @@ export const siteData = {
       ]
     },
     {
+      "title": "工厂模式",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/designPatterns.html",
+      "relativePath": "Components/javascript/designPatterns.md",
+      "key": "v-3130f0e0",
+      "path": "/Components/javascript/designPatterns.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "工厂模式",
+          "slug": "工厂模式"
+        },
+        {
+          "level": 2,
+          "title": "单例模式",
+          "slug": "单例模式"
+        },
+        {
+          "level": 2,
+          "title": "代理模式",
+          "slug": "代理模式"
+        },
+        {
+          "level": 2,
+          "title": "职责链模式",
+          "slug": "职责链模式"
+        },
+        {
+          "level": 2,
+          "title": "装饰者模式",
+          "slug": "装饰者模式"
+        },
+        {
+          "level": 2,
+          "title": "观察者-发布订阅模式",
+          "slug": "观察者-发布订阅模式"
+        }
+      ]
+    },
+    {
       "title": "JavaScript 的常用方法",
       "frontmatter": {},
       "regularPath": "/Components/javascript/base.html",
@@ -1406,71 +1446,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "浅拷贝与深拷贝",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/clone.html",
-      "relativePath": "Components/javascript/clone.md",
-      "key": "v-553ac608",
-      "path": "/Components/javascript/clone.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1.对象的深拷贝",
-          "slug": "_1-对象的深拷贝"
-        },
-        {
-          "level": 2,
-          "title": "2.数组的深拷贝方法",
-          "slug": "_2-数组的深拷贝方法"
-        },
-        {
-          "level": 2,
-          "title": "3.多维数组实现深拷贝",
-          "slug": "_3-多维数组实现深拷贝"
-        }
-      ]
-    },
-    {
-      "title": "工厂模式",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/designPatterns.html",
-      "relativePath": "Components/javascript/designPatterns.md",
-      "key": "v-3130f0e0",
-      "path": "/Components/javascript/designPatterns.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "工厂模式",
-          "slug": "工厂模式"
-        },
-        {
-          "level": 2,
-          "title": "单例模式",
-          "slug": "单例模式"
-        },
-        {
-          "level": 2,
-          "title": "代理模式",
-          "slug": "代理模式"
-        },
-        {
-          "level": 2,
-          "title": "职责链模式",
-          "slug": "职责链模式"
-        },
-        {
-          "level": 2,
-          "title": "装饰者模式",
-          "slug": "装饰者模式"
-        },
-        {
-          "level": 2,
-          "title": "观察者-发布订阅模式",
-          "slug": "观察者-发布订阅模式"
-        }
-      ]
-    },
-    {
       "title": "一. 如何获取浏览器URL中查询字符串中的参数？",
       "frontmatter": {},
       "regularPath": "/Components/javascript/extends.html",
@@ -1687,6 +1662,31 @@ export const siteData = {
           "level": 3,
           "title": "秒传",
           "slug": "秒传"
+        }
+      ]
+    },
+    {
+      "title": "浅拷贝与深拷贝",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/clone.html",
+      "relativePath": "Components/javascript/clone.md",
+      "key": "v-553ac608",
+      "path": "/Components/javascript/clone.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1.对象的深拷贝",
+          "slug": "_1-对象的深拷贝"
+        },
+        {
+          "level": 2,
+          "title": "2.数组的深拷贝方法",
+          "slug": "_2-数组的深拷贝方法"
+        },
+        {
+          "level": 2,
+          "title": "3.多维数组实现深拷贝",
+          "slug": "_3-多维数组实现深拷贝"
         }
       ]
     },
@@ -2104,6 +2104,231 @@ export const siteData = {
       ]
     },
     {
+      "title": "前端性能监控",
+      "frontmatter": {},
+      "regularPath": "/Components/performance/BorserPerformance.html",
+      "relativePath": "Components/performance/BorserPerformance.md",
+      "key": "v-0ec807b4",
+      "path": "/Components/performance/BorserPerformance.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前端性能监控",
+          "slug": "前端性能监控"
+        },
+        {
+          "level": 2,
+          "title": "性能指标",
+          "slug": "性能指标"
+        },
+        {
+          "level": 2,
+          "title": "window.performance基础",
+          "slug": "window-performance基础"
+        },
+        {
+          "level": 2,
+          "title": "各指标计算方式",
+          "slug": "各指标计算方式"
+        }
+      ]
+    },
+    {
+      "title": "一、何为MVVM？",
+      "frontmatter": {},
+      "regularPath": "/Components/md_interview/Vue.html",
+      "relativePath": "Components/md_interview/Vue.md",
+      "key": "v-35aa0168",
+      "path": "/Components/md_interview/Vue.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一、何为MVVM？",
+          "slug": "一、何为mvvm"
+        },
+        {
+          "level": 2,
+          "title": "二、Vue中响应式数据的理解",
+          "slug": "二、vue中响应式数据的理解"
+        },
+        {
+          "level": 2,
+          "title": "三、Vue种如何检测数组变化",
+          "slug": "三、vue种如何检测数组变化"
+        },
+        {
+          "level": 2,
+          "title": "四、Vue中如何进行依赖搜集",
+          "slug": "四、vue中如何进行依赖搜集"
+        },
+        {
+          "level": 2,
+          "title": "五、如何理解Vue中的模板编译原理",
+          "slug": "五、如何理解vue中的模板编译原理"
+        },
+        {
+          "level": 2,
+          "title": "六、Vue生命周期钩子是如何实现的",
+          "slug": "六、vue生命周期钩子是如何实现的"
+        },
+        {
+          "level": 2,
+          "title": "七、Vue组件生命周期由哪些？",
+          "slug": "七、vue组件生命周期由哪些"
+        },
+        {
+          "level": 2,
+          "title": "八、Vue.mixin的使用场景和原理",
+          "slug": "八、vue-mixin的使用场景和原理"
+        },
+        {
+          "level": 2,
+          "title": "九、vue的组件data为什么必须是一个函数？",
+          "slug": "九、vue的组件data为什么必须是一个函数"
+        },
+        {
+          "level": 2,
+          "title": "十、nexttick原理",
+          "slug": "十、nexttick原理"
+        },
+        {
+          "level": 2,
+          "title": "十一、computed和watch的区别",
+          "slug": "十一、computed和watch的区别"
+        },
+        {
+          "level": 2,
+          "title": "十二、Vue.set方法是如何实现的",
+          "slug": "十二、vue-set方法是如何实现的"
+        },
+        {
+          "level": 2,
+          "title": "十三、Vue为什么要用虚拟Dom",
+          "slug": "十三、vue为什么要用虚拟dom"
+        },
+        {
+          "level": 2,
+          "title": "十四、Vue的diff算法原理",
+          "slug": "十四、vue的diff算法原理"
+        },
+        {
+          "level": 2,
+          "title": "十五、既然vue通过数据劫持可以精准的探测数据变化，为什么还要用diff检测差异",
+          "slug": "十五、既然vue通过数据劫持可以精准的探测数据变化-为什么还要用diff检测差异"
+        },
+        {
+          "level": 2,
+          "title": "十六、说明key的作用和原理",
+          "slug": "十六、说明key的作用和原理"
+        },
+        {
+          "level": 2,
+          "title": "十七、谈谈对组件的理解",
+          "slug": "十七、谈谈对组件的理解"
+        },
+        {
+          "level": 2,
+          "title": "十八、描述组件渲染的流程",
+          "slug": "十八、描述组件渲染的流程"
+        },
+        {
+          "level": 2,
+          "title": "十九、描述组件的更新流程",
+          "slug": "十九、描述组件的更新流程"
+        },
+        {
+          "level": 2,
+          "title": "二十、异步组件原理",
+          "slug": "二十、异步组件原理"
+        },
+        {
+          "level": 2,
+          "title": "二十一、函数组件的优势和原理",
+          "slug": "二十一、函数组件的优势和原理"
+        },
+        {
+          "level": 2,
+          "title": "二十二、组件的传值方式有哪些？",
+          "slug": "二十二、组件的传值方式有哪些"
+        },
+        {
+          "level": 2,
+          "title": "二十三、$attrs是为了解决什么问题出现的？",
+          "slug": "二十三、-attrs是为了解决什么问题出现的"
+        },
+        {
+          "level": 2,
+          "title": "二十四、v-for和v-if哪个优先级跟高？",
+          "slug": "二十四、v-for和v-if哪个优先级跟高"
+        },
+        {
+          "level": 2,
+          "title": "二十五、v-mode是如何实现的？",
+          "slug": "二十五、v-mode是如何实现的"
+        },
+        {
+          "level": 2,
+          "title": "二十六、Vue的普通插槽和作用域插槽的区别",
+          "slug": "二十六、vue的普通插槽和作用域插槽的区别"
+        },
+        {
+          "level": 2,
+          "title": "二十七、Vue.use是干什么的?",
+          "slug": "二十七、vue-use是干什么的"
+        },
+        {
+          "level": 2,
+          "title": "二十八、组件写name有啥好处?",
+          "slug": "二十八、组件写name有啥好处"
+        },
+        {
+          "level": 2,
+          "title": "二十九、vue的修饰符有哪些?",
+          "slug": "二十九、vue的修饰符有哪些"
+        },
+        {
+          "level": 2,
+          "title": "三十、如何理解自定义指令",
+          "slug": "三十、如何理解自定义指令"
+        },
+        {
+          "level": 2,
+          "title": "三十一、keep-alive平时在哪里使用？原理是什么？",
+          "slug": "三十一、keep-alive平时在哪里使用-原理是什么"
+        },
+        {
+          "level": 2,
+          "title": "三十二、vue-router有几种钩子函数？执行流程如何？",
+          "slug": "三十二、vue-router有几种钩子函数-执行流程如何"
+        },
+        {
+          "level": 2,
+          "title": "三十三、vuerouter的两种模式的区别",
+          "slug": "三十三、vuerouter的两种模式的区别"
+        },
+        {
+          "level": 2,
+          "title": "三十四、谈谈Vue的性能优化有哪些？",
+          "slug": "三十四、谈谈vue的性能优化有哪些"
+        },
+        {
+          "level": 2,
+          "title": "三十五、Vuex",
+          "slug": "三十五、vuex"
+        },
+        {
+          "level": 2,
+          "title": "三十六、vue中使用了那些设计模式",
+          "slug": "三十六、vue中使用了那些设计模式"
+        },
+        {
+          "level": 2,
+          "title": "三十七、何为动态组件",
+          "slug": "三十七、何为动态组件"
+        }
+      ]
+    },
+    {
       "title": "Web的缓存机制",
       "frontmatter": {},
       "regularPath": "/Components/performance/Browser.html",
@@ -2140,36 +2365,6 @@ export const siteData = {
           "level": 3,
           "title": "获取节点",
           "slug": "获取节点"
-        }
-      ]
-    },
-    {
-      "title": "前端性能监控",
-      "frontmatter": {},
-      "regularPath": "/Components/performance/BorserPerformance.html",
-      "relativePath": "Components/performance/BorserPerformance.md",
-      "key": "v-0ec807b4",
-      "path": "/Components/performance/BorserPerformance.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前端性能监控",
-          "slug": "前端性能监控"
-        },
-        {
-          "level": 2,
-          "title": "性能指标",
-          "slug": "性能指标"
-        },
-        {
-          "level": 2,
-          "title": "window.performance基础",
-          "slug": "window-performance基础"
-        },
-        {
-          "level": 2,
-          "title": "各指标计算方式",
-          "slug": "各指标计算方式"
         }
       ]
     },
@@ -2228,26 +2423,6 @@ export const siteData = {
           "level": 2,
           "title": "React中可以做的性能优化？",
           "slug": "react中可以做的性能优化"
-        }
-      ]
-    },
-    {
-      "title": "一、何为dangerouslySetInnerHtml？",
-      "frontmatter": {},
-      "regularPath": "/Components/react/Reacthooks.html",
-      "relativePath": "Components/react/Reacthooks.md",
-      "key": "v-3283f1c2",
-      "path": "/Components/react/Reacthooks.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "一、何为dangerouslySetInnerHtml？",
-          "slug": "一、何为dangerouslysetinnerhtml"
-        },
-        {
-          "level": 2,
-          "title": "二、常用React Hooks有哪些？",
-          "slug": "二、常用react-hooks有哪些"
         }
       ]
     },
@@ -2312,6 +2487,26 @@ export const siteData = {
       ]
     },
     {
+      "title": "一、何为dangerouslySetInnerHtml？",
+      "frontmatter": {},
+      "regularPath": "/Components/react/Reacthooks.html",
+      "relativePath": "Components/react/Reacthooks.md",
+      "key": "v-3283f1c2",
+      "path": "/Components/react/Reacthooks.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一、何为dangerouslySetInnerHtml？",
+          "slug": "一、何为dangerouslysetinnerhtml"
+        },
+        {
+          "level": 2,
+          "title": "二、常用React Hooks有哪些？",
+          "slug": "二、常用react-hooks有哪些"
+        }
+      ]
+    },
+    {
       "title": "Button",
       "frontmatter": {},
       "regularPath": "/Components/static/Button.html",
@@ -2352,6 +2547,21 @@ export const siteData = {
       ]
     },
     {
+      "title": "幸运大乐透之刮刮乐",
+      "frontmatter": {},
+      "regularPath": "/Components/static/IconStyle.html",
+      "relativePath": "Components/static/IconStyle.md",
+      "key": "v-d504b7f0",
+      "path": "/Components/static/IconStyle.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
+    },
+    {
       "title": "Icon",
       "frontmatter": {},
       "regularPath": "/Components/static/Icon.html",
@@ -2368,21 +2578,6 @@ export const siteData = {
           "level": 2,
           "title": "API",
           "slug": "api"
-        }
-      ]
-    },
-    {
-      "title": "幸运大乐透之刮刮乐",
-      "frontmatter": {},
-      "regularPath": "/Components/static/IconStyle.html",
-      "relativePath": "Components/static/IconStyle.md",
-      "key": "v-d504b7f0",
-      "path": "/Components/static/IconStyle.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
         }
       ]
     },
@@ -2457,46 +2652,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "瀑布流",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Pinterest.html",
-      "relativePath": "Components/static/Pinterest.md",
-      "key": "v-b35c4f70",
-      "path": "/Components/static/Pinterest.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
-      "title": "滑块验证",
-      "frontmatter": {},
-      "regularPath": "/Components/static/SlideVerify.html",
-      "relativePath": "Components/static/SlideVerify.md",
-      "key": "v-1aced8c8",
-      "path": "/Components/static/SlideVerify.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "Detail",
-          "slug": "detail"
-        }
-      ]
-    },
-    {
       "title": "Axios封装",
       "frontmatter": {},
       "regularPath": "/Components/vue/Axios.html",
@@ -2533,6 +2688,46 @@ export const siteData = {
           "level": 3,
           "title": "响应拦截器",
           "slug": "响应拦截器"
+        }
+      ]
+    },
+    {
+      "title": "滑块验证",
+      "frontmatter": {},
+      "regularPath": "/Components/static/SlideVerify.html",
+      "relativePath": "Components/static/SlideVerify.md",
+      "key": "v-1aced8c8",
+      "path": "/Components/static/SlideVerify.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "Detail",
+          "slug": "detail"
+        }
+      ]
+    },
+    {
+      "title": "瀑布流",
+      "frontmatter": {},
+      "regularPath": "/Components/static/Pinterest.html",
+      "relativePath": "Components/static/Pinterest.md",
+      "key": "v-b35c4f70",
+      "path": "/Components/static/Pinterest.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "API",
+          "slug": "api"
         }
       ]
     },
@@ -2593,206 +2788,6 @@ export const siteData = {
           "level": 3,
           "title": "使用SSR",
           "slug": "使用ssr"
-        }
-      ]
-    },
-    {
-      "title": "一、组合式API",
-      "frontmatter": {},
-      "regularPath": "/Components/vue/Vuethree.html",
-      "relativePath": "Components/vue/Vuethree.md",
-      "key": "v-f40bc0fc",
-      "path": "/Components/vue/Vuethree.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "Setup():",
-          "slug": "setup"
-        },
-        {
-          "level": 3,
-          "title": "`ref()`:",
-          "slug": "ref"
-        },
-        {
-          "level": 3,
-          "title": "computed():",
-          "slug": "computed"
-        },
-        {
-          "level": 3,
-          "title": "reactive():",
-          "slug": "reactive"
-        },
-        {
-          "level": 3,
-          "title": "readonly():",
-          "slug": "readonly"
-        },
-        {
-          "level": 3,
-          "title": "`watchEffect():`",
-          "slug": "watcheffect"
-        },
-        {
-          "level": 3,
-          "title": "`watchPostEffect()`:",
-          "slug": "watchposteffect"
-        },
-        {
-          "level": 3,
-          "title": "`watchasyncEffect()`:",
-          "slug": "watchasynceffect"
-        },
-        {
-          "level": 3,
-          "title": "watch():",
-          "slug": "watch"
-        },
-        {
-          "level": 3,
-          "title": "`isRef()`:",
-          "slug": "isref"
-        },
-        {
-          "level": 3,
-          "title": "`unRef()`:",
-          "slug": "unref"
-        },
-        {
-          "level": 3,
-          "title": "`toRef()`:",
-          "slug": "toref"
-        },
-        {
-          "level": 3,
-          "title": "`isProxy`:",
-          "slug": "isproxy"
-        },
-        {
-          "level": 3,
-          "title": "`isReactive`:",
-          "slug": "isreactive"
-        },
-        {
-          "level": 3,
-          "title": "`isReadonly()`:",
-          "slug": "isreadonly"
-        },
-        {
-          "level": 3,
-          "title": "shallowRef():",
-          "slug": "shallowref"
-        },
-        {
-          "level": 3,
-          "title": "`triggerRef():`",
-          "slug": "triggerref"
-        },
-        {
-          "level": 3,
-          "title": "`customRef()`",
-          "slug": "customref"
-        },
-        {
-          "level": 3,
-          "title": "shallowReactive():",
-          "slug": "shallowreactive"
-        },
-        {
-          "level": 3,
-          "title": "`shallowReadonly()`:",
-          "slug": "shallowreadonly"
-        },
-        {
-          "level": 3,
-          "title": "`toRaw()`:",
-          "slug": "toraw"
-        },
-        {
-          "level": 3,
-          "title": "`markRaw()`:",
-          "slug": "markraw"
-        },
-        {
-          "level": 3,
-          "title": "`effectScope()`:",
-          "slug": "effectscope"
-        },
-        {
-          "level": 3,
-          "title": "`getCurrentScope()`：",
-          "slug": "getcurrentscope"
-        },
-        {
-          "level": 3,
-          "title": "`onScopeDispose()`:",
-          "slug": "onscopedispose"
-        },
-        {
-          "level": 3,
-          "title": "使用方法",
-          "slug": "使用方法"
-        },
-        {
-          "level": 3,
-          "title": "一、Object.defineProperty",
-          "slug": "一、object-defineproperty"
-        },
-        {
-          "level": 3,
-          "title": "1.编译阶段",
-          "slug": "_1-编译阶段"
-        },
-        {
-          "level": 3,
-          "title": "2.源码体积",
-          "slug": "_2-源码体积"
-        },
-        {
-          "level": 3,
-          "title": "3.响应式系统",
-          "slug": "_3-响应式系统"
-        },
-        {
-          "level": 2,
-          "title": "1.父组件数据传递到子组件",
-          "slug": "_1-父组件数据传递到子组件"
-        },
-        {
-          "level": 2,
-          "title": "2.子组件数据向父组件传递",
-          "slug": "_2-子组件数据向父组件传递"
-        },
-        {
-          "level": 2,
-          "title": "3.父组件使用子组件数据",
-          "slug": "_3-父组件使用子组件数据"
-        },
-        {
-          "level": 2,
-          "title": "4.组件之间双向绑定",
-          "slug": "_4-组件之间双向绑定"
-        },
-        {
-          "level": 2,
-          "title": "5.路由跳转，获取路由参数",
-          "slug": "_5-路由跳转-获取路由参数"
-        },
-        {
-          "level": 2,
-          "title": "6.获取上下文",
-          "slug": "_6-获取上下文"
-        },
-        {
-          "level": 2,
-          "title": "7.插槽的使用",
-          "slug": "_7-插槽的使用"
-        },
-        {
-          "level": 2,
-          "title": "8.缓存路由组件",
-          "slug": "_8-缓存路由组件"
         }
       ]
     },
@@ -3003,6 +2998,206 @@ export const siteData = {
           "level": 3,
           "title": "小结",
           "slug": "小结"
+        }
+      ]
+    },
+    {
+      "title": "一、组合式API",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/Vuethree.html",
+      "relativePath": "Components/vue/Vuethree.md",
+      "key": "v-f40bc0fc",
+      "path": "/Components/vue/Vuethree.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "Setup():",
+          "slug": "setup"
+        },
+        {
+          "level": 3,
+          "title": "`ref()`:",
+          "slug": "ref"
+        },
+        {
+          "level": 3,
+          "title": "computed():",
+          "slug": "computed"
+        },
+        {
+          "level": 3,
+          "title": "reactive():",
+          "slug": "reactive"
+        },
+        {
+          "level": 3,
+          "title": "readonly():",
+          "slug": "readonly"
+        },
+        {
+          "level": 3,
+          "title": "`watchEffect():`",
+          "slug": "watcheffect"
+        },
+        {
+          "level": 3,
+          "title": "`watchPostEffect()`:",
+          "slug": "watchposteffect"
+        },
+        {
+          "level": 3,
+          "title": "`watchasyncEffect()`:",
+          "slug": "watchasynceffect"
+        },
+        {
+          "level": 3,
+          "title": "watch():",
+          "slug": "watch"
+        },
+        {
+          "level": 3,
+          "title": "`isRef()`:",
+          "slug": "isref"
+        },
+        {
+          "level": 3,
+          "title": "`unRef()`:",
+          "slug": "unref"
+        },
+        {
+          "level": 3,
+          "title": "`toRef()`:",
+          "slug": "toref"
+        },
+        {
+          "level": 3,
+          "title": "`isProxy`:",
+          "slug": "isproxy"
+        },
+        {
+          "level": 3,
+          "title": "`isReactive`:",
+          "slug": "isreactive"
+        },
+        {
+          "level": 3,
+          "title": "`isReadonly()`:",
+          "slug": "isreadonly"
+        },
+        {
+          "level": 3,
+          "title": "shallowRef():",
+          "slug": "shallowref"
+        },
+        {
+          "level": 3,
+          "title": "`triggerRef():`",
+          "slug": "triggerref"
+        },
+        {
+          "level": 3,
+          "title": "`customRef()`",
+          "slug": "customref"
+        },
+        {
+          "level": 3,
+          "title": "shallowReactive():",
+          "slug": "shallowreactive"
+        },
+        {
+          "level": 3,
+          "title": "`shallowReadonly()`:",
+          "slug": "shallowreadonly"
+        },
+        {
+          "level": 3,
+          "title": "`toRaw()`:",
+          "slug": "toraw"
+        },
+        {
+          "level": 3,
+          "title": "`markRaw()`:",
+          "slug": "markraw"
+        },
+        {
+          "level": 3,
+          "title": "`effectScope()`:",
+          "slug": "effectscope"
+        },
+        {
+          "level": 3,
+          "title": "`getCurrentScope()`：",
+          "slug": "getcurrentscope"
+        },
+        {
+          "level": 3,
+          "title": "`onScopeDispose()`:",
+          "slug": "onscopedispose"
+        },
+        {
+          "level": 3,
+          "title": "使用方法",
+          "slug": "使用方法"
+        },
+        {
+          "level": 3,
+          "title": "一、Object.defineProperty",
+          "slug": "一、object-defineproperty"
+        },
+        {
+          "level": 3,
+          "title": "1.编译阶段",
+          "slug": "_1-编译阶段"
+        },
+        {
+          "level": 3,
+          "title": "2.源码体积",
+          "slug": "_2-源码体积"
+        },
+        {
+          "level": 3,
+          "title": "3.响应式系统",
+          "slug": "_3-响应式系统"
+        },
+        {
+          "level": 2,
+          "title": "1.父组件数据传递到子组件",
+          "slug": "_1-父组件数据传递到子组件"
+        },
+        {
+          "level": 2,
+          "title": "2.子组件数据向父组件传递",
+          "slug": "_2-子组件数据向父组件传递"
+        },
+        {
+          "level": 2,
+          "title": "3.父组件使用子组件数据",
+          "slug": "_3-父组件使用子组件数据"
+        },
+        {
+          "level": 2,
+          "title": "4.组件之间双向绑定",
+          "slug": "_4-组件之间双向绑定"
+        },
+        {
+          "level": 2,
+          "title": "5.路由跳转，获取路由参数",
+          "slug": "_5-路由跳转-获取路由参数"
+        },
+        {
+          "level": 2,
+          "title": "6.获取上下文",
+          "slug": "_6-获取上下文"
+        },
+        {
+          "level": 2,
+          "title": "7.插槽的使用",
+          "slug": "_7-插槽的使用"
+        },
+        {
+          "level": 2,
+          "title": "8.缓存路由组件",
+          "slug": "_8-缓存路由组件"
         }
       ]
     },
@@ -3402,25 +3597,6 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/Components/vue/template.html",
-      "relativePath": "Components/vue/template.md",
-      "key": "v-4bb298c2",
-      "path": "/Components/vue/template.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
-          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
-        },
-        {
-          "level": 3,
-          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
-          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
-        }
-      ]
-    },
-    {
       "title": "一、Vuex",
       "frontmatter": {},
       "regularPath": "/Components/vue/vuex.html",
@@ -3477,6 +3653,25 @@ export const siteData = {
           "level": 2,
           "title": "Vuex的核心原理",
           "slug": "vuex的核心原理"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/Components/vue/template.html",
+      "relativePath": "Components/vue/template.md",
+      "key": "v-4bb298c2",
+      "path": "/Components/vue/template.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "柯里化：一个函数可以接受多个参数，反复被调用",
+          "slug": "柯里化-一个函数可以接受多个参数-反复被调用"
+        },
+        {
+          "level": 3,
+          "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
+          "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
         }
       ]
     },
@@ -3581,6 +3776,21 @@ export const siteData = {
       ]
     },
     {
+      "title": "防抖与节流封装",
+      "frontmatter": {},
+      "regularPath": "/Components/work/debAndThr.html",
+      "relativePath": "Components/work/debAndThr.md",
+      "key": "v-5ced1930",
+      "path": "/Components/work/debAndThr.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
+    },
+    {
       "title": "WebSocket",
       "frontmatter": {},
       "regularPath": "/Components/work/WebSocket.html",
@@ -3602,21 +3812,6 @@ export const siteData = {
           "level": 2,
           "title": "何为PWA？",
           "slug": "何为pwa"
-        }
-      ]
-    },
-    {
-      "title": "防抖与节流封装",
-      "frontmatter": {},
-      "regularPath": "/Components/work/debAndThr.html",
-      "relativePath": "Components/work/debAndThr.md",
-      "key": "v-5ced1930",
-      "path": "/Components/work/debAndThr.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
         }
       ]
     },
@@ -3773,7 +3968,16 @@ export const siteData = {
       },
       {
         "text": "面试总结",
-        "link": "/Components/md_interview/interview"
+        "items": [
+          {
+            "text": "常见总结",
+            "link": "/Components/md_interview/interview"
+          },
+          {
+            "text": "Vue",
+            "link": "/Components/md_interview/Vue"
+          }
+        ]
       },
       {
         "text": "语言",

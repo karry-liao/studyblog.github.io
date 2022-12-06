@@ -59,7 +59,11 @@ console.log(path.resolve(__dirname, "./components")),
         },
         {
           text: "面试总结",
-          link: "/Components/md_interview/interview",
+          items: [
+            //多级导航栏
+            { text: "常见总结", link: "/Components/md_interview/interview" },
+            { text: "Vue", link: "/Components/md_interview/Vue" },
+          ],
         },
         {
           text: "语言",
