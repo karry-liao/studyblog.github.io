@@ -74,7 +74,10 @@ console.log(path.resolve(__dirname, "./components")),
             { text: "英文", link: "/language/english/" },
           ],
         },
-        { text: "github", link: "" },
+        {
+          text: "github",
+          link: "https://github.com/karry-liao?tab=repositories",
+        },
       ],
       sidebar: {
         //侧边拦
