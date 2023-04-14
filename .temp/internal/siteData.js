@@ -66,12 +66,47 @@ export const siteData = {
       ]
     },
     {
+      "title": "移动端点击时间的延时",
+      "frontmatter": {},
+      "regularPath": "/Components/MiniPrograme/delay.html",
+      "relativePath": "Components/MiniPrograme/delay.md",
+      "key": "v-668422b0",
+      "path": "/Components/MiniPrograme/delay.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "移动端点击时间的延时",
+          "slug": "移动端点击时间的延时"
+        }
+      ]
+    },
+    {
       "title": "数据可视化",
       "frontmatter": {},
       "regularPath": "/Components/Echarts/echarts.html",
       "relativePath": "Components/Echarts/echarts.md",
       "key": "v-dee70954",
       "path": "/Components/Echarts/echarts.html"
+    },
+    {
+      "title": "基于Node.js网路编程",
+      "frontmatter": {},
+      "regularPath": "/Components/NodeJs/Node.html",
+      "relativePath": "Components/NodeJs/Node.md",
+      "key": "v-69a880da",
+      "path": "/Components/NodeJs/Node.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "基于Node.js网路编程",
+          "slug": "基于node-js网路编程"
+        },
+        {
+          "level": 3,
+          "title": "如何判断当前脚本运行在浏览器端还是node环境中？",
+          "slug": "如何判断当前脚本运行在浏览器端还是node环境中"
+        }
+      ]
     },
     {
       "title": "MiniPrograme",
@@ -114,47 +149,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "移动端点击时间的延时",
-      "frontmatter": {},
-      "regularPath": "/Components/MiniPrograme/delay.html",
-      "relativePath": "Components/MiniPrograme/delay.md",
-      "key": "v-668422b0",
-      "path": "/Components/MiniPrograme/delay.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "移动端点击时间的延时",
-          "slug": "移动端点击时间的延时"
-        }
-      ]
-    },
-    {
       "title": "解决小程序打包上线包体过大导致失败的问题",
       "frontmatter": {},
       "regularPath": "/Components/MiniPrograme/package.html",
       "relativePath": "Components/MiniPrograme/package.md",
       "key": "v-118a0748",
       "path": "/Components/MiniPrograme/package.html"
-    },
-    {
-      "title": "基于Node.js网路编程",
-      "frontmatter": {},
-      "regularPath": "/Components/NodeJs/Node.html",
-      "relativePath": "Components/NodeJs/Node.md",
-      "key": "v-69a880da",
-      "path": "/Components/NodeJs/Node.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "基于Node.js网路编程",
-          "slug": "基于node-js网路编程"
-        },
-        {
-          "level": 3,
-          "title": "如何判断当前脚本运行在浏览器端还是node环境中？",
-          "slug": "如何判断当前脚本运行在浏览器端还是node环境中"
-        }
-      ]
     },
     {
       "title": "创建第一个应用",
@@ -350,6 +350,31 @@ export const siteData = {
       ]
     },
     {
+      "title": "正则表达式",
+      "frontmatter": {},
+      "regularPath": "/Components/base/Reg.html",
+      "relativePath": "Components/base/Reg.md",
+      "key": "v-5168da28",
+      "path": "/Components/base/Reg.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "正则表达式的匹配规则",
+          "slug": "正则表达式的匹配规则"
+        },
+        {
+          "level": 2,
+          "title": "正则表达式标记",
+          "slug": "正则表达式标记"
+        },
+        {
+          "level": 2,
+          "title": "匹配方法",
+          "slug": "匹配方法"
+        }
+      ]
+    },
+    {
       "title": "ES6中的Set和Map的区别",
       "frontmatter": {},
       "regularPath": "/Components/base/MapAndSet.html",
@@ -381,31 +406,6 @@ export const siteData = {
           "level": 3,
           "title": "WeakMap",
           "slug": "weakmap"
-        }
-      ]
-    },
-    {
-      "title": "正则表达式",
-      "frontmatter": {},
-      "regularPath": "/Components/base/Reg.html",
-      "relativePath": "Components/base/Reg.md",
-      "key": "v-5168da28",
-      "path": "/Components/base/Reg.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "正则表达式的匹配规则",
-          "slug": "正则表达式的匹配规则"
-        },
-        {
-          "level": 2,
-          "title": "正则表达式标记",
-          "slug": "正则表达式标记"
-        },
-        {
-          "level": 2,
-          "title": "匹配方法",
-          "slug": "匹配方法"
         }
       ]
     },
@@ -843,14 +843,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "数组去重",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/APLCode.html",
-      "relativePath": "Components/javascript/APLCode.md",
-      "key": "v-23f17330",
-      "path": "/Components/javascript/APLCode.html"
-    },
-    {
       "title": "前端实现动画的几种方式",
       "frontmatter": {},
       "regularPath": "/Components/htmlcss/animation.html",
@@ -882,6 +874,64 @@ export const siteData = {
           "level": 3,
           "title": "总结：",
           "slug": "总结"
+        }
+      ]
+    },
+    {
+      "title": "数组去重",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/APLCode.html",
+      "relativePath": "Components/javascript/APLCode.md",
+      "key": "v-23f17330",
+      "path": "/Components/javascript/APLCode.html"
+    },
+    {
+      "title": "何为AST语法树？",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/AST.html",
+      "relativePath": "Components/javascript/AST.md",
+      "key": "v-738ea9e8",
+      "path": "/Components/javascript/AST.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "何为AST语法树？",
+          "slug": "何为ast语法树"
+        },
+        {
+          "level": 2,
+          "title": "AST是如何生成的",
+          "slug": "ast是如何生成的"
+        },
+        {
+          "level": 3,
+          "title": "1. 分词",
+          "slug": "_1-分词"
+        },
+        {
+          "level": 3,
+          "title": "2. 语义分析",
+          "slug": "_2-语义分析"
+        },
+        {
+          "level": 2,
+          "title": "AST的具体应用",
+          "slug": "ast的具体应用"
+        },
+        {
+          "level": 3,
+          "title": "vue模板编译过程",
+          "slug": "vue模板编译过程"
+        },
+        {
+          "level": 3,
+          "title": "Prettier实现原理",
+          "slug": "prettier实现原理"
+        },
+        {
+          "level": 2,
+          "title": "AST还能做什么",
+          "slug": "ast还能做什么"
         }
       ]
     },
@@ -972,56 +1022,6 @@ export const siteData = {
           "level": 3,
           "title": "map()",
           "slug": "map"
-        }
-      ]
-    },
-    {
-      "title": "何为AST语法树？",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/AST.html",
-      "relativePath": "Components/javascript/AST.md",
-      "key": "v-738ea9e8",
-      "path": "/Components/javascript/AST.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "何为AST语法树？",
-          "slug": "何为ast语法树"
-        },
-        {
-          "level": 2,
-          "title": "AST是如何生成的",
-          "slug": "ast是如何生成的"
-        },
-        {
-          "level": 3,
-          "title": "1. 分词",
-          "slug": "_1-分词"
-        },
-        {
-          "level": 3,
-          "title": "2. 语义分析",
-          "slug": "_2-语义分析"
-        },
-        {
-          "level": 2,
-          "title": "AST的具体应用",
-          "slug": "ast的具体应用"
-        },
-        {
-          "level": 3,
-          "title": "vue模板编译过程",
-          "slug": "vue模板编译过程"
-        },
-        {
-          "level": 3,
-          "title": "Prettier实现原理",
-          "slug": "prettier实现原理"
-        },
-        {
-          "level": 2,
-          "title": "AST还能做什么",
-          "slug": "ast还能做什么"
         }
       ]
     },
@@ -1177,31 +1177,6 @@ export const siteData = {
           "level": 3,
           "title": "URIError",
           "slug": "urierror"
-        }
-      ]
-    },
-    {
-      "title": "浅拷贝与深拷贝",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/clone.html",
-      "relativePath": "Components/javascript/clone.md",
-      "key": "v-553ac608",
-      "path": "/Components/javascript/clone.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1.对象的深拷贝",
-          "slug": "_1-对象的深拷贝"
-        },
-        {
-          "level": 2,
-          "title": "2.数组的深拷贝方法",
-          "slug": "_2-数组的深拷贝方法"
-        },
-        {
-          "level": 2,
-          "title": "3.多维数组实现深拷贝",
-          "slug": "_3-多维数组实现深拷贝"
         }
       ]
     },
@@ -1436,6 +1411,31 @@ export const siteData = {
       ]
     },
     {
+      "title": "浅拷贝与深拷贝",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/clone.html",
+      "relativePath": "Components/javascript/clone.md",
+      "key": "v-553ac608",
+      "path": "/Components/javascript/clone.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1.对象的深拷贝",
+          "slug": "_1-对象的深拷贝"
+        },
+        {
+          "level": 2,
+          "title": "2.数组的深拷贝方法",
+          "slug": "_2-数组的深拷贝方法"
+        },
+        {
+          "level": 2,
+          "title": "3.多维数组实现深拷贝",
+          "slug": "_3-多维数组实现深拷贝"
+        }
+      ]
+    },
+    {
       "title": "工厂模式",
       "frontmatter": {},
       "regularPath": "/Components/javascript/designPatterns.html",
@@ -1607,6 +1607,91 @@ export const siteData = {
           "level": 2,
           "title": "解法2：Array.prototype.reduce",
           "slug": "解法2-array-prototype-reduce"
+        }
+      ]
+    },
+    {
+      "title": "大型文件上传",
+      "frontmatter": {},
+      "regularPath": "/Components/javascript/fileUpload.html",
+      "relativePath": "Components/javascript/fileUpload.md",
+      "key": "v-ade7a7b0",
+      "path": "/Components/javascript/fileUpload.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "大型文件上传",
+          "slug": "大型文件上传"
+        },
+        {
+          "level": 3,
+          "title": "前端怎么对资源进行分块？",
+          "slug": "前端怎么对资源进行分块"
+        },
+        {
+          "level": 3,
+          "title": "服务端怎么知道什么时候要整合资源？如何保证资源整合的有序性？",
+          "slug": "服务端怎么知道什么时候要整合资源-如何保证资源整合的有序性"
+        },
+        {
+          "level": 3,
+          "title": "如果某个分块的上传请求失败了，怎么办？",
+          "slug": "如果某个分块的上传请求失败了-怎么办"
+        },
+        {
+          "level": 3,
+          "title": "请求模块",
+          "slug": "请求模块"
+        },
+        {
+          "level": 3,
+          "title": "文件资源分块",
+          "slug": "文件资源分块"
+        },
+        {
+          "level": 3,
+          "title": "发送上传请求和合并请求",
+          "slug": "发送上传请求和合并请求"
+        },
+        {
+          "level": 3,
+          "title": "进度条数据",
+          "slug": "进度条数据"
+        },
+        {
+          "level": 2,
+          "title": "服务端部分",
+          "slug": "服务端部分"
+        },
+        {
+          "level": 3,
+          "title": "搭建服务",
+          "slug": "搭建服务"
+        },
+        {
+          "level": 3,
+          "title": "接收分块",
+          "slug": "接收分块"
+        },
+        {
+          "level": 3,
+          "title": "整合分块",
+          "slug": "整合分块"
+        },
+        {
+          "level": 2,
+          "title": "扩展之断点续传&秒传",
+          "slug": "扩展之断点续传-秒传"
+        },
+        {
+          "level": 3,
+          "title": "断点续传",
+          "slug": "断点续传"
+        },
+        {
+          "level": 3,
+          "title": "秒传",
+          "slug": "秒传"
         }
       ]
     },
@@ -1912,91 +1997,6 @@ export const siteData = {
           "level": 3,
           "title": "查找有序二维数组的目标值",
           "slug": "查找有序二维数组的目标值"
-        }
-      ]
-    },
-    {
-      "title": "大型文件上传",
-      "frontmatter": {},
-      "regularPath": "/Components/javascript/fileUpload.html",
-      "relativePath": "Components/javascript/fileUpload.md",
-      "key": "v-ade7a7b0",
-      "path": "/Components/javascript/fileUpload.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "大型文件上传",
-          "slug": "大型文件上传"
-        },
-        {
-          "level": 3,
-          "title": "前端怎么对资源进行分块？",
-          "slug": "前端怎么对资源进行分块"
-        },
-        {
-          "level": 3,
-          "title": "服务端怎么知道什么时候要整合资源？如何保证资源整合的有序性？",
-          "slug": "服务端怎么知道什么时候要整合资源-如何保证资源整合的有序性"
-        },
-        {
-          "level": 3,
-          "title": "如果某个分块的上传请求失败了，怎么办？",
-          "slug": "如果某个分块的上传请求失败了-怎么办"
-        },
-        {
-          "level": 3,
-          "title": "请求模块",
-          "slug": "请求模块"
-        },
-        {
-          "level": 3,
-          "title": "文件资源分块",
-          "slug": "文件资源分块"
-        },
-        {
-          "level": 3,
-          "title": "发送上传请求和合并请求",
-          "slug": "发送上传请求和合并请求"
-        },
-        {
-          "level": 3,
-          "title": "进度条数据",
-          "slug": "进度条数据"
-        },
-        {
-          "level": 2,
-          "title": "服务端部分",
-          "slug": "服务端部分"
-        },
-        {
-          "level": 3,
-          "title": "搭建服务",
-          "slug": "搭建服务"
-        },
-        {
-          "level": 3,
-          "title": "接收分块",
-          "slug": "接收分块"
-        },
-        {
-          "level": 3,
-          "title": "整合分块",
-          "slug": "整合分块"
-        },
-        {
-          "level": 2,
-          "title": "扩展之断点续传&秒传",
-          "slug": "扩展之断点续传-秒传"
-        },
-        {
-          "level": 3,
-          "title": "断点续传",
-          "slug": "断点续传"
-        },
-        {
-          "level": 3,
-          "title": "秒传",
-          "slug": "秒传"
         }
       ]
     },
@@ -2374,26 +2374,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "ServiceWorker",
-      "frontmatter": {},
-      "regularPath": "/Components/performance/ServiceWorker.html",
-      "relativePath": "Components/performance/ServiceWorker.md",
-      "key": "v-2c4f2a10",
-      "path": "/Components/performance/ServiceWorker.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "何为ServiceWorker？",
-          "slug": "何为serviceworker"
-        },
-        {
-          "level": 2,
-          "title": "Cache",
-          "slug": "cache"
-        }
-      ]
-    },
-    {
       "title": "前端性能优化",
       "frontmatter": {},
       "regularPath": "/Components/performance/Performance.html",
@@ -2428,6 +2408,26 @@ export const siteData = {
           "level": 2,
           "title": "React中可以做的性能优化？",
           "slug": "react中可以做的性能优化"
+        }
+      ]
+    },
+    {
+      "title": "ServiceWorker",
+      "frontmatter": {},
+      "regularPath": "/Components/performance/ServiceWorker.html",
+      "relativePath": "Components/performance/ServiceWorker.md",
+      "key": "v-2c4f2a10",
+      "path": "/Components/performance/ServiceWorker.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "何为ServiceWorker？",
+          "slug": "何为serviceworker"
+        },
+        {
+          "level": 2,
+          "title": "Cache",
+          "slug": "cache"
         }
       ]
     },
@@ -2637,26 +2637,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "瀑布流",
-      "frontmatter": {},
-      "regularPath": "/Components/static/Pinterest.html",
-      "relativePath": "Components/static/Pinterest.md",
-      "key": "v-b35c4f70",
-      "path": "/Components/static/Pinterest.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        },
-        {
-          "level": 2,
-          "title": "API",
-          "slug": "api"
-        }
-      ]
-    },
-    {
       "title": "Button",
       "frontmatter": {},
       "regularPath": "/Components/static/Message.html",
@@ -2677,12 +2657,12 @@ export const siteData = {
       ]
     },
     {
-      "title": "滑块验证",
+      "title": "瀑布流",
       "frontmatter": {},
-      "regularPath": "/Components/static/SlideVerify.html",
-      "relativePath": "Components/static/SlideVerify.md",
-      "key": "v-1aced8c8",
-      "path": "/Components/static/SlideVerify.html",
+      "regularPath": "/Components/static/Pinterest.html",
+      "relativePath": "Components/static/Pinterest.md",
+      "key": "v-b35c4f70",
+      "path": "/Components/static/Pinterest.html",
       "headers": [
         {
           "level": 2,
@@ -2691,8 +2671,8 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "Detail",
-          "slug": "detail"
+          "title": "API",
+          "slug": "api"
         }
       ]
     },
@@ -2733,6 +2713,86 @@ export const siteData = {
           "level": 3,
           "title": "响应拦截器",
           "slug": "响应拦截器"
+        }
+      ]
+    },
+    {
+      "title": "滑块验证",
+      "frontmatter": {},
+      "regularPath": "/Components/static/SlideVerify.html",
+      "relativePath": "Components/static/SlideVerify.md",
+      "key": "v-1aced8c8",
+      "path": "/Components/static/SlideVerify.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        },
+        {
+          "level": 2,
+          "title": "Detail",
+          "slug": "detail"
+        }
+      ]
+    },
+    {
+      "title": "SPA(单页应用)  首屏加载速度慢怎么解决",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/FirstLoad.html",
+      "relativePath": "Components/vue/FirstLoad.md",
+      "key": "v-b954e374",
+      "path": "/Components/vue/FirstLoad.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "SPA(单页应用)  首屏加载速度慢怎么解决",
+          "slug": "spa-单页应用-首屏加载速度慢怎么解决"
+        },
+        {
+          "level": 3,
+          "title": "一、加载慢的原因",
+          "slug": "一、加载慢的原因"
+        },
+        {
+          "level": 3,
+          "title": "三、解决方案",
+          "slug": "三、解决方案"
+        },
+        {
+          "level": 3,
+          "title": "减小入口文件体积",
+          "slug": "减小入口文件体积"
+        },
+        {
+          "level": 3,
+          "title": "静态资源本地缓存",
+          "slug": "静态资源本地缓存"
+        },
+        {
+          "level": 3,
+          "title": "UI框架按需加载",
+          "slug": "ui框架按需加载"
+        },
+        {
+          "level": 3,
+          "title": "组件重复打包",
+          "slug": "组件重复打包"
+        },
+        {
+          "level": 3,
+          "title": "图片资源的压缩",
+          "slug": "图片资源的压缩"
+        },
+        {
+          "level": 3,
+          "title": "开启GZip压缩",
+          "slug": "开启gzip压缩"
+        },
+        {
+          "level": 3,
+          "title": "使用SSR",
+          "slug": "使用ssr"
         }
       ]
     },
@@ -2933,66 +2993,6 @@ export const siteData = {
           "level": 2,
           "title": "8.缓存路由组件",
           "slug": "_8-缓存路由组件"
-        }
-      ]
-    },
-    {
-      "title": "SPA(单页应用)  首屏加载速度慢怎么解决",
-      "frontmatter": {},
-      "regularPath": "/Components/vue/FirstLoad.html",
-      "relativePath": "Components/vue/FirstLoad.md",
-      "key": "v-b954e374",
-      "path": "/Components/vue/FirstLoad.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "SPA(单页应用)  首屏加载速度慢怎么解决",
-          "slug": "spa-单页应用-首屏加载速度慢怎么解决"
-        },
-        {
-          "level": 3,
-          "title": "一、加载慢的原因",
-          "slug": "一、加载慢的原因"
-        },
-        {
-          "level": 3,
-          "title": "三、解决方案",
-          "slug": "三、解决方案"
-        },
-        {
-          "level": 3,
-          "title": "减小入口文件体积",
-          "slug": "减小入口文件体积"
-        },
-        {
-          "level": 3,
-          "title": "静态资源本地缓存",
-          "slug": "静态资源本地缓存"
-        },
-        {
-          "level": 3,
-          "title": "UI框架按需加载",
-          "slug": "ui框架按需加载"
-        },
-        {
-          "level": 3,
-          "title": "组件重复打包",
-          "slug": "组件重复打包"
-        },
-        {
-          "level": 3,
-          "title": "图片资源的压缩",
-          "slug": "图片资源的压缩"
-        },
-        {
-          "level": 3,
-          "title": "开启GZip压缩",
-          "slug": "开启gzip压缩"
-        },
-        {
-          "level": 3,
-          "title": "使用SSR",
-          "slug": "使用ssr"
         }
       ]
     },
@@ -3203,6 +3203,31 @@ export const siteData = {
           "level": 3,
           "title": "小结",
           "slug": "小结"
+        }
+      ]
+    },
+    {
+      "title": "自定义指令",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/directive.html",
+      "relativePath": "Components/vue/directive.md",
+      "key": "v-40ea6b94",
+      "path": "/Components/vue/directive.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "自定义指令",
+          "slug": "自定义指令"
+        },
+        {
+          "level": 3,
+          "title": "二、如何实现",
+          "slug": "二、如何实现"
+        },
+        {
+          "level": 3,
+          "title": "三、应用场景",
+          "slug": "三、应用场景"
         }
       ]
     },
@@ -3427,31 +3452,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "自定义指令",
-      "frontmatter": {},
-      "regularPath": "/Components/vue/directive.html",
-      "relativePath": "Components/vue/directive.md",
-      "key": "v-40ea6b94",
-      "path": "/Components/vue/directive.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "自定义指令",
-          "slug": "自定义指令"
-        },
-        {
-          "level": 3,
-          "title": "二、如何实现",
-          "slug": "二、如何实现"
-        },
-        {
-          "level": 3,
-          "title": "三、应用场景",
-          "slug": "三、应用场景"
-        }
-      ]
-    },
-    {
       "title": "一、keep-alive",
       "frontmatter": {},
       "regularPath": "/Components/vue/innerComponents.html",
@@ -3572,6 +3572,36 @@ export const siteData = {
       ]
     },
     {
+      "title": "Vue实现权限控制管理，控制到按钮级别的权限。",
+      "frontmatter": {},
+      "regularPath": "/Components/vue/permissionControl.html",
+      "relativePath": "Components/vue/permissionControl.md",
+      "key": "v-15bd0256",
+      "path": "/Components/vue/permissionControl.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "接口权限",
+          "slug": "接口权限"
+        },
+        {
+          "level": 3,
+          "title": "路由权限控制",
+          "slug": "路由权限控制"
+        },
+        {
+          "level": 3,
+          "title": "菜单权限",
+          "slug": "菜单权限"
+        },
+        {
+          "level": 3,
+          "title": "按钮权限",
+          "slug": "按钮权限"
+        }
+      ]
+    },
+    {
       "frontmatter": {},
       "regularPath": "/Components/vue/template.html",
       "relativePath": "Components/vue/template.md",
@@ -3587,51 +3617,6 @@ export const siteData = {
           "level": 3,
           "title": "需求：能实现ajax请求，自动在失败的时候重连，重试次数可传递，延迟时间",
           "slug": "需求-能实现ajax请求-自动在失败的时候重连-重试次数可传递-延迟时间"
-        }
-      ]
-    },
-    {
-      "title": "web实时消息推送",
-      "frontmatter": {},
-      "regularPath": "/Components/work/MessagePush.html",
-      "relativePath": "Components/work/MessagePush.md",
-      "key": "v-16ca30c8",
-      "path": "/Components/work/MessagePush.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "何为消息推送？",
-          "slug": "何为消息推送"
-        },
-        {
-          "level": 2,
-          "title": "短轮询",
-          "slug": "短轮询"
-        },
-        {
-          "level": 3,
-          "title": "长轮询",
-          "slug": "长轮询"
-        },
-        {
-          "level": 3,
-          "title": "iframe流",
-          "slug": "iframe流"
-        },
-        {
-          "level": 3,
-          "title": "SSE",
-          "slug": "sse"
-        },
-        {
-          "level": 3,
-          "title": "MQTT协议",
-          "slug": "mqtt协议"
-        },
-        {
-          "level": 3,
-          "title": "Websocket",
-          "slug": "websocket"
         }
       ]
     },
@@ -3696,32 +3681,47 @@ export const siteData = {
       ]
     },
     {
-      "title": "Vue实现权限控制管理，控制到按钮级别的权限。",
+      "title": "web实时消息推送",
       "frontmatter": {},
-      "regularPath": "/Components/vue/permissionControl.html",
-      "relativePath": "Components/vue/permissionControl.md",
-      "key": "v-15bd0256",
-      "path": "/Components/vue/permissionControl.html",
+      "regularPath": "/Components/work/MessagePush.html",
+      "relativePath": "Components/work/MessagePush.md",
+      "key": "v-16ca30c8",
+      "path": "/Components/work/MessagePush.html",
       "headers": [
         {
-          "level": 3,
-          "title": "接口权限",
-          "slug": "接口权限"
+          "level": 2,
+          "title": "何为消息推送？",
+          "slug": "何为消息推送"
+        },
+        {
+          "level": 2,
+          "title": "短轮询",
+          "slug": "短轮询"
         },
         {
           "level": 3,
-          "title": "路由权限控制",
-          "slug": "路由权限控制"
+          "title": "长轮询",
+          "slug": "长轮询"
         },
         {
           "level": 3,
-          "title": "菜单权限",
-          "slug": "菜单权限"
+          "title": "iframe流",
+          "slug": "iframe流"
         },
         {
           "level": 3,
-          "title": "按钮权限",
-          "slug": "按钮权限"
+          "title": "SSE",
+          "slug": "sse"
+        },
+        {
+          "level": 3,
+          "title": "MQTT协议",
+          "slug": "mqtt协议"
+        },
+        {
+          "level": 3,
+          "title": "Websocket",
+          "slug": "websocket"
         }
       ]
     },
@@ -3762,6 +3762,46 @@ export const siteData = {
           "level": 3,
           "title": "状态确认",
           "slug": "状态确认"
+        }
+      ]
+    },
+    {
+      "title": "发送验证码",
+      "frontmatter": {},
+      "regularPath": "/Components/work/SendeCode.html",
+      "relativePath": "Components/work/SendeCode.md",
+      "key": "v-d781a7b0",
+      "path": "/Components/work/SendeCode.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "代码演示",
+          "slug": "代码演示"
+        }
+      ]
+    },
+    {
+      "title": "WebSocket",
+      "frontmatter": {},
+      "regularPath": "/Components/work/WebSocket.html",
+      "relativePath": "Components/work/WebSocket.md",
+      "key": "v-03d05308",
+      "path": "/Components/work/WebSocket.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "什么是WebSocket？",
+          "slug": "什么是websocket"
+        },
+        {
+          "level": 2,
+          "title": "优点",
+          "slug": "优点"
+        },
+        {
+          "level": 2,
+          "title": "何为PWA？",
+          "slug": "何为pwa"
         }
       ]
     },
@@ -3886,42 +3926,22 @@ export const siteData = {
       ]
     },
     {
-      "title": "发送验证码",
+      "title": "支付功能",
       "frontmatter": {},
-      "regularPath": "/Components/work/SendeCode.html",
-      "relativePath": "Components/work/SendeCode.md",
-      "key": "v-d781a7b0",
-      "path": "/Components/work/SendeCode.html",
+      "regularPath": "/Components/work/pay.html",
+      "relativePath": "Components/work/pay.md",
+      "key": "v-21608ca8",
+      "path": "/Components/work/pay.html",
       "headers": [
         {
           "level": 2,
-          "title": "代码演示",
-          "slug": "代码演示"
-        }
-      ]
-    },
-    {
-      "title": "WebSocket",
-      "frontmatter": {},
-      "regularPath": "/Components/work/WebSocket.html",
-      "relativePath": "Components/work/WebSocket.md",
-      "key": "v-03d05308",
-      "path": "/Components/work/WebSocket.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "什么是WebSocket？",
-          "slug": "什么是websocket"
+          "title": "一、支付可能需要的东西",
+          "slug": "一、支付可能需要的东西"
         },
         {
           "level": 2,
-          "title": "优点",
-          "slug": "优点"
-        },
-        {
-          "level": 2,
-          "title": "何为PWA？",
-          "slug": "何为pwa"
+          "title": "二、支付的完成流程",
+          "slug": "二、支付的完成流程"
         }
       ]
     },
@@ -4270,6 +4290,10 @@ export const siteData = {
             [
               "work/eventTraking",
               "数据埋点"
+            ],
+            [
+              "work/Pay",
+              "支付功能"
             ]
           ]
         },

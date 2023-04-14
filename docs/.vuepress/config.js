@@ -193,6 +193,7 @@ console.log(path.resolve(__dirname, "./components")),
               ["work/SendeCode", "验证码发送倒计时"],
               ["work/debAndThr", "防抖与节流"],
               ["work/eventTraking", "数据埋点"],
+              ["work/Pay", "支付功能"],
             ],
           },
           {
