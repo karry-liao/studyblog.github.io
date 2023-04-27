@@ -199,7 +199,10 @@ console.log(path.resolve(__dirname, "./components")),
           {
             title: "NodeJS篇",
             collapsable: true,
-            children: [["NodeJs/Start", "初识NodeJS"]],
+            children: [
+              ["NodeJs/Node", "NodeJS网络编程"],
+              ["NodeJs/Start", "初识NodeJS"],
+            ],
           },
           {
             title: "Web性能提升篇",
