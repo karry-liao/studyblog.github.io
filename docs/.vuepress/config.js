@@ -66,12 +66,11 @@ console.log(path.resolve(__dirname, "./components")),
           ],
         },
         {
-          text: "语言",
+          text: "ThreeJS",
           ariLabel: "2021",
           items: [
             //多级导航栏
-            { text: "中文", link: "/language/chinese/" },
-            { text: "英文", link: "/language/english/" },
+            { text: "中文", link: "/Components/ThreeJS/Lamborghini" },
           ],
         },
         {
@@ -193,7 +192,7 @@ console.log(path.resolve(__dirname, "./components")),
               ["work/SendeCode", "验证码发送倒计时"],
               ["work/debAndThr", "防抖与节流"],
               ["work/eventTraking", "数据埋点"],
-              ["work/Pay", "支付功能"],
+              ["work/pay", "支付功能"],
             ],
           },
           {
