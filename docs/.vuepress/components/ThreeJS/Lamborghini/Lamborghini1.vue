@@ -1,8 +1,6 @@
 <template>
-    <client-only>
-        <div id="container">
-        </div>
-    </client-only>
+    <div id="container">
+    </div>
 </template>
 
 <script>
@@ -98,9 +96,10 @@ export default {
             renderer.outputEncoding = THREE.sRGBEncoding;
             renderer.toneMapping = THREE.ACESFilmicToneMapping;
             let container = document.querySelector('#container')
-            if (document) { 
-                container.appendChild(renderer.domElement)
+            if (container) { 
+                setTimeout(() => container.appendChild(renderer.domElement), 2000)
             }
+
         }
 
         function loadCarModal() {
