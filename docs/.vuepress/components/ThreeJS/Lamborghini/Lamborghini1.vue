@@ -1,6 +1,8 @@
 <template>
-    <div>
-    </div>
+    <client-only>
+        <div id="container">
+        </div>
+    </client-only>
 </template>
 
 <script>
@@ -90,18 +92,19 @@ export default {
             renderer = new WebGLRenderer({
                 antialias: true
             })
-            renderer.setSize(window.innerWidth, window.innerHeight)
+            renderer.setSize(window.innerWidth/1.5, window.innerHeight/1.5)
             // 支持阴影
             renderer.shadowMap.enabled = true
             renderer.outputEncoding = THREE.sRGBEncoding;
             renderer.toneMapping = THREE.ACESFilmicToneMapping;
-
-            document.body.appendChild(renderer.domElement)
+            let container = document.querySelector('#container')
+            if (document) { 
+                container.appendChild(renderer.domElement)
+            }
         }
 
         function loadCarModal() {
             new GLTFLoader().load('models/gltf/Duck/glTF/Lamborghini.glb', function (gltf) {
-                console.log(gltf)
                 const carModel = gltf.scene
 
                 carModel.rotation.y = Math.PI
@@ -441,9 +444,10 @@ export default {
 .lil-gui{
     margin-top: 11%;
 }
-canvas{
-    margin-top: -8%;
-    transform: scale(1,1);
+#container{
+    width: 50%;
+    height: 50%;
+    margin-right: 20%;
 }
 </style>
 
